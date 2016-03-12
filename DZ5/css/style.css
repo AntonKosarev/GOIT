@@ -1,0 +1,109 @@
+.template { /* Вставка макета для проверки на идентичность*/
+	position: absolute;
+	background-color: transparent;
+	opacity: 0.3;
+	z-index: 1;
+    left: 5px;
+}
+.background {
+    margin: auto;/* выравниваем по центру вертикально и горизонтально*/
+    max-width: 1215px;
+    min-width: 1215px;
+    max-height: 1064px;
+    min-height: 1064px;
+    background-color: #074e8c;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+}
+
+/* top menu */
+.top_menu {
+    padding-right: 20px;
+}
+.top_menu li {
+    float: right;
+    display: inline-block;
+    line-height: 36px;/* по высоте меню для центрирования текста*/
+    font-size: 14px;
+    text-decoration: none;
+}
+.left_buttons li {
+    color: #60b5ed;
+    letter-spacing: 0px;
+    padding: 0 10px;
+    margin: 0 10px 0 0;
+}
+.right_buttons li {
+    color: #fefefe;
+    letter-spacing: 0px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+}
+.left_buttons li:hover {
+    background-image: url("../img/layer44.png");
+    color: #ffffff;
+}
+.right_buttons li:hover {
+    background-image: url("../img/layer16.png");
+    color: #feffff;
+}
+a { /* блок а наследует параметры li*/
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+}
+.delimiter li { /* выравниваем по вертикали разделитель в меню*/
+    padding: 2px 0 3px 0;
+}
+.flag a:before {/*флажек*/
+    content: url("../img/inventicons29.png");
+    float: left;
+    margin: 0 10px -13px 10px;
+}
+/*.top_menu:after {/*убираем float
+    content: '';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}*/
+/* end top menu */
+/* Центральный блок */
+.flexbox {
+    clear: both;
+    width: 100%;
+    height: 1002px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastr {
+    width: 560px;
+    height: 613px;
+}
+.topcadastr {
+    width: 100%;
+    height: 62px;
+    margin-bottom: 1px;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 62px;
+    text-align: center;
+}
+.undercadastr {
+    width: 100%;
+    height: 550px;
+}
+.topcadastr,
+.undercadastr {
+    background-color: rgba(0,0,0,0.63);
+}
+.ou {
+    background-image: url("../img/ou.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+}
+/*Форма*/

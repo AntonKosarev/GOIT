@@ -138,6 +138,7 @@ input {
     text-indent: 13px;
 }
 input:focus {
+    color: #ffffff;
     background-color: #1b5288;
     border: 0px;
     border-bottom: 1px solid #689bcc;
@@ -150,6 +151,7 @@ input:focus {
     height: 15px;
     vertical-align: middle;
     margin: 6px 9px 6px -63px;
+    cursor: pointer;
 }
 [type="submit"] {
     width: 149px;
@@ -159,6 +161,7 @@ input:focus {
     background-image: url("../img/button.png");
     font-size: 14px;
     text-indent: 1px;
+    cursor: pointer;
 }
 .Byclicking {
     font-size: 11px;

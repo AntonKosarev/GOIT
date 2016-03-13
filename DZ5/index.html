@@ -36,14 +36,28 @@
             <div class="cadastr">
                 <div class="topcadastr">Cadastre-se</div>
                 <div class="undercadastr">
-                    <a href="#" class="photo">
-                        <img src="img/logfacebook.png" width="276" height="35" alt="Log In with Facebook">
-                    </a>
+                    <div  class="logfacebook">
+                        <a href="#">
+                            <img src="img/logfacebook.png" width="276" height="35" alt="Log In with Facebook">
+                        </a>
+                    </div>
                     <div class="ou">OU</div>
                     <!-- Форма-->
-                    <form action="#">
-                        <input type="text" name="FirstName" >
+                    <form action="#" metod="POST">
+                        <div><input type="text" name="FirstName" placeholder="Firs Name"></div>
+                        <div><input type="text" name="LastName" placeholder="Last Name"></div>
+                        <div><input type="text" name="EmailAddress" placeholder="Email Address"></div>
+                        <div><input type="text" name="ChoosePassword" placeholder="Choose Password"></div>
+                        <div><input type="text" name="PasswordConfirm" placeholder="Password Confirm"></div>
+                        <div><input type="checkbox" name="SendYU" checked>Send me Youbike updates and tips</div>
+                        <div><input type="submit" value="Create my Account"></div>
                     </form>
+                    <div class="Byclicking">
+                        <a href="#">
+                            By clicking the button above, you agree to the Terms of Service<br>
+                            Xiew our Privacy Policy.
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

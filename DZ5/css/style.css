@@ -1,3 +1,4 @@
+@import url(fontstyle.css);
 .template { /* Вставка макета для проверки на идентичность*/
 	position: absolute;
 	background-color: transparent;

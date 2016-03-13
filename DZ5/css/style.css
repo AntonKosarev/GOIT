@@ -44,7 +44,7 @@
     color: #ffffff;
 }
 .right_buttons li:hover {
-    background-image: url("../img/layer16.png");
+    background-image: url("../img/Layer16.png");
     color: #feffff;
 }
 a { /* блок а наследует параметры li*/

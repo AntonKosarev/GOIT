@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>DZ6</title>
    <link href='css/resetstyles.css' rel='stylesheet'>
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/style-header.css' rel='stylesheet'>
+    <link href='css/style-find.css' rel='stylesheet'>
 </head>
 <body>
     <div class="header">
         <div class="header_phones">
             <img src="img/phone.png" alt="phone">
-            (044)123-45-67 (044)567-89-10
+            <span>(044)123-45-67   (044)567-89-10</span>
         </div>
         <div class="header_avtoriz">
             <img src="img/avtoriz_man.png" alt="man">
@@ -21,7 +22,7 @@
                 <button class="avtoriz_button">вход</button>
                 <div class="slesh"></div>
                 <button class="avtoriz_button">регистрация</button>
-                <button class="avtoriz_button">забыли пароль?</button>
+                <button class="avtoriz_button_1">забыли пароль?</button>
         </div>
         <div class="header_navi">
             <img src="img/header_nav.png" width="85" height="33" alt="home" usemap="#navmap">
@@ -33,7 +34,7 @@
         </div>
         <div class="header_banner">
             <div class="header_banner_zazor">
-                <strong>zazor</strong>.com.ua
+                <span><strong>zazor</strong>.com.ua</span>
                 <p>drives you away</p>
             </div>
         </div>
@@ -52,72 +53,233 @@
             &nbsp;&nbsp;насумму:&nbsp;<span>0,00&nbsp;грн.</span>
             </div>
         </div>
-    </div>
+    <!-- Поиск ------------------------------------------------------------------------------------------------->
     <div class="search">
-        <div class="search_auto">
-            <p>Поиск по автомобилю</p>
-            <div class="search_auto_1">
-                <form action="#" metod="#">
-                    <div class="search_auto_align">
-                        <p class="search_auto_align_left">Диски:</p>
-                        <label><div><p>Марка&nbsp;<span>авто:</span></p></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label><div class="search_auto_align_left_model"><p>Модель</p><span>автомобиля:</span></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label class="select_podyear_lab"><div class="search_auto_align_left_god"><p>Год выпуска</p><span>автомобиля:</span></div>
-                            <select class="select_podyear">
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label><div><p>Комплектация:</p></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                    </div>
-                </form>
-                <form action="#" metod="#">
-                    <div class="search_auto_align">
-                        <p class="search_auto_align_right">Шины:</p>
-                        <label><div><p>Марка&nbsp;<span>авто:</span></p></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label><div class="search_auto_align_left_model"><p>Модель</p><span>автомобиля:</span></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label class="select_podyear_lab"><div class="search_auto_align_left_god"><p>Год выпуска</p><span>автомобиля:</span></div>
-                            <select class="select_podyear">
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                        <label><div><p>Комплектация:</p></div>
-                            <select>
-                                <option value="0"></option>
-                            </select>
-                        </label>
-                    </div>
-                </form>
+        <div class="search_1">
+            <p class="main">Поиск по автомобилю</p>
+            <!-- Левая Колонка-->
+            <div class="left_colum"><p id="left_main">Диски:</p>
+                <div class="parametr_serch_1">
+                    <label>
+                        <div class="podpis">Марка <span>авто:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_2">
+                    <label>
+                        <div class="podpis">Модель <span>автомобиля:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_3">
+                    <label>
+                        <div class="podpis">Год выпуска <span>автомобиля:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_4">
+                    <label>
+                        <div class="podpis">Комплектация:</div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
             </div>
-            <p class="search_auto_search"><a href="#">поиск...</a></p>
+            <!-- Правая Колонка-->
+            <div class="right_colum"><p id="right_main">Шины:</p>
+                <div class="parametr_serch_1">
+                    <label>
+                        <div class="podpis">Марка <span>авто:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_2">
+                    <label>
+                        <div class="podpis">Модель <span>автомобиля:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_3">
+                    <label>
+                        <div class="podpis">Год выпуска <span>автомобиля:</span></div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_4">
+                    <label>
+                        <div class="podpis">Комплектация:</div>
+                        <div class="">  <select class="pole_select">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="low_poisk"><a href="#">поиск...</a></div>
         </div>
-        <div class="search_tire"></div>
-        <div class="search_disk"></div>
+        <!-- Конец 1го Блока -->
+        <!-- 2й Блок -------------------------------------------------------------------------------------------------->
+        <div class="search_2">
+            <p class="main_2">поиск шин</p>
+            <div class="left_colum">
+                <div class="parametr_serch_2_1">
+                    <label>
+                        <div class="podpis_2_1">Размер:</div>
+                        <div class="">  <select class="pole_select_2_1">
+                            <option>145</option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select>
+                            <div class="podpis_slash">/</div>
+                            <select class="pole_select_2_1">
+                                <option></option>
+                                <option>#</option>
+                                <option>#</option>
+                            </select>
+                        </div>
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_R">
+                    <label>
+                        <div class="podpis_R">R</div>
+                        <div class="">  <select class="pole_select_R">
+                            <option>12</option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                    <div class="clearfix"></div>
+                    <div class="parametr_serch_checkbox">
+                        <label>
+                            <div class="podpis_checkbox">Сезон:</div>
+                            <div class="cheks">
+                                <div><input type="checkbox"><span>лето</span></div>
+                                <div><input type="checkbox"><span>зима</span></div>
+                                <div><input type="checkbox"><span>всесез</span></div>
+                            </div>
+                        </label>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="low_poisk_2"><a href="#">поиск...</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец 2го Блока -->
+        <!-- 3й Блок -------------------------------------------------------------------------------------------------->
+        <div class="search_3">
+            <p class="main_3">поиск дисков:</p>
+            <div class="left_colum_3">
+                <div class="parametr_serch_3_1">
+                    <label>
+                        <div class="podpis_3_1">Диаметр <span>диска:</span></div>
+                        <div class="">  <select class="pole_select_3_1">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                </div>
+                <div class="clearfix"></div>
+                <div class="parametr_serch_3_2">
+                    <div class="parametr_serch_3_2">
+                        <label>
+                            <div class="podpis_3_2">Количество <span>крепёжных отверстий:</span></div>
+                            <div class="">  <select class="pole_select_3_2">
+                                <option></option>
+                                <option>#</option>
+                                <option>#</option>
+                            </select></div>
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="parametr_serch_3_3">
+                    <div class="parametr_serch_3_3">
+                        <label>
+                            <div class="podpis_3_3">Диаметр <span>расположения крепёжных отверстий:</span></div>
+                            <div class="">  <select class="pole_select_3_3">
+                                <option></option>
+                                <option>#</option>
+                                <option>#</option>
+                            </select></div>
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="right_colum_3">
+
+                <div class="parametr_serch_3_r">
+                    <label>
+                        <div class="podpis_3_r">ДЦО <span>(диаметр центрального отверстия):</span></div>
+                        <div class="">  <select class="pole_select_3_r">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="parametr_serch_3_2r">
+                    <label>
+                        <div class="podpis_3_2r">ЕТ<p><span>(вылет диска):</span></p></div>
+                        <div class="">  <select class="pole_select_3_2r">
+                            <option></option>
+                            <option>#</option>
+                            <option>#</option>
+                        </select></div>
+                    </label>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="low_poisk_3"><a href="#">поиск...</a></div>
+        </div>
     </div>
-    <div class="content">
+
         <div class="content_katalog"></div>
         <div class="content_tovar"></div>
         <div class="content_brend"></div>
-    </div>
+
     <div class="famoslogo"></div>
     <footer></footer>
 </body>

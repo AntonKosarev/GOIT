@@ -1,0 +1,477 @@
+/* ПЕРВАЯ СЕКЦИЯ */
+.search {
+    color: #000000;
+    margin: 13px 0 0 -3px;
+}
+.search_1 {
+    float: left;
+    width: 412px;
+    height: 134px;
+    border: 1px solid #9c9c9d;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    border-radius: 18px/16px;
+}
+
+.search_1 p { /* "Поиск по автомобилю" */
+    margin: -2px 0 0 0;
+    color: #154467;
+    font-size: 12px;
+    font-weight: 900;
+    text-indent: -13px;
+}
+#left_main { /*"Диски:"*/
+    font-size: 10px;
+    margin: -13px 0 4px -120px;
+}
+#right_main { /* "Шины" */
+    font-size: 10px;
+    margin: -13px 0 4px 136px;
+}
+.left_colum,
+.right_colum {
+    float: left; /* выстраиваем столбики в поле Поиск по авто*/
+}
+.right_colum {
+     margin: -2px 0 0 27px; /* выравнивание столбцов */
+}
+.left_colum {
+    margin-left: 15px; /* выравнивание столбцов */
+}
+.parametr_serch_4,
+.parametr_serch_3,
+.parametr_serch_2,
+.parametr_serch_1 { /* блок с label+select */
+    width: 179px; /* расстояние между label и select*/
+    position: relative; /* для правильного отображения селектора .parametr_serch label:after */
+}
+.parametr_serch_4 label:after,
+.parametr_serch_2 label:after,
+.parametr_serch_1 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 0;
+    top: 1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_2{
+    margin-top: 6px; /* выравнивание повертикали 2го поля select */
+}
+.parametr_serch_2 .podpis {
+    margin-top: -6px; /* выравнивание (компенсация) 2й подписи*/
+}
+.parametr_serch_3{
+    margin-top: 5px; /* выравнивание повертикали 2го поля select */
+}
+.parametr_serch_3 .podpis {
+    margin-top: -5px; /* выравнивание (компенсация) 2й подписи*/
+}
+.parametr_serch_3 .pole_select {
+    width: 56px; /* Ширина поля Год выпуска*/
+    float: left; /* Виравниваем поле select по горизонтали*/
+    margin-left: 5px;
+}
+.parametr_serch_3 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 44px;
+    top: 1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_4{
+    margin-top: 5px; /* выравнивание повертикали 2го поля select */
+}
+.parametr_serch_4 .podpis {
+    margin-top: -1px; /* выравнивание (компенсация) 2й подписи*/
+}
+.pole_select {
+    float: right;
+    display: block;
+    width: 101px;
+    height: 16px;
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.podpis {
+    float: left;
+    width: 73px;
+    padding-top: 6px; /* выранивает label по вертикали */
+    line-height: 8px; /* выранивает расстояние между строк в label */
+    text-indent: 1px; /* выранивает label по горизонтали */
+    text-align: left;
+}
+.podpis_3_2r span,
+.podpis_3_r span,
+.podpis_3_3 span,
+.podpis_3_2 span,
+.podpis_3_1 span,
+.podpis span { /* параметры серых label "авто:*/
+    color: #77858b;
+    font-size: 10px;
+}
+.clearfix { /* Блок длязачистки границ от float*/
+    clear: both;
+}
+.low_poisk {
+    margin: 6px 0 0 320px; /*позиционир-е "поиска"*/
+}
+.low_poisk a { /* Стиль "поиск" внизу*/
+    color: #154467;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+/* ВТОРАЯ СЕКЦИЯ------------------------------------------------------------------------------------------- */
+.search_2 {
+    float: left;
+    width: 191px;
+    height: 135px;
+    margin: -1px 0 0 14px;
+    border: 1px solid #9c9c9d;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    border-radius: 18px/16px;
+}
+.main_2 { /* "Поиск шин" */
+    color: #154467;
+    font-size: 11px;
+    font-weight: 900;
+    text-indent: -13px; /* ровняю "Поиск шин" по горизонтали*/
+    margin: 1px 0 6px -90px; /* ровня. "Поиск шин" по горизонтали */
+}
+.podpis_2_1 {
+    float: left;
+    width: 44px; /* Ширина label*/
+    padding-top: 6px; /* выранивает label по вертикали */
+    line-height: 13px; /* выранивает расстояние между строк в label */
+    text-indent: -2px; /* выранивает label по горизонтали */
+    text-align: left; /* ровняю label по горизонтали*/
+}
+.podpis_slash {
+    float: left;
+    width: 17px; /* Ширина label*/
+    padding-top: 3px; /* выранивает label по вертикали */
+    text-align: center; /* ровняю label по горизонтали*/
+    font-size: 14px;
+}
+.podpis_R {
+    float: left;
+    width: 44px; /* Ширина label*/
+    padding-top: 6px; /* выранивает label по вертикали */
+    line-height: 11px; /* выранивает расстояние между строк в label */
+    font-size: 12px;
+    text-indent: 30px; /* выранивает label по горизонтали */
+    text-align: left; /* ровняю label по горизонтали*/
+}
+.pole_select_R {
+    height: 16px;
+    font-size: 11px;
+    width: 46px;
+    margin: 0 0 0 -83px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.pole_select_2_1 {
+    float: left;
+    display: block;
+    width: 49px; /* Ширина поля select*/
+    height: 16px;
+    font-size: 11px;
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.podpis_2_1,
+.podpis_2_1 div {
+    float: left;
+}
+.parametr_serch_2_1 { /* блок с label+select */
+    width: 170px; /* расстояние между label и select*/
+    position: relative; /* для правильного отображения селектора .parametr_serch_2_2 label:after */
+    margin-bottom: 5px; /* выравнивание selekt для R по вертикали */
+}
+.parametr_serch_2_1 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 8px;
+    top: 1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_R {
+    position: relative; /* для правильного отображения селектора .parametr_serch_R label:after */
+}
+.parametr_serch_R label:after {
+    content: url("../img/select.png");
+    position: absolute;
+    left: 72px;
+    top: 1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.podpis_slash {
+    position: relative; /* для правильного отображения селектора .podpis_slash:after */
+}
+.podpis_slash:after {
+    content: url("../img/select.png");
+    position: absolute;
+    left: -14px;
+    top: 1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+/*Чекбоксы длявторогоблока*/
+.podpis_checkbox {
+    float: left;
+    padding-top: 5px;
+}
+.parametr_serch_checkbox {
+    width: 121px;
+    height: 60px;
+}
+.cheks {
+    padding: 4px 0 0 40px;
+    margin: 0 0 0 0;
+    text-align: left;
+}
+.cheks div {
+    height: 13px;
+    font-size: 11px;
+}
+.low_poisk_2 {
+    margin: -14px 0 0 94px;; /*позиционир-е "поиска"*/
+}
+.low_poisk_2 a { /* Стиль "поиск" внизу*/
+    color: #154467;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+/* ТРЕТЬЯ СЕКЦИЯ------------------------------------------------------------------------------------------- */
+.search_3 {
+    float: left;
+    width: 266px;
+    height: 134px;
+    margin: -1px 0 0 10px;
+    border: 1px solid #9c9c9d;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    border-radius: 18px/16px;
+}
+.main_3 {
+    color: #154467;
+    font-size: 12px;
+    font-weight: 900;
+    text-indent: -13px; /* ровняю "Поиск шин" по горизонтали*/
+    margin: 0 0 6px -141px; /* ровня. "Поиск шин" по горизонтали */
+}
+.podpis_3_1 {
+    float: left;
+    width: 90px;/* Ширина label*/
+    padding-top: 3px;/* выранивает label по вертикали */
+    line-height: 6px; /* выранивает расстояние между строк в label */
+    font-size: 10px;
+    text-indent: 14px;/* выранивает label по горизонтали */
+    text-align: left;/* ровняю label по горизонтали*/
+}
+.pole_select_3_1 {
+    height: 16px;
+    font-size: 11px;
+    width: 57px;
+    margin: -3px 0 0 -88px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+
+.podpis_3_2 {
+    float: left;
+    width: 43px;/* Ширина label*/
+    margin: 0 0 0 14px;
+    padding-top: 3px;/* выранивает label по вертикали */
+    line-height: 9px; /* выранивает расстояние между строк в label */
+    font-size: 10px;
+    text-indent: 1px;/* выранивает label по горизонтали */
+    text-align: left;/* ровняю label по горизонтали*/
+}
+.pole_select_3_2 {
+    height: 16px;
+    font-size: 11px;
+    width: 50px;
+    margin: 13px 0 0 -62px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.parametr_serch_3_2 {
+    margin-top: 1px;
+}
+.parametr_serch_3_3,
+.parametr_serch_3_2,
+.parametr_serch_3_1 {
+    position: relative;
+}
+.parametr_serch_3_1 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 103px;
+    top: -1px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_3_2 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 110px;
+    top: 16px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_3_3 label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+    content: url("../img/select.png");
+    position: absolute;
+    right: 102px;
+    top: 17px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.podpis_3_3 {
+    float: left;
+    width: 43px;/* Ширина label*/
+    margin: 0 0 0 14px;
+    padding-top: 3px;/* выранивает label по вертикали */
+    line-height: 9px; /* выранивает расстояние между строк в label */
+    font-size: 10px;
+    text-indent: 1px;/* выранивает label по горизонтали */
+    text-align: left;/* ровняю label по горизонтали*/
+}
+
+.pole_select_3_3 {
+    height: 16px;
+    font-size: 11px;
+    width: 58px;
+    margin: 15px 0 0 -56px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.parametr_serch_3_3 {
+    margin-top: 1px;
+}
+.line { /* Вертикальная линия */
+    float: left;
+    width: 1px;
+    height: 107px;
+    background-color: #bdc6ca;
+    margin: -104px 0 0 175px;
+}
+/* На этом этапе становится ясно чтонахрен все поля полетели идалше придётся позиционировать в абсолютном варианте*/
+.parametr_serch_3_2r,
+.parametr_serch_3_r {
+    float: left;
+    position: relative;
+}
+.right_colum_3 {
+    float: left;
+    margin: -101px 0 0 9px;
+}
+.podpis_3_r {
+    float: left;
+    width: 43px;/* Ширина label*/
+    margin: 0 0 0px 0px;
+    padding-top: 0px;/* выранивает label по вертикали */
+    line-height: 9px; /* выранивает расстояние между строк в label */
+    font-size: 10px;
+    text-indent: 1px;/* выранивает label по горизонтали */
+    text-align: left;/* ровняю label по горизонтали*/
+}
+.podpis_3_2r {
+    float: left;
+    width: 74px;/* Ширина label*/
+    margin: 8px 0 2px 0px;
+    padding-top: 0px;/* выранивает label по вертикали */
+    line-height: 9px; /* выранивает расстояние между строк в label */
+    font-size: 10px;
+    text-indent: 1px;/* выранивает label по горизонтали */
+    text-align: left;/* ровняю label по горизонтали*/
+}
+.pole_select_3_r {
+
+    height: 16px;
+    font-size: 11px;
+    width: 58px;
+    margin: 1px 0 0 2px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+p {
+    margin: 0;
+}
+.pole_select_3_2r {
+
+    height: 16px;
+    font-size: 11px;
+    width: 58px;
+    margin: 1px 0 0 -15px; /* Выравнивание  seleсt для R по вертикали*/
+    -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid #a9a9a9;
+    border-bottom: thin; /* убрал нижнюю рамку select */
+}
+.low_poisk_3 a { /* Стиль "поиск" внизу*/
+    color: #154467;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+.low_poisk_3 {
+    margin: 2px 0 0 0;; /*позиционир-е "поиска"*/
+}
+.parametr_serch_3_r:after {
+    content: url("../img/select.png");
+    position: absolute;
+    right: 0px;
+    top: 38px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}
+.parametr_serch_3_2r:after {
+    content: url("../img/select.png");
+    position: absolute;
+    right: 14px;
+    top: 30px;
+    pointer-events: none; /* опускает картинку на заднийплан */
+    border-radius: 1px;
+}

@@ -147,13 +147,13 @@
     color: #465961;
 }
 .rightColumn .list_2_1_3 {
-    margin: 0px 0 0 -43px;
+    margin: 0 0 0 -43px;
 }
 .rightColumn .list_2_1_2 {
     margin: 7px 0 16px -43px;
 }
 .rightColumn .list_2_1_1 {
-    margin: 0px 0 12px -43px;
+    margin: 0 0 12px -43px;
 }
 .rightColumn button {
     margin: 0 0 0 16px;
@@ -169,7 +169,7 @@
     border-radius: 10px;
 }
 .rightColumn .rl /* подправил правую колонку*/{
-    padding: 0px 0 0 12px;
+    padding: 0 0 0 12px;
 }
 .rightColumn .list_2d {
     border: 1px solid #79878d;

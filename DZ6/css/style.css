@@ -32,9 +32,9 @@ body{
     background-color: #1f6786;
     background-image: linear-gradient(to top, #1f6789, #0c3357);
     border-radius: 3px;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(150,150,150,1);
-    -moz-box-shadow: 3px 3px 3px 0px rgba(150,150,150,1);
-    box-shadow: 3px 3px 3px 0px rgba(150,150,150,1);
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
 }
 .avtoriz_button {
     color: #fff;
@@ -86,9 +86,9 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url(../img/bgmenu.png);
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
     border-radius: 3px/4px;
     color: #b1bcc0;
     text-decoration: none;
@@ -129,9 +129,9 @@ body{
     font-family: Arial, sans-serif;
     font-size: 10px;
     text-align: center;
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(104,104,104,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(104,104,104,0.75);
-    box-shadow: 5px 5px 5px 0px rgba(104,104,104,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
+    box-shadow: 5px 5px 5px 0 rgba(104,104,104,0.75);
     border-radius: 18px/16px;
 }
 .search_auto p {
@@ -186,7 +186,7 @@ body{
 }
 .search_auto_align label div {
     line-height: 7px;
-    padding: 6px 0px 0px 0;
+    padding: 6px 0 0 0;
     margin: 0 0 5px 0;
 }
 .search_auto_align label {
@@ -202,11 +202,11 @@ body{
 .search_auto select {
     width: 102px;
     border: none;
-    -webkit-box-shadow: inset 2px 2px 2px 0px rgba(104,104,104,0.75);
-    -moz-box-shadow: inset 2px 2px 2px 0px rgba(104,104,104,0.75);
-    box-shadow: inset 2px 2px 2px 0px rgba(104,104,104,0.75);
+    -webkit-box-shadow: inset 2px 2px 2px 0 rgba(104,104,104,0.75);
+    -moz-box-shadow: inset 2px 2px 2px 0 rgba(104,104,104,0.75);
+    box-shadow: inset 2px 2px 2px 0 rgba(104,104,104,0.75);
     border-radius: 1px;
-    margin: 0px -2px 7px 0px;
+    margin: 0 -2px 7px 0;
 }
 .search_auto_align  .select_podyear{
     width: 57px;

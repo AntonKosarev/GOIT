@@ -406,8 +406,8 @@
 .podpis_3_r {
     float: left;
     width: 43px;/* Ширина label*/
-    margin: 0 0 0px 0px;
-    padding-top: 0px;/* выранивает label по вертикали */
+    margin: 0 0 0 0;
+    padding-top: 0;/* выранивает label по вертикали */
     line-height: 9px; /* выранивает расстояние между строк в label */
     font-size: 10px;
     text-indent: 1px;/* выранивает label по горизонтали */
@@ -416,8 +416,8 @@
 .podpis_3_2r {
     float: left;
     width: 74px;/* Ширина label*/
-    margin: 8px 0 2px 0px;
-    padding-top: 0px;/* выранивает label по вертикали */
+    margin: 8px 0 2px 0;
+    padding-top: 0;/* выранивает label по вертикали */
     line-height: 9px; /* выранивает расстояние между строк в label */
     font-size: 10px;
     text-indent: 1px;/* выранивает label по горизонтали */
@@ -462,7 +462,7 @@ p {
 .parametr_serch_3_r:after {
     content: url("../img/select.png");
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 38px;
     pointer-events: none; /* опускает картинку на заднийплан */
     border-radius: 1px;

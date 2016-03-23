@@ -1,0 +1,85 @@
+@import url(fontstyle.css);
+/* Блок header */
+/*320*/
+.header {
+    max-width: 2400px;
+    height: 869px;
+    background: url("../img/header_bg.jpg") center top no-repeat;
+}
+.header__logo {
+    width: 151px;
+    height: 36px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'LeagueGothic-Regular', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 34px;
+    /*mod320*/
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.header__logo span {
+    /*градиент для текста*/
+    width: 29px;
+    height: 36px;
+    margin-left: 2px;
+    background: -moz-linear-gradient(top, rgba(115,79,130,1) 0%, rgba(51,38,58,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(115,79,130,1) 0%, rgba(51,38,58,1) 100%);
+    background: -o-linear-gradient(top, rgba(115,79,130,1) 0%, rgba(51,38,58,1) 100%);
+    background: -ms-linear-gradient(top, rgba(115,79,130,1) 0%, rgba(51,38,58,1) 100%);
+    background: linear-gradient(to bottom, rgba(115,79,130,1) 0%, rgba(51,38,58,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.header__home {
+    width: 35px;
+    height: 18px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    color: white;
+    font-family: 'LeagueGothic-Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: uppercase;
+    /*mod320*/
+    margin: 30px auto 0; /*41margin-(58span-36span)/2=30 поправка(11px) на высоту span в блоке .header__logo*/
+    padding: 0 60px 0 56px;
+}
+.header__unline {
+    width: 47px;
+    height: 2px;
+    background-color: #edbfff;
+    /*mod320*/
+    margin: 8px 0 0 -6px;
+}
+.header__slider {
+    /* Base text style */
+    width: 202px;
+    height: 51px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "Semper sollici" */
+    color: white;
+    font-family: 'Myriad Pro', 'LeagueGothic-Regular', sans-serif;
+    font-size: 16px;
+    /*320*/
+    margin: 124px auto 0;
+}
+.header__p1 {    /* Text style for "Lorem Ipsum Do" */
+    width: 201px;
+    color: #fefefe;
+    font-family: 'LeagueGothic-Regular', sans-serif;
+    font-size: 36px;
+}
+.header__p2 {  /* Text style for "IT WILL MAKE A" */
+    width: 204px;
+    height: 22px;
+    color: #edbfff;
+    font-family: 'LeagueGothic-Regular', sans-serif;
+    font-size: 18px;
+}
+
+
+    /* end Блок header */

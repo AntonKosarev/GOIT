@@ -6,3 +6,11 @@
     url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
     url('fonts/OpenSans-Regular-webfont.svg') format('svg');*/
 }
+@font-face {
+    font-family: 'OpenSans_Regular';
+    src: url('fonts/OpenSans_Regular/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans_Regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans_Regular/OpenSans-Regular-webfont.woff') format('woff'),
+    url('fonts/OpenSans_Regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('fonts/OpenSans_Regular/OpenSans-Regular-webfont.svg') format('svg');
+}

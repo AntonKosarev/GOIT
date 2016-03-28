@@ -12,9 +12,7 @@
     min-width: 1215px;
     max-height: 1064px;
     min-height: 1064px;
-    background-color: #074e8c;
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
+    background: #074e8c url("../img/bg.png") 0 0 no-repeat;
 }
 
 /* top menu */
@@ -30,13 +28,13 @@
 }
 .left_buttons li {
     color: #60b5ed;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding: 0 10px;
     margin: 0 10px 0 0;
 }
 .right_buttons li {
     color: #fefefe;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding: 0 10px;
     margin: 0 0 0 10px;
 }
@@ -104,9 +102,7 @@ a { /* блок а наследует параметры li*/
 }
 .ou {
     margin: 0 auto 28px;
-    background-image: url("../img/ou.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/ou.png") center top no-repeat;
     text-align: center;
     color: #999999;
     font-size: 14px;
@@ -118,7 +114,7 @@ a { /* блок а наследует параметры li*/
 /*Форма*/
 form {
     width: 560px;
-    align: middle;
+    align-content: center;
     /*display: flex;
     flex-flow: column wrap;*/
     font-size: 12px;
@@ -132,7 +128,7 @@ input {
     width: 266px;
     height: 35px;
     background-color: #101010;
-    border: 0px;
+    border: 0;
     border-bottom: 1px solid #484846;
     line-height: 20px;
     padding: 0 5px;
@@ -141,11 +137,11 @@ input {
 input:focus {
     color: #ffffff;
     background-color: #1b5288;
-    border: 0px;
+    border: 0;
     border-bottom: 1px solid #689bcc;
-    -webkit-box-shadow: 0px 0px 15px 2px rgba(68,127,170,1);
-    -moz-box-shadow: 0px 0px 15px 2px rgba(68,127,170,1);
-    box-shadow: 0px 0px 15px 2px rgba(68,127,170,1);
+    -webkit-box-shadow: 0 0 15px 2px rgba(68,127,170,1);
+    -moz-box-shadow: 0 0 15px 2px rgba(68,127,170,1);
+    box-shadow: 0 0 15px 2px rgba(68,127,170,1);
 }
 [type="checkbox"] {
     width: 15px;

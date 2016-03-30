@@ -310,6 +310,7 @@ body {}
         width: 100%;
         background-color: #ececec;
         font-family: LeagueGothic, sans-serif;
+
     }
         .blok4 {
             width: 960px; /*960*/
@@ -348,7 +349,7 @@ body {}
                     font-family: OpenSans, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
-                    /*line-height: 24px;*/
+                    line-height: 24px;
                 }
                 .article2__2 /*h1 p*/ {}
                 .article2__2 h1 {
@@ -366,7 +367,7 @@ body {}
                     font-family: OpenSans, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
-                    /*line-height: 24px;*/
+                    line-height: 24px;
                 }
                 .article2__3 /*h1 p*/ {}
                 .article2__3 h1 {
@@ -382,7 +383,7 @@ body {}
                     font-family: OpenSans, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
-                    /*line-height: 24px;*/
+                    line-height: 24px;
                 }
                 .article2__4,
                 .article2__5 {display: none;}
@@ -1131,7 +1132,7 @@ body {}
     }
     .article2__1 p {
         overflow: hidden;
-        height: 113px;
+        height: 148px;
     }
     .article2__2 /*h1 p*/ {
         width: 277px;
@@ -1142,7 +1143,7 @@ body {}
     }
     .article2__2 p {
         overflow: hidden;
-        height: 161px;
+        height: 193px;
     }
     .article2__3 /*h1 p*/ {
         width: 277px;
@@ -1154,7 +1155,7 @@ body {}
     }
     .article2__3 p {
         overflow: hidden;
-        height: 161px;
+        height: 193px;
     }
     /*<!--5-->*/
     .fon__blok5 {height: 114px;}

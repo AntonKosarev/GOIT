@@ -420,7 +420,7 @@ body {}
                     font-weight: 700;
                 }
 
-/*--320--*/@media (max-width: 479px) {
+/*--320--*/@media all, (max-width: 479px) {
     .fon__blok1 {height: 516px;}
     .blok1 {width: 320px;}
     .logo /*span*/ {
@@ -577,8 +577,8 @@ body {}
         font-size: 12px;
     }
 }
-/*--480--*/@media (max-width: 767px) {
-    @media (min-width: 468px) {
+/*--480--*/@media all, (max-width: 767px) {
+    @media all, (min-width: 468px) {
                     .fon__blok1 {height: 548px;}
                     .blok1 {width: 480px;}
                     .logo /*span*/ {
@@ -781,8 +781,8 @@ body {}
                     }
     }
 }
-/*--768--*/@media (max-width: 959px) {
-    @media (min-width: 768px) {
+/*--768--*/@media all, (max-width: 959px) {
+    @media all, (min-width: 768px) {
             /*<!--1-->*/
             .fon__blok1 {
                 height: 798px;
@@ -993,7 +993,7 @@ body {}
             }
     }
 }
-/*--960--*/@media (min-width: 960px) {
+/*--960--*/@media all, (min-width: 960px) {
     /*<!--1-->*/
     .fon__blok1 {height: 848px;}
     .blok1 {width: 960px;}

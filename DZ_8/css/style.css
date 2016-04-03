@@ -38,12 +38,13 @@ body {}
             .topmenu__no {
                 position: relative;
                 display: none;
+                margin: 0 auto;
+                width: 244px;
             }
                 .drop-menu {
                     position: absolute;
-                    top: 50px;
-                    left: 50px;
                     border-radius:  10px;
+                    top: 137px;
                 }
                 .drops {
                     border-radius:  10px;
@@ -736,8 +737,6 @@ body {}
     .topmenu {display: none;}
     .topmenu__no {
         display: block;
-        top: 87px;
-        left: 14%;
     }
     .karusel__text {
         margin: 184px 0 0 8%;
@@ -801,7 +800,7 @@ body {}
         padding-top: 70px;
     }
     .content__1 {
-        width: 87%;
+        width: 480px;/*87%*/
         padding: 30px 43px 31px 40px;
         float: none;
         margin: 0 auto;
@@ -857,6 +856,7 @@ body {}
     .article2__5 {
         margin: 0 auto 53px;
         width: 92%;
+        max-width: 480px;
         float: none;
     }
     .article2__3 p,
@@ -903,7 +903,7 @@ body {}
     }
     .karusel__text {
         margin: 184px auto 0;
-        width: 60%;
+        width: 200px;
         float: none;
     }
     .items {

@@ -45,6 +45,7 @@ body {}
                     position: absolute;
                     border-radius:  10px;
                     top: 137px;
+                    z-index: 1;
                 }
                 .drops {
                     border-radius:  10px;

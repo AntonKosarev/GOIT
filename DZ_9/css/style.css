@@ -22,7 +22,7 @@ body {}
         top: 278px;
         width: 100%;
         height: 400px;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";/* IE 8*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";/* IE 8*/
         opacity: 0.2;
         background-color: black;
     }
@@ -146,7 +146,7 @@ body {}
                 .karusel__text p {
                     /* Text style for "Semper sollici" */
                     color: white;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 18px;
                     font-weight: 300;
                     line-height: 25px;
@@ -168,6 +168,7 @@ body {}
 /*<!--2-->*/
     .fon__blok2 {
         width: 100%;
+        background-color: #322539; /*IE8*/
         background-image: linear-gradient(to top, #322539 0%, #745083 100%);
     }
         .blok2 {
@@ -216,7 +217,7 @@ body {}
                 .article1__3 p {
                     text-shadow: 1px 1px 0 #0f1518;
                     color: white;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
@@ -250,7 +251,7 @@ body {}
         .blok3 {
             max-width: 960px; /*960*/
             margin: 0 auto;
-            font-family: LeagueGothic, sans-serif;
+            font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
             padding: 101px 0 20px;
         }
             .content {}
@@ -293,7 +294,7 @@ body {}
                     .content__1 p {
                         text-shadow: 1px 1px 0 white;
                         color: #454545;
-                        font-family: OpenSans, sans-serif;
+                        font-family: OpenSans, Tahoma, Geneva, sans-serif;
                         font-size: 16px;
                         font-weight: 300;
                         line-height: 24px;
@@ -328,7 +329,7 @@ body {}
                     /* Text style for "Nunc turpis ne" */
                     text-shadow: 1px 1px 0 white;
                     color: #454545;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 16px;
                     font-weight: 700;
                     line-height: 24px;
@@ -338,7 +339,7 @@ body {}
                     /* Text style for "Posted by Admi" */
                     text-shadow: 1px 1px 0 white;
                     color: #454545;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 15px;
                     font-weight: 300;
                     line-height: 24px;
@@ -390,7 +391,7 @@ body {}
     .fon__blok4 {
         width: 100%;
         background-color: #ececec;
-        font-family: LeagueGothic, sans-serif;
+        font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
     }
         .blok4 {
             max-width: 960px; /*960*/
@@ -431,7 +432,7 @@ body {}
                     /* Text style for "Nunc turpis ne" */
                     text-shadow: 1px 1px 0 white;
                     color: #787878;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
@@ -457,7 +458,7 @@ body {}
                     /* Text style for "Nunc turpis ne" */
                     text-shadow: 1px 1px 0 white;
                     color: #787878;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
@@ -480,7 +481,7 @@ body {}
                 .article2__3 p {
                     text-shadow: 1px 1px 0 white;
                     color: #787878;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
@@ -518,7 +519,7 @@ body {}
                     /* Text style for "Designed by" */
                     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
                     color: white;
-                    font-family: OpenSans, sans-serif;
+                    font-family: OpenSans, Tahoma, Geneva, sans-serif;
                     font-size: 12px;
                     line-height: 34px;
                     font-weight: 300;

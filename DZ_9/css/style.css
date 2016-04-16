@@ -116,7 +116,8 @@ body {}
                 margin-left: 0;
             }
             .topmenu a:hover {
-                text-decoration: underline;
+                /*text-decoration: underline;*/
+                border-bottom: 2px solid #edbfff;
             }
             .karusel {}
                 .karusel__text /*h1 h2 p*/ {

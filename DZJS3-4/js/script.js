@@ -32,8 +32,6 @@ body.appendChild(test);
 test.appendChild(form);
 test.appendChild(button);
 
-console.log('button', button);
-
 for(var i = 1; i < 4; i++) {
     form.innerHTML = form.innerHTML + question.getQuestion(i);
 }
@@ -48,5 +46,5 @@ var getAttributeToInput = function() {
 getAttributeToInput();
 
 for (var a = 0; a < document.body.children.length; a++) {
-    console.log('document.body.children', document.body.children[a]); // DIV, UL, DIV, SCRIPT
+    console.log('document.body.children', document.body.children[a]); // DOM
 }

@@ -32,6 +32,9 @@
     border-radius: 65px;
     background-color: #A41717;
 }
+#clear:hover {
+    background-color: red;
+}
 #pause,
 #cont,
 #start {

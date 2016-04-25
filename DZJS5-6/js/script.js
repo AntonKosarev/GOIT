@@ -1,15 +1,18 @@
-
 var start = document.getElementById('start');
 var clear = document.getElementById('clear');
+
 var hours = document.getElementById('hours');
 var minutes = document.getElementById('minutes');
 var seconds = document.getElementById('seconds');
 var underseconds = document.getElementById('underseconds');
+
 var scoreSeconds = 0;
 var scoreMinutes = 0;
 var scoreHours = 0;
 var score = 0;
+
 var timerId;
+
 start.innerHTML = 'Start';
 clear.innerHTML = 'Clear';
 
@@ -44,10 +47,11 @@ function timer() {
     }
     score++;
     if (scoreHours === 24) {
-        clearInterval(timerId);// Сброс таймера
+        clearTimer();// Сброс таймера
     }
 }
-start.onclick = function startTimer() {
+
+function startTimer() {
     if (start.innerHTML === 'Pause') {
         clearInterval(timerId);// Сброс таймера
         start.innerHTML = 'Cont..';
@@ -57,8 +61,9 @@ start.onclick = function startTimer() {
         start.innerHTML = 'Pause';
         start.setAttribute('id', 'pause');
     }
-};
-clear.onclick = function clearTimer() {
+}
+
+function clearTimer() {
     timer(0, 0, 0, 0);
     clearInterval(timerId);// Сброс таймера
     hours.innerHTML = '00';
@@ -71,4 +76,7 @@ clear.onclick = function clearTimer() {
     score = 0;
     start.innerHTML = 'Start';
     start.setAttribute('id', 'start');
-};
+}
+
+start.onclick = startTimer;
+clear.onclick = clearTimer;

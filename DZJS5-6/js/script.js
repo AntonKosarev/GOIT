@@ -64,7 +64,6 @@ function startTimer() {
 }
 
 function clearTimer() {
-    timer(0, 0, 0, 0);
     clearInterval(timerId);// Сброс таймера
     hours.innerHTML = '00';
     minutes.innerHTML = '00';

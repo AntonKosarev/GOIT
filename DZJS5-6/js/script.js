@@ -1,4 +1,4 @@
-var score = 0;
+
 var start = document.getElementById('start');
 var clear = document.getElementById('clear');
 var hours = document.getElementById('hours');
@@ -8,6 +8,7 @@ var underseconds = document.getElementById('underseconds');
 var scoreSeconds = 0;
 var scoreMinutes = 0;
 var scoreHours = 0;
+var score = 0;
 var timerId;
 start.innerHTML = 'Start';
 clear.innerHTML = 'Clear';
@@ -29,15 +30,15 @@ function timer() {
     } else {
         seconds.innerHTML = scoreSeconds;
     }
-    if (score === 5) {
+    if (score === 1000) {
         score = 0;
         scoreSeconds++;
     }
-    if (scoreSeconds === 6) {
+    if (scoreSeconds === 60) {
         scoreSeconds = 0;
         scoreMinutes++;
     }
-    if (scoreMinutes === 6) {
+    if (scoreMinutes === 60) {
         scoreMinutes = 0;
         scoreHours++;
     }
@@ -58,11 +59,16 @@ start.onclick = function startTimer() {
     }
 };
 clear.onclick = function clearTimer() {
+    timer(0, 0, 0, 0);
     clearInterval(timerId);// Сброс таймера
     hours.innerHTML = '00';
     minutes.innerHTML = '00';
     seconds.innerHTML = '00';
     underseconds.innerHTML = '0';
+    scoreSeconds = 0;
+    scoreMinutes = 0;
+    scoreHours = 0;
+    score = 0;
     start.innerHTML = 'Start';
     start.setAttribute('id', 'start');
 };

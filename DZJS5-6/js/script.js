@@ -33,7 +33,7 @@ function timer() {
     } else {
         seconds.innerHTML = scoreSeconds;
     }
-    if (score === 1000) {
+    if (score === 250) {
         score = 0;
         scoreSeconds++;
     }
@@ -57,7 +57,7 @@ function startTimer() {
         start.innerHTML = 'Cont..';
         start.setAttribute('id', 'cont');
     } else {
-        timerId = setInterval(timer, 1);//Запуск таймера
+        timerId = setInterval(timer, 4);//Запуск таймера
         start.innerHTML = 'Pause';
         start.setAttribute('id', 'pause');
     }

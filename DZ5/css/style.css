@@ -148,8 +148,15 @@ a { /* блок а наследует параметры li*/
     text-align: left;
 }
 .facebook-link a {
-    width: 100%;
+    display: inline-block;
+    width: 200px;
     height: 100%;
+    padding-left: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.facebook-link a span {
+    font-weight: 300;
 }
 
 .f {

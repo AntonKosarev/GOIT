@@ -150,7 +150,7 @@ a { /* блок а наследует параметры li*/
 .facebook-link a {
     display: inline-block;
     width: 200px;
-    height: 100%;
+    height: 20px;
     padding-left: 30px;
     font-weight: 800;
     letter-spacing: 1px;

@@ -7,17 +7,24 @@
     left: 5px;
 }
 .background {
-    margin: auto;/* выравниваем по центру вертикально и горизонтально*/
-    max-width: 1215px;
-    min-width: 1215px;
-    max-height: 1064px;
-    min-height: 1064px;
-    background: #074e8c url("../img/bg.png") 0 0 no-repeat;
+    /*margin: auto;!* выравниваем по центру вертикально и горизонтально*!*/
+    /*max-width: 1215px;*/
+    /*min-width: 1215px;*/
+    /*max-height: 1064px;*/
+    /*min-height: 1064px;*/
+    background: #074e8c url("../img/bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* top menu */
 .top_menu {
     padding-right: 20px;
+    background: url(../img/topmenuebg.jpg) repeat-x;
 }
 .top_menu li {
     float: right;
@@ -29,8 +36,12 @@
 .left_buttons li {
     color: #60b5ed;
     letter-spacing: 0;
-    padding: 0 10px;
-    margin: 0 10px 0 0;
+    /*padding: 0 10px;*/
+    /*margin: 0 10px 0 0;*/
+}
+.left_buttons li a {
+    display: block;
+    padding: 0 20px;
 }
 .right_buttons li {
     color: #fefefe;
@@ -38,12 +49,15 @@
     padding: 0 10px;
     margin: 0 0 0 10px;
 }
+#alinks a {
+    text-decoration: underline;
+}
 .left_buttons li:hover {
-    background-image: url("../img/layer44.png");
+    background-color: #4eabda;
     color: #ffffff;
 }
 .right_buttons li:hover {
-    background-image: url("../img/Layer16.png");
+    background-color: #4eabda;
     color: #feffff;
 }
 a { /* блок а наследует параметры li*/
@@ -52,7 +66,10 @@ a { /* блок а наследует параметры li*/
     font-size: inherit;
 }
 .delimiter li { /* выравниваем по вертикали разделитель в меню*/
-    padding: 2px 0 3px 0;
+    display: inline-block;
+    height: 31px;
+    border-left: 1px solid #56a2dc;
+    margin: 2px 0 3px 0;
 }
 .flag a:before {/*флажек*/
     content: url("../img/inventicons29.png");
@@ -70,7 +87,7 @@ a { /* блок а наследует параметры li*/
 /* Центральный блок */
 .flexbox {
     clear: both;
-    width: 100%;
+    /*width: 100%;*/
     height: 1013px;
     padding-left: 25px;
     display:flex;
@@ -82,18 +99,20 @@ a { /* блок а наследует параметры li*/
     height: 613px;
 }
 .topcadastr {
-    width: 100%;
-    height: 62px;
+    /*width: 100%;*/
+    /*height: 62px;*/
     margin-bottom: 1px;
     font-size: 25px;
     color: #ffffff;
-    line-height: 62px;
+    /*line-height: 62px;*/
     text-align: center;
+    padding: 20px 0;
 }
 .undercadastr {
-    width: 100%;
-    height: 550px;
+    /*width: 100%;*/
+    /*height: 550px;*/
     font-size: 12px;
+    padding: 0 0 20px 0;
 }
 .topcadastr,
 .undercadastr {
@@ -102,10 +121,19 @@ a { /* блок а наследует параметры li*/
 }
 .ou {
     margin: 0 auto 28px;
-    background: url("../img/ou.png") center top no-repeat;
+    /*background: url("../img/ou.png") center top no-repeat;*/
     text-align: center;
     color: #999999;
     font-size: 14px;
+}
+.ou span {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: sub;
+}
+.ou:before,
+.ou:after {
+    content: url(../img/ou.png);
 }
 .logfacebook {
     padding: 37px 0 27px 0;
@@ -120,7 +148,7 @@ form {
     font-size: 12px;
     color: #cccccc;
 }
-form div {
+.noclass {
     margin: 0 auto 16px;
 }
 
@@ -155,7 +183,8 @@ input:focus {
     height: 35px;
     border-radius: 2px;
     color: #ffffff;
-    background-image: url("../img/button.png");
+    background: linear-gradient(to bottom, #28539B, #193F7B);
+    /*background-image: url("../img/button.png");*/
     font-size: 14px;
     text-indent: 1px;
     cursor: pointer;

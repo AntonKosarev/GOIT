@@ -6,7 +6,7 @@
 	z-index: 1;
     left: 5px;
 }
-.background {
+body {
     /*margin: auto;!* выравниваем по центру вертикально и горизонтально*!*/
     /*max-width: 1215px;*/
     /*min-width: 1215px;*/
@@ -33,6 +33,9 @@
     font-size: 14px;
     text-decoration: none;
 }
+.left_buttons li:first-child {
+    border-right: 1px solid #56a2dc;
+}
 .left_buttons li {
     color: #60b5ed;
     letter-spacing: 0;
@@ -52,11 +55,7 @@
 #alinks a {
     text-decoration: underline;
 }
-.left_buttons li:hover {
-    background-color: #4eabda;
-    color: #ffffff;
-}
-.right_buttons li:hover {
+.right_buttons li:first-child {
     background-color: #4eabda;
     color: #feffff;
 }
@@ -71,7 +70,7 @@ a { /* блок а наследует параметры li*/
     border-left: 1px solid #56a2dc;
     margin: 2px 0 3px 0;
 }
-.flag a:before {/*флажек*/
+.flag:before {/*флажек*/
     content: url("../img/inventicons29.png");
     float: left;
     margin: 0 10px -13px 10px;
@@ -140,23 +139,34 @@ a { /* блок а наследует параметры li*/
     text-align: center;
 }
 .facebook-link {
+    position: relative;
     margin: 0 auto;
     width: 276px;
     height: 35px;
     background: linear-gradient(to bottom, #3b5798, #3e5599);
     border-radius: 3px;
     text-align: left;
-}
-.facebook-link a {
-    display: inline-block;
-    width: 200px;
-    height: 20px;
-    padding-left: 30px;
-    font-weight: 800;
+    font-weight: bold;
     letter-spacing: 1px;
 }
-.facebook-link a span {
-    font-weight: 300;
+/*.facebook-link a {*/
+    /*display: inline-block;*/
+    /*width: 200px;*/
+    /*height: 20px;*/
+    /*padding-left: 30px;*/
+    /*font-weight: 800;*/
+    /*letter-spacing: 1px;*/
+/*}*/
+.facebook-link span {
+    font-weight: lighter;
+}
+/*Ссылка на всюкнопку*/
+.link {
+    display: block;
+    position: absolute;
+    width: 275px;
+    height: 34px;
+    z-index: 1;
 }
 
 .f {

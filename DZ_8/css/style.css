@@ -1,29 +1,23 @@
 @import url(fontstyle.css);
 * {box-sizing: border-box;}
-body {}
+body {
+    overflow-x: hidden;
+    }
     .clearfix {clear: both;}
     a {
         text-decoration: none;
         color: #fff;
     }
     .fon {
-    width: 100%;
-    max-width: 2400px;
+        width: 100%;
+        max-width: 2400px;
+        margin: 0 auto;
     }
 /*<!--1-->*/
     .fon__blok1 {
         position: relative;
         width: 100%;
         background: url("../img/fon_1_bg.jpg") center top no-repeat;
-    }
-    .opacity {
-        /* Style for "overlay" */
-        position: absolute;
-        top: 278px;
-        width: 100%;
-        height: 400px;
-        opacity: 0.2;
-        background-color: black;
     }
         .blok1 {
             max-width: 960px; /*960*/
@@ -254,7 +248,7 @@ body {}
         }
             .content {}
                 .content__1 /*img h1 span p*/ {
-                    background-color: #ffffff;
+                    background-color: #fff;
                     /*Position*/
                     width: 44.5%;
                     max-width: 430px;
@@ -262,6 +256,16 @@ body {}
                     margin-left: 25px;
                     float: left;
                     position: relative; /*for .items--wite*/
+                }
+
+                .content__1:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 65px;
+                    border: 10px solid transparent;
+                    border-color: white white transparent transparent;
                 }
                     .items--wite {
                         position: absolute;
@@ -313,7 +317,7 @@ body {}
                 .content__2 img {
                     /*Position*/
                     float: left;
-                    margin: 16px 17px 0 0;
+                    margin: 0 17px 0 0;
                 }
                 .content__2 h1 {
                     /* Text style for "RECENT UPDATES" */
@@ -648,9 +652,6 @@ body {}
     }
     .content__2 {
         margin: -2px 0 0 64px;
-    }
-    .content__2 img {
-        margin-top: 18px;
     }
     #content__2--a,
     .content__2 span {

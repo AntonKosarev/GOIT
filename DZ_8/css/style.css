@@ -178,22 +178,40 @@ body {
                 max-width: 290px;
                 float: left;
             }
+            .article1__1:before,
+            .article1__2:before,
+            .article1__3:before {
+                content: "";
+                display: block;
+                width: 27px;
+                height: 27px;
+                background: url("../img/spr2.png") 0 0 no-repeat;
+                /*Position*/
+                float: left;
+                margin-top: 6px;
+            }
+            .article1__2:before {
+                background-position: 0 -48px;
+            }
+            .article1__3:before {
+                background-position: -51px 0;
+            }
             .article1__2 {
                 margin-right: 62px;
                 margin-left: 62px;
             }
-                .article1__1__img,
-                .article1__2__img,
-                .article1__3__img {
-                    width: 27px;
-                    height: 27px;
-                    background: url("../img/spr2.png") 0 0 no-repeat;
-                    /*Position*/
-                    float: left;
-                    margin-top: 6px;
-                }
-                .article1__2__img {background-position: 0 -48px;}
-                .article1__3__img {background-position: -51px 0;}
+                /*.article1__1__img,*/
+                /*.article1__2__img,*/
+                /*.article1__3__img {*/
+                    /*width: 27px;*/
+                    /*height: 27px;*/
+                    /*background: url("../img/spr2.png") 0 0 no-repeat;*/
+                    /*!*Position*!*/
+                    /*float: left;*/
+                    /*margin-top: 6px;*/
+                /*}*/
+                /*.article1__2__img {background-position: 0 -48px;}*/
+                /*.article1__3__img {background-position: -51px 0;}*/
                 .article1__1 h1,
                 .article1__2 h1,
                 .article1__3 h1 {
@@ -600,9 +618,9 @@ body {
         width: 29.6%;
         max-width: 230px;
     }
-    .article1__1__img,
-    .article1__2__img,
-    .article1__3__img {
+    .article1__1:before,
+    .article1__2:before,
+    .article1__3:before {
         background-position: 0 0;
         margin: 3px 0 0 5px;
     }

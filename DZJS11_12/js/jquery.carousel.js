@@ -20,7 +20,7 @@
         var pixelsOffset = 125;
         var currentLeftValue = 0;
         var elementsCount = elementsList.find('li').length;
-        var minimumOffset = - ((elementsCount - settings.carousel) * pixelsOffset);
+        var minimumOffset = - ((elementsCount - settings.carouselViewImg) * pixelsOffset);
         var maximumOffset = 0;
 
         leftUIEl.click(function() {

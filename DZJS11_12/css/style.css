@@ -127,7 +127,7 @@ hr {
     background-color: #7B7B7B; /* Цвет линии для браузера Firefox и Opera */
     height: 1px; /* Толщина линии */
 }
-p,
-a {
+.leaf p,
+.leaf a {
     padding-left: 15px; /* Абзац */
 }

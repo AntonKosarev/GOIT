@@ -74,6 +74,24 @@ test = JSON.parse(test);
     });
     $('body').append(content);
 
+    function getModal(frase) {
+        var $body = $('body');
+        var $modal = $('<div class="modal">' +
+            '<p class="frase">' + frase + '</p>' +
+            '<button type="button" class="modal-button">Close</button>' +
+            '</div>');
+        var $overlay = $('<div class="overlay"></div>');
+        $body.append($overlay);
+        $body.append($modal);
+        $('.modal-button').one('click', closeModal);
+
+        function closeModal(){
+            $('input').prop('checked', false);
+            $modal.remove();
+            $overlay.remove();
+        }
+    }
+
     $('.button').on('click', function() {
 
         var $checkboxes = $('input:checked');
@@ -81,7 +99,7 @@ test = JSON.parse(test);
         //console.log('Выделенные чекбоксы $checkboxes: ', $checkboxes);
 
         var checkedAnswers = [];
-        $checkboxes.each(function($link) {
+        $checkboxes.each(function() {
             checkedAnswers.push($(this).attr('id'));
         });
 
@@ -95,23 +113,33 @@ test = JSON.parse(test);
 
         //console.log('Массив со всеми вопросами allAnswers',allAnswers);
 
-        var testSuccessful = true;
+        var testSuccessful;
         var totalCorrectAnswers = 0;
-        for (i=0; i<allAnswers.length; i++) {
+        var $input = $('input');
 
+        console.log('checked answers: ', checkedAnswers.length);
+
+        for (i=0; i<allAnswers.length; i++) {
+            console.log('i: ', i);
             if (allAnswers[i].correct) {
                 totalCorrectAnswers++;
-                //console.log('количество верных ответов totalCorrectAnswers',totalCorrectAnswers);
                 if (checkedAnswers.indexOf(allAnswers[i].id) === -1) {
-                    alert('Test NOT successful.');
+                    getModal('Test NOT successful.');
                     testSuccessful = false;
                     return testSuccessful;
                 }
-
-                if (totalCorrectAnswers == checkedAnswers.length) {
-                    alert('Test successful!');
-                }
             }
+            console.log('true answers: ', totalCorrectAnswers);
+        }
+
+        if (totalCorrectAnswers < checkedAnswers.length) {
+            getModal('You get too many answers, test NOT successful.');
+            testSuccessful = false;
+            return testSuccessful;
+        } else {
+            getModal('Test successful!');
+            testSuccessful = true;
+            return testSuccessful;
         }
     });
 

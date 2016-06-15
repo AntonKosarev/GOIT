@@ -83,6 +83,7 @@ test = JSON.parse(test);
         var $overlay = $('<div class="overlay"></div>');
         $body.append($overlay);
         $body.append($modal);
+
         $('.modal-button').one('click', closeModal);
 
         function closeModal(){
@@ -92,7 +93,8 @@ test = JSON.parse(test);
         }
     }
 
-    $('.button').on('click', function() {
+    $('.button').on('click', function(e) {
+        e.preventDefault();
 
         var $checkboxes = $('input:checked');
 
@@ -102,7 +104,6 @@ test = JSON.parse(test);
         $checkboxes.each(function() {
             checkedAnswers.push($(this).attr('id'));
         });
-
         //checkedAnswers = [1, 4, 7]; //Правильные
         //console.log('Массив с значениями ID выделенных чекбоксов checkedAnswers: ', checkedAnswers);
 
@@ -115,7 +116,6 @@ test = JSON.parse(test);
 
         var testSuccessful;
         var totalCorrectAnswers = 0;
-        var $input = $('input');
 
         console.log('checked answers: ', checkedAnswers.length);
 

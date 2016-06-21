@@ -21,7 +21,7 @@
     background-color: #fff;
     vertical-align: top;
     border: 1px solid #d9d9d9;
-    border-top-color: none;
+    /*border-top-color: none;*/
 }
 .button {
     text-align: center;
@@ -56,4 +56,23 @@
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
+}
+.table {
+    margin-bottom: 10px;
+}
+.table a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1a0dab;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+.table a:visited {
+    color: #609;
+}
+.searchcontent {
+    margin: 50px 0 0 130px;
+}
+li {
+    margin-bottom: 25px;
 }

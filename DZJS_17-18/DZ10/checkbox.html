@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link href='css/style.css' rel='stylesheet'>-->
+    <link href='css/dist/main.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+<p>JS</p>
+<!--<div class="checkboxJS">-->
+<div class="checkboxes">
+    <label class="label" for="label 1">Label 1</label>
+    <div class="check">
+        <input id="label 1" type="checkbox" value="jQuery">
+    </div><br>
+    <label class="label" for="label 2">Label 2</label>
+    <div class="check">
+        <input id="label 2" type="checkbox" value="HTML">
+    </div><br>
+    <label class="label" for="label 3">Label 3</label>
+    <div class="check">
+        <input id="label 3" type="checkbox" value="CSS">
+    </div>
+</div>
+<!--</div>-->
+
+
+<p>CSS</p>
+<div class="checkboxCSS">
+    <form>
+        <label for="labelCSS1">Label 1</label>
+        <input id="labelCSS1" type="checkbox"><br>
+        <label for="labelCSS2">Label 2</label>
+        <input id="labelCSS2" type="checkbox"><br>
+        <label for="labelCSS3">Label 3</label>
+        <input id="labelCSS3" type="checkbox">
+    </form>
+</div>
+
+<p>Создать анимированную выпадающую двухуровневую меню</p>
+<div class="wrapper">
+    <ul class="menu">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown"><a href="#">Nav 3 <span>&#9660;</span></a>
+            <ul class="submenu submenu-1">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown"><a href="#">Nav 3.4	<span>&#9658;</span></a>
+                    <ul class="submenu submenu-down submenu-2">
+                        <li><a href="#">Nav 3.4.1</a></li>
+                        <li class="dropdown"><a href="#">Nav 3.4.2	<span>&#9658;</span></a>
+                            <ul class="submenu submenu-down submenu-3">
+                                <li><a href="#">Nav 3.4.2.1</a></li>
+                                <li><a href="#">Nav 3.4.2.2</a></li>
+                                <li><a href="#">Nav 3.4.2.3</a></li>
+                                <li><a href="#">Nav 3.4.2.4</a></li>
+                                <li><a href="#">Nav 3.4.2.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.4.3</a></li>
+                        <li><a href="#">Nav 3.4.4</a></li>
+                        <li><a href="#">Nav 3.4.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nav 4</a></li>
+        <li><a href="#">Nav 5</a></li>
+    </ul>
+</div>
+
+<script src="js/jquery-1.12.3.js"></script>
+<!--<script src="js/script2.js"></script>-->
+<script src="js/dist/main.min.js"></script>
+</body>
+</html>

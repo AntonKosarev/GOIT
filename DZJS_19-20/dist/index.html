@@ -4,21 +4,87 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="css/style.main.min.css" rel="stylesheet">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 <header>
-    <div class="logo clearfix">
-        <img class="logo__img " src="img/logo.png" alt="Logotype">
-        <h1>Build Home</h1>
-        <h2>Industrial Theme</h2>
+    <div class="links clearfix">
+        <a href="#" class="links__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="links__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="links__link"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        <a href="#" class="links__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#" class="links__link"><i class="fa fa-skype" aria-hidden="true"></i></a>
     </div>
-    <div class="links">
-        <a href="#" class="links__facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#" class="links__twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="#" class="links__rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
-        <a href="#" class="links__linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="#" class="links__skype"><i class="fa fa-skype" aria-hidden="true"></i></a>
+    <div class="logo">
+        <a href="#"><img class="logo__img" src="img/logo.png" alt="Logotype"></a>
+        <div class="logo__text clearfix">
+            <h1>Build Home</h1>
+            <h2>Industrial Theme</h2>
+        </div>
+    </div>
+    <div class="top_menu clearfix">
+        <ul class="menu clearfix">
+            <li class="menu__item"><a href="#">HOME</a></li>
+            <li class="menu__item"><a href="#">FEATURES</a></li>
+            <li class="menu__item"><a href="#">SERVICES</a></li>
+            <li class="menu__item"><a href="#">NEWS</a></li>
+            <li class="menu__item"><a href="#">SHOP</a></li>
+        </ul>
+        <div class="search clearfix">
+            <input class="search__text" type="text" value="Search...">
+            <button class="search__button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <div class="mycont">
+        <ul class="carousel">
+            <li><img class="crousel__img" alt="" src="img/banner.jpg"></li>
+        </ul>
     </div>
 </header>
+<section class="articles">
+    <article class="articles__article">
+        <div class="articles__article-list">01</div>
+        <div class="articles__article-content clearfix">
+            <div class="articles__article-img1"></div>
+            <h1 class="articles__article-head">Power Inside</h1>
+            <p class="articles__article-text">
+            Cum sociis natoque penatibus et magnis dis
+            parturient montesmus. Pro vel nibh et elit mollis
+            commodo et nec augueique Nemo enim ipsam voluptatem quia
+            </p>
+            <a href="#" class="articles__article-link">Read More <span>&rarr;</span></a>
+        </div>
+    </article>
+
+    <article class="articles__article">
+        <div class="articles__article-list">02</div>
+        <div class="articles__article-content clearfix">
+            <div class="articles__article-img2"></div>
+            <h1 class="articles__article-head">New Technologies</h1>
+            <p class="articles__article-text">
+                Cum sociis natoque penatibus et magnis dis
+                parturient montesmus. Pro vel nibh et elit mollis
+                commodo et nec augueique Nemo enim ipsam voluptatem quia
+            </p>
+            <a href="#" class="articles__article-link">Read More <span>&rarr;</span></a>
+        </div>
+    </article>
+
+    <article class="articles__article">
+        <div class="articles__article-list">03</div>
+        <div class="articles__article-content clearfix">
+            <div class="articles__article-img3"></div>
+            <h1 class="articles__article-head">Fast Support</h1>
+            <p class="articles__article-text">
+                Cum sociis natoque penatibus et magnis dis
+                parturient montesmus. Pro vel nibh et elit mollis
+                commodo et nec augueique Nemo enim ipsam voluptatem quia
+            </p>
+            <a href="#" class="articles__article-link">Read More <span>&rarr;</span></a>
+        </div>
+    </article>
+</section>
 </body>
 </html>

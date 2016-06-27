@@ -2894,6 +2894,11 @@
   font-family: 'Ubuntu-Light';
   src: url("../fonts/Ubuntu-L.ttf") format('truetype');
 }
+
+@font-face {
+  font-family: 'Ubuntu-Condensed';
+  src: url("../fonts/Ubuntu-C.ttf") format('truetype');
+}
 /*@import url(fontstyle.css);*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -3039,8 +3044,8 @@ body {
 }
 
 header {
-  width: 1160px;
-  margin: auto;
+  max-width: 1160px;
+  margin: 37px auto 0;
 }
 
 .logo h1 {
@@ -3057,4 +3062,146 @@ header {
 
 .logo__img {
   float: left;
+}
+
+.links {
+  float: right;
+  color: #880000;
+}
+
+.links__link {
+  margin: 0 10px;
+}
+
+.top_menu {
+  width: 100%;
+  background-color: #2a2d32;
+  margin: 37px 0 40px;
+}
+
+.menu {
+  float: left;
+  background-color: #2a2d32;
+  font-family: Ubuntu-Condensed, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.menu__item {
+  float: left;
+  border-right: 1px solid #181a1d;
+}
+
+.menu__item a {
+  display: inline-block;
+  padding: 23px 38px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  color: #f4b60d;
+  cursor: pointer;
+}
+
+.menu__item:first-child {
+  background-color: #248cec;
+}
+
+.search {
+  float: right;
+  width: 200px;
+  background-color: #35383c;
+  padding: 9px 0 9px 12px;
+  margin: 10px;
+  border: 1px solid #181a1d;
+}
+
+.search__text {
+  background: none;
+  color: #4d4f53;
+  border: none;
+}
+
+.search__button {
+  background: none;
+  border: none;
+}
+
+.search__button .fa {
+  color: #4d4f53;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.crousel__img {
+  height: 471px;
+  width: 1160px;
+  margin: 0 10px;
+}
+
+.articles {
+  width: 1160px;
+  margin: auto;
+}
+
+.articles__article {
+  float: left;
+  margin: 70px 20px 80px;
+}
+
+.articles__article-content {
+  float: right;
+}
+
+.articles__article-list {
+  display: inline-block;
+  font-size: 70px;
+  font-family: Ubuntu-Medium, sans-serif;
+  color: #e9e9ea;
+  height: 100%;
+}
+
+.articles__article-img1 {
+  background: url("../img/spryte.png") 0 0 no-repeat;
+  height: 32px;
+  margin: 0 0 0 80px;
+}
+
+.articles__article-img2 {
+  background: url("../img/spryte.png") 0 -34px no-repeat;
+  height: 32px;
+  margin: 0 0 0 80px;
+}
+
+.articles__article-img3 {
+  background: url("../img/spryte.png") 0 -68px no-repeat;
+  height: 32px;
+  margin: 0 0 0 80px;
+}
+
+.articles__article-head {
+  font-family: Ubuntu-Medium, sans-serif;
+  color: #2a2b2e;
+  font-size: 16px;
+}
+
+.articles__article-text {
+  font-family: Arisl,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8a8a8a;
+  overflow: hidden;
+  width: 237px;
+  height: 46px;
+}
+
+.articles__article-link {
+  font-family: Ubuntu-Medium, sans-serif;
+  color: #2a2b2e;
+  font-size: 13px;
 }

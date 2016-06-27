@@ -1,2 +1,28 @@
-h3 {
-  color: red; }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  width: 100%; }
+
+header {
+  width: 1160px;
+  margin: auto; }
+
+.logo h1 {
+  font-family: Ubuntu-Medium, sans-serif;
+  font-size: 22px;
+  color: #434343; }
+
+.logo h2 {
+  font-family: Ubuntu-Light, sans-serif;
+  font-size: 14px;
+  color: #333; }
+
+.logo__img {
+  float: left; }
+
+.links {
+  text-align: right;
+  color: #880000; }

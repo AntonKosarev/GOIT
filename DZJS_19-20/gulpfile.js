@@ -13,35 +13,35 @@ gulp.task('default', [
 //https://www.npmjs.com/package/gulp-sass
 var sass = require('gulp-sass');
 gulp.task('sass', function () {
-	return gulp.src('css/*.scss')
+	return gulp.src('src/css/*.scss')
 			.pipe(sass().on('error', sass.logError))
 			.pipe(gulp.dest('css'));
 });
 gulp.task('sass:watch', function () {
-	gulp.watch('./css/*.scss', ['sass']);
+	gulp.watch('src/css/*.scss', ['sass']);
 });
 
 //https://www.npmjs.com/package/gulp-concat-css
 var concatCss = require('gulp-concat-css');
 gulp.task('concatcss', function () {
-	return gulp.src('css/*.css')
+	return gulp.src('src/css/*.css')
 			.pipe(concatCss("style.main.css"))
-			.pipe(gulp.dest('css/dist/'));
+			.pipe(gulp.dest('dist/css/'));
 });
 gulp.task('concatcss:watch', function () {
-	gulp.watch('./css/*.css', ['concatcss']);
+	gulp.watch('src/css/*.css', ['concatcss']);
 });
 
 //https://www.npmjs.com/package/gulp-cssmin
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 gulp.task('cssmin', function () {
-	gulp.src('css/dist/style.main.css')
+	gulp.src('dist/css/style.main.css')
 			.pipe(cssmin())
 			.pipe(rename({suffix: '.min'}))
-			.pipe(gulp.dest('css/dist'));
+			.pipe(gulp.dest('dist/css'));
 });
 gulp.task('cssmin:watch', function () {
-	gulp.watch('css/dist/*.css', ['cssmin']);
+	gulp.watch('dist/css/*.css', ['cssmin']);
 });
 

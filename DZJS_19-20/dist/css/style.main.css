@@ -3156,6 +3156,7 @@ header {
 
 .articles__article-content {
   float: right;
+  margin: 0  0 0 38px;
 }
 
 .articles__article-list {
@@ -3169,25 +3170,23 @@ header {
 .articles__article-img1 {
   background: url("../img/spryte.png") 0 0 no-repeat;
   height: 32px;
-  margin: 0 0 0 80px;
 }
 
 .articles__article-img2 {
   background: url("../img/spryte.png") 0 -34px no-repeat;
   height: 32px;
-  margin: 0 0 0 80px;
 }
 
 .articles__article-img3 {
   background: url("../img/spryte.png") 0 -68px no-repeat;
   height: 32px;
-  margin: 0 0 0 80px;
 }
 
 .articles__article-head {
   font-family: Ubuntu-Medium, sans-serif;
   color: #2a2b2e;
   font-size: 16px;
+  margin: 22px 0 29px 0;
 }
 
 .articles__article-text {
@@ -3196,12 +3195,26 @@ header {
   line-height: 16px;
   color: #8a8a8a;
   overflow: hidden;
-  width: 237px;
+  width: 227px;
   height: 46px;
+  margin: 0 0 25px 0;
 }
 
 .articles__article-link {
   font-family: Ubuntu-Medium, sans-serif;
   color: #2a2b2e;
   font-size: 13px;
+  text-decoration: none;
+}
+
+.articles__article-link span {
+  color: #5eabf1;
+}
+
+.articles__article-link:hover {
+  color: #5eabf1;
+}
+
+.articles__article-link:hover span {
+  color: #2a2b2e;
 }

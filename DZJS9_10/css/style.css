@@ -149,6 +149,7 @@ label {
     text-decoration: none;
     color: white;
     font-size: 12px;
+    padding: 5px;
 }
 .menu a:hover {
     color: #3E3232;
@@ -187,5 +188,5 @@ label {
     clear: both;
 }
 .submenu {
-    display: none;
+    /*display: none;*/
 }

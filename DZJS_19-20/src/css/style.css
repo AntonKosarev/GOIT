@@ -343,3 +343,60 @@ header {
     background-position: -638px; }
   .brands .brands_6 {
     background-position: -780px; }
+
+.footer {
+  width: 100%;
+  background-color: #2a2d32;
+  color: #fff;
+  padding: 60px 0 75px 0; }
+
+.nav {
+  width: 1160px;
+  margin: auto; }
+
+.nav__menu {
+  float: left;
+  margin: 0 45px 0 0;
+  font-family: Ubuntu-Medium, sans-serif; }
+
+.nav__menu:last-child {
+  margin: 0; }
+
+.nav__menu-list {
+  color: #828385;
+  border-bottom: 1px solid #828385;
+  width: 250px; }
+  .nav__menu-list a {
+    color: inherit;
+    text-decoration: none;
+    line-height: 36px;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 13px; }
+  .nav__menu-list a:hover {
+    color: #248cec;
+    cursor: pointer; }
+
+.nav__menu-list:last-child {
+  border: none; }
+
+.nav__menu-list:first-child {
+  margin: 46px 0 0 0; }
+
+.contacts {
+  width: 100%;
+  background-color: #35383c;
+  color: #828385; }
+
+.contacts__list {
+  width: 1160px;
+  margin: auto;
+  padding: 20px 0 20px 0; }
+  .contacts__list a {
+    line-height: 14px;
+    font-family: Ubuntu-Medium, sans-serif;
+    font-size: 11px;
+    color: inherit;
+    text-decoration: none;
+    margin: 0 28px 0 0; }
+  .contacts__list .fa {
+    color: inherit; }

@@ -1,0 +1,56 @@
+@import "fonts.css";
+$font-MB: Montserrat-Bold, Arial, sans-serif ;
+$font-MR: Montserrat-Regular, Arial, sans-serif;
+$font-RBlack: Roboto-Black, Arial, sans-serif;
+$font-RBlackI: Roboto-BlackItalic, Arial, sans-serif;
+$font-RB: Roboto-Bold, Arial, sans-serif;
+$font-RBI: Roboto-BoldItalic, Arial, sans-serif;
+$font-RI: Roboto-Italic, Arial, sans-serif;
+$font-RL: Roboto-Light, Arial, sans-serif;
+$font-RLI: Roboto-LightItalic, Arial, sans-serif;
+$font-RM: Roboto-Medium, Arial, sans-serif;
+$font-RMI: Roboto-MediumItalic, Arial, sans-serif;
+$font-RR: Roboto-Regular, Arial, sans-serif;
+$font-RT: Roboto-Thin, Arial, sans-serif;
+$font-RTI: Roboto-ThinItalic, Arial, sans-serif;
+$fonts-color: #fff;
+
+@mixin border-radius($rad) {
+  -moz-border-radius: ($rad);
+  -webkit-border-radius: ($rad);
+  -ms-border-radius: ($rad);
+  border-radius: ($rad);
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header {
+  font-family: $font-MB;
+  color: $fonts-color;
+  width: 100%;
+  max-width: 1440px;
+  height: 700px;
+  background: url("../img/banner.jpg") 0 0 no-repeat;
+}
+.header__top {}
+.title {
+  font-size: 17px;
+}
+.login {
+}
+.login__login,
+.login__singup {
+  border: none;
+  background: none;
+  color: $fonts-color;
+  font-size: 17px;
+}
+.login__login {}
+.login__singup {
+  padding: 10px;
+  border: 1px solid $fonts-color;
+  @include border-radius(10px);
+}

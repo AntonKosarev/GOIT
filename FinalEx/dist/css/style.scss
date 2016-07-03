@@ -22,6 +22,13 @@ $fonts-color: #fff;
   border-radius: ($rad);
 }
 
+.template { /* Вставка макета для проверки на идентичность*/
+  position: absolute;
+  background-color: transparent;
+  opacity: 0.3;
+  z-index: 1;
+  left: 0;
+}
 .clearfix:after {
   content: '';
   display: block;
@@ -30,16 +37,22 @@ $fonts-color: #fff;
 .header {
   font-family: $font-MB;
   color: $fonts-color;
-  width: 100%;
-  max-width: 1440px;
+  //width: 100%;
+  //max-width: 1440px;
+  width: 1440px;
   height: 700px;
   background: url("../img/banner.jpg") 0 0 no-repeat;
 }
 .header__top {}
 .title {
-  font-size: 17px;
+  float: left;
+  font-size: 18px;
+  margin: 50px 0 0 250px;
+  letter-spacing: 2px;
 }
 .login {
+  float: right;
+  margin: 38px 250px 0 0;
 }
 .login__login,
 .login__singup {
@@ -48,9 +61,18 @@ $fonts-color: #fff;
   color: $fonts-color;
   font-size: 17px;
 }
-.login__login {}
+.login__login {
+  margin: 0 6px 0 0;
+}
 .login__singup {
-  padding: 10px;
+  padding: 8px 16px 7px;
   border: 1px solid $fonts-color;
-  @include border-radius(10px);
+  @include border-radius(26px);
+}
+.header__middle {
+  text-align: center;
+}
+.bannername {
+  font-size: 70px;
+
 }

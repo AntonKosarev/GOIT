@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/jquery.modal.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<script type="text/html" id="test">
+    <form class="js-form">
+        <h3 class="header">Тест по программированию</h3>
+        <% for(var i=0; i < data.length; i++) { %>
+        <ul><%= data[i].question %>
+            <% for(var k=0; k < data[i].answers.length; k++) { %>
+            <li class="menu__item">
+                <label class="label">
+                    <input type="checkbox" id="<%= data[i].answers[k].id %>"><%= data[i].answers[k].text %>
+                </label>
+            </li>
+            <% } %>
+        </ul>
+        <% } %>
+        <button type="submit" class="button">Проверить мои результаты</button>
+    </form>
+</script>
+</body>
+</html>

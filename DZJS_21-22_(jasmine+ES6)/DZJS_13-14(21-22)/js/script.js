@@ -145,3 +145,5 @@ test = JSON.parse(test);
 
 
 });
+
+module.exports = getModal;

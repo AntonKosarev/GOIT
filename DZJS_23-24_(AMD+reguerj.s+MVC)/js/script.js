@@ -25,6 +25,16 @@ function Model(data) {
 
         return self.data;
     };
+
+    self.renameItem = function (item, index) {
+        self.data.splice(index, 1, item);
+
+        if (index>=self.data.length) {
+            return;
+        }
+
+        return self.data;
+    }
 }
 function View(model) {
     var self = this;
@@ -36,6 +46,9 @@ function View(model) {
         self.elements = {
             input: $('.item-value'),
             addBtn: $('.item-add'),
+            inputRenm: $('.item-value-rename'),
+            inputRnmIndx: $('.item-index'),
+            renmBtn: $('.item-rename'),
             listContainer: $('.item-list')
         };
         self.renderList(model.data);
@@ -54,6 +67,7 @@ function Controller(model, view) {
 
     view.elements.addBtn.on('click', addItem);
     view.elements.listContainer.on('click', '.item-delete', removeItem);
+    view.elements.renmBtn.on('click', renameItem);
 
     function  addItem() {
         var newItem = view.elements.input.val();
@@ -67,6 +81,15 @@ function Controller(model, view) {
 
         model.removeItem(item);
         view.renderList(model.data);
+    }
+
+    function renameItem () {
+        var reItem = view.elements.inputRenm.val();
+        var index = view.elements.inputRnmIndx.val();
+        model.renameItem(reItem, index);
+        view.renderList(model.data);
+        view.elements.inputRenm.val('');
+        view.elements.renmBtn.val('');
     }
 }
 

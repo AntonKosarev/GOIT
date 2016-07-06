@@ -1,12 +1,19 @@
-var script = reuire('../DZJS_2(#1)(21-22)/js/js.js');//Подключаем скрипт для проверки
+var pow = require('../pow/js/js.js');//Подключаем скрипт для проверки
 
-describe("script", function() {
+describe("pow", function() {
     it("metod_1", function() {
         //prepare
-        var result;
+        var res;
         //act
-        result = pow(3,3);
+        res = pow(3,3);
         //assert
-        expect(result).toBe(27);
+        expect(res).toBe(27);
     });
 });
+
+//describe("A suite", function() {
+//    it("contains spec with an expectation", function() {
+//        console.log('pow');
+//        expect(true).toBe(true);
+//    });
+//});

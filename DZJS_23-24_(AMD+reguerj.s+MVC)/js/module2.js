@@ -1,12 +1,12 @@
 define(
     'module2',
     [
+        'module1',
         'jquery',
         'template'
     ],
-    function () {
-        return {
-            View: function View(model) {
+    function (module1) {
+            function View(model) {
                     var self = this;
 
                     function init() {
@@ -31,6 +31,8 @@ define(
 
                     init();
             }
-        }
+        var view = new View(module1);
+        return view;
+
     }
 );

@@ -1,14 +1,13 @@
 define(
     'module1',
     [
-        'jquery',
-        'template'
+        'jquery'
     ],
-    function () {
-        return {
-            Model: function Model(data) {
+    function (data) {
+               function Model(data) {
                     var self = this;
                     self.data = data;
+
                     self.addItem = function (item) {
                         if (item.length === 0) {
                             return;
@@ -31,7 +30,10 @@ define(
                         }
                         return self.data;
                     }
-            }
-        }
+               }
+        var firstToDoList = ["learn Gulp", "learn Grunt", "learn BEM", "learn Jasmine", "learn Bootstrap"];
+        var model = new Model(firstToDoList);
+        return model;
     }
+
 );

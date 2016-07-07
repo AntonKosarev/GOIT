@@ -1,12 +1,11 @@
 define(
     'module3',
     [
-        'jquery',
-        'template'
+        'module1',
+        'module2'
     ],
-    function () {
-        return {
-            Controller: function Controller(model, view) {
+    function (module1, module2) {
+        function Controller(model, view) {
                 var self = this;
 
                 view.elements.addBtn.on('click', addItem);
@@ -35,7 +34,9 @@ define(
                     view.elements.inputRenm.val('');
                     view.elements.renmBtn.val('');
                 }
-            }
+
         }
+        var controller = new Controller(module1, module2);
+        return controller;
     }
 );

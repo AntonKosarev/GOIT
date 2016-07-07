@@ -1,33 +1,26 @@
 require.config({
-   paths: {
-       'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery',
-       'template': 'template',
-       'module4': 'module4'
-   },
+    baseUrl: 'js',
+    paths: {
+       'jquery': 'jquery-1.12.3',
+       'temlate': 'template'
+    },
     shim: {
         'jquery': {
             exports: 'jQuery'
         },
-        template: {
+        'temlate': {
             exports: 'template'
-        },
-        module4: {
-            exports: 'module4'
         }
     }
 });
 require(
     [
         'module1',
-        'module2',
-        'module3',
         'jquery',
         'template',
-        'module4'
+        'module2',
+        'module3'
     ],
-    function(module1,module2,module3,$,template,module4){
-        module1.Model();
-        module2.View();
-        module3.Controller();
+    function(module1, $, template, module2, module3){
     }
 );

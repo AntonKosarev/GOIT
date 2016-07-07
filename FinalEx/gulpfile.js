@@ -9,10 +9,10 @@ gulp.task('default', [
 //https://www.npmjs.com/package/gulp-sass
 var sass = require('gulp-sass');
 gulp.task('sass', function () {
-    return gulp.src('dist/css/*.scss')
+    return gulp.src('site/css/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('site/css'));
 });
 gulp.task('sass:watch', function () {
-    gulp.watch('dist/css/*.scss', ['sass']);
+    gulp.watch('site/css/*.scss', ['sass']);
 });

@@ -1,0 +1,33 @@
+* {
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+}
+.wrapper {
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 10px 30px 30px;
+    background-color: burlywood;
+}
+.item-add,
+.item-rename {
+    background-color: peru;
+    padding: 5px 10px;
+}
+.item-rename:hover,
+.item-add:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+.item-delete {
+    padding: 1px 6px 2px 5px;
+    background-color: coral;
+    border: 1px solid black;
+}
+.item-delete:hover {
+    background-color: black;
+    color: azure;
+    cursor: pointer;
+}
+.item-list li {
+    margin: 20px 20px 0 5px;
+}

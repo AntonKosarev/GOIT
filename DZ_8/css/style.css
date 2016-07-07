@@ -568,7 +568,7 @@ body {
     .topmenu {
         float: left;
         margin: 32px 0 0 18px;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .topmenu li {
@@ -972,7 +972,7 @@ body {
     }
     .content__1 span {font-size: 26px;}
     .items--wite {
-        left: 67.5%;
+        left: 55.5%;
     }
     .content__2 {
         width: 282px;

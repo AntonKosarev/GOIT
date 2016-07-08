@@ -97,6 +97,9 @@ body {
   color: #fff;
   padding: 11px 23px;
   @include border-radius(32px);
+  &:hover {
+    cursor: pointer;
+  }
 }
 .header__middle-button {
   font-family: $font-MB;
@@ -117,26 +120,35 @@ body {
 .howuwork__articles {
   margin: 36px 250px;
 }
-.slider-wrap{ /* Оболочка слайдера и кнопок */
-  width:320px;
+#slider-wrap,
+#slider-wrap_1,
+#slider-wrap_2 { /* Оболочка слайдера и кнопок */
+  width:300px;
+  position:relative;
+  //float: left;
 }
-.slider{ /* Оболочка слайдера */
+#slider,
+#slider_1,
+#slider_2 { /* Оболочка слайдера */
   width:300px;
   height:400px;
   overflow: hidden;
-  //border:#eee solid 10px;
   position:relative;
 }
-.slide{ /* Слайд */
+.slide { /* Слайд */
   width:100%;
   height:100%;
 }
-.sli-links{ /* Кнопки смены слайдов */
+.sli-links { /* Кнопки смены слайдов */
   margin-top:10px;
   text-align:center;
 }
-.prewbutton,
-.nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
+#prewbutton,
+#prewbutton_1,
+#prewbutton_2,
+#nextbutton,
+#nextbutton_1,
+#nextbutton_2{ /* Ссылка "Следующий" и "Педыдущий" */
   display:block;
   width:30px;
   height: 55px;;
@@ -145,16 +157,44 @@ body {
   overflow:hidden;
   text-indent:-999px;
   background:url(../img/arrowBg.png) left center no-repeat;
-  z-index:3;
+  z-index:1;
+  &:hover {
+    cursor: pointer;
+  }
 }
-.prewbutton{
+#prewbutton,
+#prewbutton_1,
+#prewbutton_2 {
   left:20px;
 }
-.nextbutton{
-  right:20px;
-  background:url(../img/arrowBg.png) right center no-repeat;
-}
-.prewbutton:hover,
-.nextbutton:hover{
-  cursor: pointer;
+#nextbutton,
+#nextbutton_1,
+#nextbutton_2 {
+    right:20px;
+    background:url(../img/arrowBg.png) right center no-repeat;
+  }
+.slider__text {
+  color: #fff;
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  text-align: left;
+  h2 {
+    font-family: $font-MB;
+    font-size: 24px;
+    margin-top: 16px;
+    line-height: 28px;
+  }
+  p {
+    font-family: $font-RL;
+    font-size: 13px;
+    margin-top: 14px;
+    line-height: 16px;
+  }
+  .howuwork__button {
+    font-family: $font-MR;
+    font-size: 10px;
+    padding: 3px 14px;
+    letter-spacing: 2px;
+  }
 }

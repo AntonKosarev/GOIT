@@ -8,3 +8,69 @@
   width: 100%;
   max-width: 1920px;
   background: #6358c0; }
+
+.social_network {
+  display: inline-block;
+  width: 20%;
+  text-align: left; }
+  .social_network li {
+    float: left; }
+
+.logo {
+  display: inline-block;
+  width: 58%;
+  text-align: center; }
+
+.menu {
+  display: inline-block;
+  float: right;
+  width: 20%;
+  text-align: right; }
+
+.content_phone {
+  display: inline-block;
+  float: left;
+  width: 20.26%;
+  max-width: 389px;
+  margin: 0 0 0 23.59%; }
+  .content_phone img {
+    width: 100%; }
+
+.content_article {
+  display: inline-block;
+  width: 23%;
+  color: #fff; }
+  .content_article h1 {
+    font-family: SolomonSansBook, Arial, sans-serif;
+    font-size: 32px; }
+  .content_article p {
+    font-family: SolomonSansNormal, Arial, sans-serif;
+    font-size: 12px; }
+
+.button {
+  display: inline-block;
+  background: #61acec;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 200%;
+  padding: 0 1.5%; }
+
+.controls_1,
+.controls_2,
+.controls_3 {
+  width: 8px;
+  height: 8px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+
+.controls_1 {
+  border: 2px solid #fff; }
+
+.controls_2 {
+  background: rgba(255, 255, 255, 0.5); }
+
+.controls_3 {
+  background: rgba(255, 255, 255, 0.5); }

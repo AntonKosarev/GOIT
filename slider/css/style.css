@@ -11,44 +11,59 @@
 
 .social_network {
   display: inline-block;
-  width: 20%;
-  text-align: left; }
+  width: 10%;
+  text-align: left;
+  padding: 0 0 0 2.4%; }
   .social_network li {
-    float: left; }
+    float: left;
+    padding: 16px 9px 0 0; }
 
 .logo {
-  display: inline-block;
-  width: 58%;
-  text-align: center; }
+  width: 97px;
+  height: 25px;
+  text-align: center;
+  margin: -25px auto 0; }
 
 .menu {
   display: inline-block;
   float: right;
-  width: 20%;
-  text-align: right; }
+  width: 10%;
+  text-align: right;
+  margin: 18px 2.6% 0 0; }
+
+.content {
+  padding: 84px 0 101px 0; }
 
 .content_phone {
   display: inline-block;
   float: left;
   width: 20.26%;
   max-width: 389px;
-  margin: 0 0 0 23.59%; }
+  margin: 0 0 0 23.8%; }
   .content_phone img {
     width: 100%; }
 
 .content_article {
   display: inline-block;
-  width: 23%;
-  color: #fff; }
+  width: 28%;
+  color: #fff;
+  padding: 90px 0 0 6.5%; }
   .content_article h1 {
+    width: 100%;
     font-family: SolomonSansBook, Arial, sans-serif;
-    font-size: 32px; }
+    font-size: 34px;
+    line-height: 46px;
+    letter-spacing: 1px; }
   .content_article p {
+    width: 80%;
     font-family: SolomonSansNormal, Arial, sans-serif;
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 19px 0 17px 0; }
 
 .button {
-  display: inline-block;
+  width: 46%;
+  min-width: 160px;
+  height: 10%;
   background: #61acec;
   color: #fff;
   text-align: center;
@@ -56,9 +71,16 @@
   line-height: 200%;
   padding: 0 1.5%; }
 
+.controls {
+  position: absolute;
+  right: 2%;
+  top: 300px;
+  text-align: center; }
+
 .controls_1,
 .controls_2,
 .controls_3 {
+  display: inline-block;
   width: 8px;
   height: 8px;
   -moz-border-radius: 6px;

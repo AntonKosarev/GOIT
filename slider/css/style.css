@@ -1,0 +1,10 @@
+@import url(fonts.css);
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.slide1 {
+  width: 100%;
+  max-width: 1920px;
+  background: #6358c0; }

@@ -1,0 +1,24 @@
+@import "fonts.css";
+
+$font: Arial, sans-serif;
+$font-SSN: SolomonSansNormal, Arial, sans-serif;
+$font-SSB: SolomonSansBook, Arial, sans-serif;
+
+$fonts-color-slide1: #fff;
+$bg-color-slide1: #6358c0;
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.slide1 {
+  width: 100%;
+  max-width: 1920px;
+  background: $bg-color-slide1;
+}
+
+.social_network {}
+.logo {}
+.menu {}

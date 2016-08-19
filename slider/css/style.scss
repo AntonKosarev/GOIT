@@ -36,8 +36,10 @@ $btn-color-slide1: #61acec;
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   max-width: 1920px;
+  max-height: 1080px;
   clear: both;
   background: $bg-color-slide1;
 }
@@ -265,3 +267,14 @@ $btn-color-slide1: #61acec;
 
 
 //controls
+.controls {
+  position: absolute;
+  top: 400px;
+  a {
+    display: block;
+    width: 6px;
+    height: 6px;
+    @include border-radius(6px);
+    background: rgba(255, 255, 255, 0.5);
+  }
+}

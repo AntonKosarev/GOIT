@@ -34,32 +34,42 @@ $(window).resize(function(){
 //    })
 //});
 
-$(document).ready(function(){
+$(function() {
     $('.bxslider').bxSlider({
         mode: 'vertical',
         slideMargin: 3
     });
-});
 
-$(document).ready(function(){
+    //var s1 = $('.slide1');
+    //var s2 = $('.slide2');
+    //var s3 = $('.slide3');
+
     var $slide1 = $('[data-slide-index = "0"]'),
         $slide2 = $('[data-slide-index = "1"]'),
         $slide3 = $('[data-slide-index = "2"]');
 
     var $bg = $('.wrapper');
 
-    $slide1.click(function(){
+    $slide1.on('click', function(){
         $bg.css('background', '#6358c0');
+        //$s3.css('display', 'none');
+        //$s2.css('display', 'none');
+        //$s1.css('display', 'block');
     });
 
-    $slide2.click(function(){
+    $slide2.on('click', function(){
         $bg.css('background', '#61acec');
+        //$s3.css('display', 'none');
+        //$s1.css('display', 'none');
+        //$s2.css('display', 'block');
     });
 
-    $slide3.click(function(){
+    $slide3.on('click', function(){
         $bg.css('background', '#68a780');
+        //$s2.css('display', 'none');
+        //$s1.css('display', '');
+        //$s3.css('display', 'block');
     });
-
 });
 
 

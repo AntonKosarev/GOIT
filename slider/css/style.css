@@ -5,8 +5,10 @@
   clear: both; }
 
 .wrapper {
+  position: relative;
   width: 100%;
   max-width: 1920px;
+  max-height: 1080px;
   clear: both;
   background: #6358c0; }
 
@@ -191,3 +193,16 @@
   letter-spacing: 1px;
   line-height: 62px;
   margin: 0 0 0 4px; }
+
+.controls {
+  position: absolute;
+  top: 400px; }
+  .controls a {
+    display: block;
+    width: 6px;
+    height: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.5); }

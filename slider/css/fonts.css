@@ -5,4 +5,7 @@
 @font-face {
     font-family: 'SolomonSansBook';
     src: url('../fonts/SolomonSansBook.otf');
+}@font-face {
+    font-family: 'SolomonSansSemiBold';
+    src: url('../fonts/SolomonSansSemiBold.otf');
 }

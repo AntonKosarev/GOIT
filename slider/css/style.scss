@@ -3,9 +3,15 @@
 $font: Arial, sans-serif;
 $font-SSN: SolomonSansNormal, Arial, sans-serif;
 $font-SSB: SolomonSansBook, Arial, sans-serif;
+$font-SSSB: SolomonSansSemiBold, "Times New Roman", serif;
+
 
 $fonts-color-slide1: #fff;
+
 $bg-color-slide1: #6358c0;
+$bg-color-slide2: #61acec;
+$bg-color-slide3: #68a780;
+
 $btn-color-slide1: #61acec;
 
 @mixin border-radius($rad) {
@@ -21,7 +27,7 @@ $btn-color-slide1: #61acec;
   clear: both;
 }
 
-.slide1 {
+.wrapper {
   width: 100%;
   max-width: 1920px;
   background: $bg-color-slide1;
@@ -51,10 +57,13 @@ $btn-color-slide1: #61acec;
   text-align: right;
   margin: 18px 2.6% 0 0;
 }
-.content {
+
+//slide1
+.slide1 {
   padding: 84px 0 101px 0;
+  display: none;
 }
-.content_phone {
+.slide1_phone {
   display: inline-block;
   float: left;
   width: 20.26%;
@@ -64,9 +73,10 @@ $btn-color-slide1: #61acec;
   }
   margin: 0 0 0 23.8%;
 }
-.content_article {
+.slide1_article {
   display: inline-block;
-  width: 28%;
+  //width: 28%;
+  max-width: 500px;
   color: $fonts-color-slide1;
   padding: 90px 0 0 6.5%;
   h1 {
@@ -84,7 +94,8 @@ $btn-color-slide1: #61acec;
   }
 }
 
-.content_button {
+.button:hover {
+  cursor: pointer;
 }
 .button {
   width: 46%;
@@ -119,4 +130,89 @@ $btn-color-slide1: #61acec;
 }
 .controls_3 {
   background: rgba(255, 255, 255, 0.5);
+}
+
+//slide2
+.slide2 {
+  max-width: 1060px;
+  margin: auto;
+  padding: 198px 0 326px;
+  article {
+    border: 1px solid blue;
+  }
+  div {
+    border: 1px solid red;
+  }
+}
+.slide2_left {
+  width: 26%;
+  height: 500px;
+  float: left;
+  padding-top: 96px;
+  .slide2_article {
+    h1,
+    p {
+      text-align: right;
+    }
+  }
+}
+
+.slide2_phone {
+  width: 45%;
+  height: 500px;
+  float: left;
+  margin: 0 1%;
+  //width: 42.8%;
+  //max-width: 454px;
+  //img {
+  //  width: 100%;
+  //}
+}
+.slide2_right {
+  width: 26%;
+  height: 500px;
+  float: right;
+  padding-top: 96px;
+}
+.slide2_article {
+  display: inline-block;
+  color: $fonts-color-slide1;
+  //padding: 90px 0 0 6.5%;
+  h1 {
+    //width: 100%;
+    font-family: 'Times New Roman', $font-SSSB;
+    font-size: 14px;
+    //line-height: 46px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
+  p {
+    //width: 80%;
+    font-family: $font-SSN;
+    font-size: 12px;
+    padding: 19px 0 17px 0;
+  }
+}
+.mic,
+.paper,
+.globe,
+.img {
+  width: 66px;
+  height: 66px;
+  background: url("../img/sprites_slide2.png") no-repeat;
+}
+.mic {
+  background-position-y: 0;
+  float: right;
+}
+.paper {
+  background-position-y: -86px;
+  float: right;
+}
+.globe {
+  background-position-y: -170px;
+}
+.img {
+  background-position-y: -254px;
 }

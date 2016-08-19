@@ -42,3 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*My notation*/
+button {
+	border-width: 0;
+}

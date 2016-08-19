@@ -4,7 +4,7 @@
   display: block;
   clear: both; }
 
-.slide1 {
+.wrapper {
   width: 100%;
   max-width: 1920px;
   background: #6358c0; }
@@ -31,34 +31,38 @@
   text-align: right;
   margin: 18px 2.6% 0 0; }
 
-.content {
-  padding: 84px 0 101px 0; }
+.slide1 {
+  padding: 84px 0 101px 0;
+  display: none; }
 
-.content_phone {
+.slide1_phone {
   display: inline-block;
   float: left;
   width: 20.26%;
   max-width: 389px;
   margin: 0 0 0 23.8%; }
-  .content_phone img {
+  .slide1_phone img {
     width: 100%; }
 
-.content_article {
+.slide1_article {
   display: inline-block;
-  width: 28%;
+  max-width: 500px;
   color: #fff;
   padding: 90px 0 0 6.5%; }
-  .content_article h1 {
+  .slide1_article h1 {
     width: 100%;
     font-family: SolomonSansBook, Arial, sans-serif;
     font-size: 34px;
     line-height: 46px;
     letter-spacing: 1px; }
-  .content_article p {
+  .slide1_article p {
     width: 80%;
     font-family: SolomonSansNormal, Arial, sans-serif;
     font-size: 12px;
     padding: 19px 0 17px 0; }
+
+.button:hover {
+  cursor: pointer; }
 
 .button {
   width: 46%;
@@ -96,3 +100,69 @@
 
 .controls_3 {
   background: rgba(255, 255, 255, 0.5); }
+
+.slide2 {
+  max-width: 1060px;
+  margin: auto;
+  padding: 198px 0 326px; }
+  .slide2 article {
+    border: 1px solid blue; }
+  .slide2 div {
+    border: 1px solid red; }
+
+.slide2_left {
+  width: 26%;
+  height: 500px;
+  float: left;
+  padding-top: 96px; }
+  .slide2_left .slide2_article h1,
+  .slide2_left .slide2_article p {
+    text-align: right; }
+
+.slide2_phone {
+  width: 45%;
+  height: 500px;
+  float: left;
+  margin: 0 1%; }
+
+.slide2_right {
+  width: 26%;
+  height: 500px;
+  float: right;
+  padding-top: 96px; }
+
+.slide2_article {
+  display: inline-block;
+  color: #fff; }
+  .slide2_article h1 {
+    font-family: "Times New Roman", SolomonSansSemiBold, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 30px; }
+  .slide2_article p {
+    font-family: SolomonSansNormal, Arial, sans-serif;
+    font-size: 12px;
+    padding: 19px 0 17px 0; }
+
+.mic,
+.paper,
+.globe,
+.img {
+  width: 66px;
+  height: 66px;
+  background: url("../img/sprites_slide2.png") no-repeat; }
+
+.mic {
+  background-position-y: 0;
+  float: right; }
+
+.paper {
+  background-position-y: -86px;
+  float: right; }
+
+.globe {
+  background-position-y: -170px; }
+
+.img {
+  background-position-y: -254px; }

@@ -1,3 +1,4 @@
+/* Изменение размера шрифта пропорционально разеру лейаута
 $(window).resize(function(){
     var text = $(".content_article h1"),
         currentWidth = parseInt(text.css("width")),
@@ -16,4 +17,21 @@ $(window).resize(function(){
     else if (currentWidth<1420) newWidth = 35;
 
     text.css("font-size",newWidth+"px");
+}); */
+$(document).ready(function(){
+    var $slide1 = $('.slide1'),
+        $slide2 = $('.slide2'),
+        $slide3 = $('.slide3');
+
+    var $control1 = $('.controls_1'),
+        $control2 = $('.controls_2'),
+        $control3 = $('.controls_3');
+
+    $control2.on('click', function(e) {
+        e.preventDefault();
+        $slide1.css('display','none');
+        $slide2.css('display','block');
+    })
 });
+
+

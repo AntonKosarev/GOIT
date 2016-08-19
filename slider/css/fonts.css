@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'SolomonSansNormal';
-    src: url('../fonts/SolomonSansNormal.otf');
+    font-family: 'SolomonNormal';
+    src: url('../fonts/Solomon%20Normal.otf');
 }
 @font-face {
-    font-family: 'SolomonSansBook';
-    src: url('../fonts/SolomonSansBook.otf');
+    font-family: 'SolomonBook';
+    src: url('../fonts/Solomon%20-%20book.ttf') format('truetype');;
 }@font-face {
-    font-family: 'SolomonSansSemiBold';
-    src: url('../fonts/SolomonSansSemiBold.otf');
+    font-family: 'SolomonBold';
+    src: url('../fonts/Solomon%20-%20bold.ttf') format('truetype');;
 }
+

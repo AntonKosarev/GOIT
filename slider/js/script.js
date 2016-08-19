@@ -17,21 +17,51 @@ $(window).resize(function(){
     else if (currentWidth<1420) newWidth = 35;
 
     text.css("font-size",newWidth+"px");
-}); */
+//}); */
+//$(document).ready(function(){
+//    var $slide1 = $('.slide1'),
+//        $slide2 = $('.slide2'),
+//        $slide3 = $('.slide3');
+//
+//    var $control1 = $('.controls_1'),
+//        $control2 = $('.controls_2'),
+//        $control3 = $('.controls_3');
+//
+//    $control2.on('click', function(e) {
+//        e.preventDefault();
+//        $slide1.css('display','none');
+//        $slide2.css('display','block');
+//    })
+//});
+
 $(document).ready(function(){
-    var $slide1 = $('.slide1'),
-        $slide2 = $('.slide2'),
-        $slide3 = $('.slide3');
-
-    var $control1 = $('.controls_1'),
-        $control2 = $('.controls_2'),
-        $control3 = $('.controls_3');
-
-    $control2.on('click', function(e) {
-        e.preventDefault();
-        $slide1.css('display','none');
-        $slide2.css('display','block');
-    })
+    $('.bxslider').bxSlider({
+        mode: 'vertical',
+        slideMargin: 3
+    });
 });
+
+$(document).ready(function(){
+    var $slide1 = $('[data-slide-index = "0"]'),
+        $slide2 = $('[data-slide-index = "1"]'),
+        $slide3 = $('[data-slide-index = "2"]');
+
+    var $bg = $('.wrapper');
+
+    $slide1.click(function(){
+        $bg.css('background', '#6358c0');
+    });
+
+    $slide2.click(function(){
+        $bg.css('background', '#61acec');
+    });
+
+    $slide3.click(function(){
+        $bg.css('background', '#68a780');
+    });
+
+});
+
+
 
 

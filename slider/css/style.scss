@@ -6,13 +6,13 @@ $font-SSN_S: SolomonNormal, Arial, sans-serif;
 $font-SSB_S: SolomonBook, Arial, sans-serif;
 $font-SSSB_S: SolomonBold, "Times New Roman", serif;
 
-//$font-SSN: Arial, sans-serif;
-//$font-SSB: Arial, sans-serif;
-//$font-SSSB: "Times New Roman", serif;
+$font-SSN: Arial, sans-serif;
+$font-SSB: Arial, sans-serif;
+$font-SSSB: "Times New Roman", serif;
 
-$font-SSN: SolomonNormal, Arial, sans-serif;
-$font-SSB: SolomonBook, Arial, sans-serif;
-$font-SSSB: SolomonBold, "Times New Roman", serif;
+//$font-SSN: SolomonNormal, Arial, sans-serif;
+//$font-SSB: SolomonBook, Arial, sans-serif;
+//$font-SSSB: SolomonBold, "Times New Roman", serif;
 
 $fonts-color-slide1: #fff;
 
@@ -38,10 +38,11 @@ $btn-color-slide1: #61acec;
 .wrapper {
   width: 100%;
   max-width: 1920px;
+  clear: both;
   background: $bg-color-slide1;
 }
 
-//header
+  //header
 .social_network {
   float: left;
   text-align: left;
@@ -65,13 +66,17 @@ $btn-color-slide1: #61acec;
 .slide1 {
   width: 1081px;
   margin: auto;
+  //background: $bg-color-slide1;
   padding: 132px 0 230px;
   //display: none;
 }
 .slide1_phone {
   float: left;
-  max-width: 389px;
+  width: 36%;
   margin: 0 0 0 36px;
+}
+.slide1_img {
+  max-width: 389px;
   img {
     width: 100%;
   }
@@ -116,7 +121,7 @@ $btn-color-slide1: #61acec;
 
 //slide2
 .slide2 {
-  display: none;
+  //display: none;
   width: 1081px;
   margin: auto;
   padding: 198px 0 230px;
@@ -145,7 +150,7 @@ $btn-color-slide1: #61acec;
   max-width: 454px;
   margin: auto;
   img {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .slide2_img {
@@ -198,7 +203,7 @@ $btn-color-slide1: #61acec;
   width: 1081px;
   margin: auto;
   padding: 238px 0 277px;
-  display: none;
+  //display: none;
 }
 .slide3_left {
   position: relative;
@@ -248,41 +253,15 @@ $btn-color-slide1: #61acec;
   margin: 0 0 0 4px;
 }
 
-//slider
-#slideshow #slidesContainer {
-  width: 1101px;
-  overflow: auto; /* прокрутка */
-  position: relative;
-}
-#slide {
-  width: 1081px;
-}
+////slider
+//#slideshow #slidesContainer {
+//  width: 1101px;
+//  overflow: auto; /* прокрутка */
+//  position: relative;
+//}
+//#slide {
+//  width: 1081px;
+//}
 
 
 //controls
-.controls {
-  position: absolute;
-  right: 60px;
-  top: 466px;
-  text-align: center;
-  li {
-    margin-bottom: 19px;
-  }
-}
-.controls_1,
-.controls_2,
-.controls_3 {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  @include border-radius(6px);
-}
-.controls_1 {
-  border: 2px solid #fff;
-}
-.controls_2 {
-  background: rgba(255, 255, 255, 0.5);
-}
-.controls_3 {
-  background: rgba(255, 255, 255, 0.5);
-}

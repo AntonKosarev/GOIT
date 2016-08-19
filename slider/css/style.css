@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(fonts.css);
 .clearfix:after {
   content: '';
@@ -8,6 +7,7 @@
 .wrapper {
   width: 100%;
   max-width: 1920px;
+  clear: both;
   background: #6358c0; }
 
 .social_network {
@@ -34,9 +34,12 @@
 
 .slide1_phone {
   float: left;
-  max-width: 389px;
+  width: 36%;
   margin: 0 0 0 36px; }
-  .slide1_phone img {
+
+.slide1_img {
+  max-width: 389px; }
+  .slide1_img img {
     width: 100%; }
 
 .slide1_right {
@@ -74,7 +77,6 @@
   margin: 0 0 0 4px; }
 
 .slide2 {
-  display: none;
   width: 1081px;
   margin: auto;
   padding: 198px 0 230px; }
@@ -99,7 +101,7 @@
   max-width: 454px;
   margin: auto; }
   .slide2_phone img {
-    max-width: 100%; }
+    width: 100%; }
 
 .slide2_img {
   margin: -11px 0 0 -1%; }
@@ -107,13 +109,13 @@
 .slide2_article {
   color: #fff; }
   .slide2_article h1 {
-    font-family: SolomonBold, "Times New Roman", serif;
+    font-family: "Times New Roman", serif;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 28px 0 18px; }
   .slide2_article p {
-    font-family: SolomonNormal, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 1px; }
@@ -146,8 +148,7 @@
 .slide3 {
   width: 1081px;
   margin: auto;
-  padding: 238px 0 277px;
-  display: none; }
+  padding: 238px 0 277px; }
 
 .slide3_left {
   position: relative;
@@ -173,7 +174,7 @@
     line-height: 44px;
     padding: 130px 0 25px 0; }
   .slide3_article p {
-    font-family: SolomonNormal, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 10px;
     line-height: 24px;
     letter-spacing: 1px; }
@@ -190,40 +191,3 @@
   letter-spacing: 1px;
   line-height: 62px;
   margin: 0 0 0 4px; }
-
-#slideshow #slidesContainer {
-  width: 1101px;
-  overflow: auto;
-  /* прокрутка */
-  position: relative; }
-
-#slide {
-  width: 1081px; }
-
-.controls {
-  position: absolute;
-  right: 60px;
-  top: 466px;
-  text-align: center; }
-  .controls li {
-    margin-bottom: 19px; }
-
-.controls_1,
-.controls_2,
-.controls_3 {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px; }
-
-.controls_1 {
-  border: 2px solid #fff; }
-
-.controls_2 {
-  background: rgba(255, 255, 255, 0.5); }
-
-.controls_3 {
-  background: rgba(255, 255, 255, 0.5); }

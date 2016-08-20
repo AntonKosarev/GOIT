@@ -1,11 +1,4 @@
-/*
- * Third party
- */
-
-//= ../../bower_components/jquery/dist/jquery.js
-
-/*
- * Custom
- */
-
-//= partials/app.js
+//= partials/jquery.bxslider.js
+$(document).ready(function(){
+    $('.bxslider').bxSlider();
+});

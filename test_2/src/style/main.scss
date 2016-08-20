@@ -1,9 +1,6 @@
-/*
-* Third Party
-*/
-//@import "../../bower_components/normalize.css/normalize.css";
+@import "partials/jquery.bxslider";
+@import "partials/resetstyle";
 
-/*
-* Custom
-*/
-//@import "partials/app";
+.bx-wrapper {
+  max-width: 1081px;
+}

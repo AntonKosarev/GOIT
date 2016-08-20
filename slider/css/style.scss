@@ -1,18 +1,13 @@
 @import "fonts.css";
 
-$font: Arial, sans-serif;
+$font-ss: Arial, sans-serif;
+$font-s: "Times New Roman", serif;
 
-$font-SSN_S: SolomonNormal, Arial, sans-serif;
-$font-SSB_S: SolomonBook, Arial, sans-serif;
-$font-SSSB_S: SolomonBold, "Times New Roman", serif;
-
-$font-SSN: Arial, sans-serif;
-$font-SSB: Arial, sans-serif;
-$font-SSSB: "Times New Roman", serif;
-
-//$font-SSN: SolomonNormal, Arial, sans-serif;
-//$font-SSB: SolomonBook, Arial, sans-serif;
-//$font-SSSB: SolomonBold, "Times New Roman", serif;
+$font-SN: SolomonNormal, Arial, sans-serif;
+$font-SBol: SolomonBold, Arial, sans-serif;
+$font-SBook: SolomonBook, Arial, sans-serif;
+$font-SL: SolomonLight, Arial, sans-serif;
+$font-ST: SolomonThin, Arial, sans-serif;
 
 $fonts-color-slide1: #fff;
 
@@ -69,12 +64,13 @@ $btn-color-slide1: #61acec;
   width: 1081px;
   margin: auto;
   //background: $bg-color-slide1;
-  padding: 132px 0 230px;
+  //padding: 132px 0 230px;
   //display: none;
 }
 .slide1_phone {
   float: left;
   width: 36%;
+  //height: 300px;
   margin: 0 0 0 36px;
 }
 .slide1_img {
@@ -91,7 +87,7 @@ $btn-color-slide1: #61acec;
   color: $fonts-color-slide1;
   h1 {
     width: 100%;
-    font-family: $font-SSB_S;
+    font-family: $font-SBook;
     font-size: 60px;
     line-height: 76px;
     letter-spacing: 1px;
@@ -100,7 +96,7 @@ $btn-color-slide1: #61acec;
   }
   p {
     width: 80%;
-    font-family: Arial, sans-serif;
+    font-family: $font-SN;
     font-size: 18px;
     padding: 16px 0 49px 4px;
     line-height: 24px;
@@ -126,7 +122,7 @@ $btn-color-slide1: #61acec;
   //display: none;
   width: 1081px;
   margin: auto;
-  padding: 198px 0 230px;
+  //padding: 198px 0 230px;
 }
 .slide2_left {
   float: left;
@@ -161,14 +157,14 @@ $btn-color-slide1: #61acec;
 .slide2_article {
   color: $fonts-color-slide1;
   h1 {
-    font-family: $font-SSSB;
+    font-family: $font-s;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 28px 0 18px;
   }
   p {
-    font-family: $font-SSN;
+    font-family: $font-SN;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -201,10 +197,15 @@ $btn-color-slide1: #61acec;
 }
 
 //slide 3
+div,
+article {
+  //border: 1px solid red;
+
+}
 .slide3 {
   width: 1081px;
   margin: auto;
-  padding: 238px 0 277px;
+  //padding: 238px 0 277px;
   //display: none;
 }
 .slide3_left {
@@ -226,14 +227,14 @@ $btn-color-slide1: #61acec;
   color: $fonts-color-slide1;
   h1 {
     width: 80%;
-    font-family: "Times New Roman", serif;
+    font-family: $font-s;
     font-size: 38px;
     font-weight: 500;
     line-height: 44px;
     padding: 130px 0 25px 0;
   }
   p {
-    font-family: $font-SSN;
+    font-family: $font-SN;
     font-size: 10px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -277,4 +278,9 @@ $btn-color-slide1: #61acec;
     @include border-radius(6px);
     background: rgba(255, 255, 255, 0.5);
   }
+}
+.slide1,
+.slide2,
+.slide3 {
+  min-height: 800px;
 }

@@ -31,8 +31,7 @@
 
 .slide1 {
   width: 1081px;
-  margin: auto;
-  padding: 132px 0 230px; }
+  margin: auto; }
 
 .slide1_phone {
   float: left;
@@ -60,7 +59,7 @@
     padding: 150px 0 16px 0; }
   .slide1_article p {
     width: 80%;
-    font-family: Arial, sans-serif;
+    font-family: SolomonNormal, Arial, sans-serif;
     font-size: 18px;
     padding: 16px 0 49px 4px;
     line-height: 24px; }
@@ -80,8 +79,7 @@
 
 .slide2 {
   width: 1081px;
-  margin: auto;
-  padding: 198px 0 230px; }
+  margin: auto; }
 
 .slide2_left {
   float: left;
@@ -117,7 +115,7 @@
     text-transform: uppercase;
     padding: 28px 0 18px; }
   .slide2_article p {
-    font-family: Arial, sans-serif;
+    font-family: SolomonNormal, Arial, sans-serif;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 1px; }
@@ -149,8 +147,7 @@
 
 .slide3 {
   width: 1081px;
-  margin: auto;
-  padding: 238px 0 277px; }
+  margin: auto; }
 
 .slide3_left {
   position: relative;
@@ -176,7 +173,7 @@
     line-height: 44px;
     padding: 130px 0 25px 0; }
   .slide3_article p {
-    font-family: Arial, sans-serif;
+    font-family: SolomonNormal, Arial, sans-serif;
     font-size: 10px;
     line-height: 24px;
     letter-spacing: 1px; }
@@ -206,3 +203,8 @@
     -ms-border-radius: 6px;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.5); }
+
+.slide1,
+.slide2,
+.slide3 {
+  min-height: 800px; }

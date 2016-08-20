@@ -1,12 +1,20 @@
 @font-face {
     font-family: 'SolomonNormal';
-    src: url('../fonts/Solomon%20Normal.otf');
+    src: url('../fonts/Solomon-Normal.otf');
+}
+@font-face {
+    font-family: 'SolomonThin';
+    src: url('../fonts/Solomon%20-%20thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SolomonLight';
+    src: url('../fonts/Solomon%20-%20light.ttf') format('truetype');
 }
 @font-face {
     font-family: 'SolomonBook';
-    src: url('../fonts/Solomon%20-%20book.ttf') format('truetype');;
+    src: url('../fonts/Solomon%20-%20book.ttf') format('truetype');
 }@font-face {
     font-family: 'SolomonBold';
-    src: url('../fonts/Solomon%20-%20bold.ttf') format('truetype');;
+    src: url('../fonts/Solomon%20-%20bold.ttf') format('truetype');
 }
 

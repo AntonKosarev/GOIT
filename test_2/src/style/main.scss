@@ -1,5 +1,19 @@
 @import "partials/jquery.bxslider";
 @import "partials/resetstyle";
+@import "partials/fonts.scss";
+@import "partials/font-awesome.scss";
+
+
+$font-ss: Arial, sans-serif;
+$font-s: "Times New Roman", serif;
+
+$font-SN: SolomonNormal, Arial, sans-serif;
+$font-SBol: SolomonBold, Arial, sans-serif;
+$font-SBook: SolomonBook, Arial, sans-serif;
+$font-SL: SolomonLight, Arial, sans-serif;
+$font-ST: SolomonThin, Arial, sans-serif;
+
+$fonts-color-slide1: #fff;
 
 $bg-color-slide1: #6358c0;
 $bg-color-slide2: #61acec;
@@ -64,4 +78,55 @@ body {
   height: 100%;
   border: 1px solid black;
   align-self: center;
+}
+
+.slide1_article {
+  color: $fonts-color-slide1;
+  h1 {
+    width: 100%;
+    font-family: $font-SBook;
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 150px 0 16px 0;
+  }
+  p {
+    width: 80%;
+    font-family: $font-SN;
+    font-size: 18px;
+    padding: 16px 0 49px 4px;
+    line-height: 24px;
+  }
+}
+
+.button {
+  width: 255px;
+  background: #61acec;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 62px;
+  margin: 0 0 0 4px;
+  &:hover {
+  cursor: pointer;
+  }
+}
+
+.slide2_article {
+  color: $fonts-color-slide1;
+  h1 {
+    font-family: $font-s;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 28px 0 18px;
+  }
+  p {
+    font-family: $font-SN;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
 }

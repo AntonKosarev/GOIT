@@ -1,3 +1,20 @@
+//watch
+var gulp = require('gulp'),
+    watch = require('gulp-watch');
+
+gulp.task('stream', function () {
+    // Endless stream mode
+    return watch('css/**/*.css', { ignoreInitial: false })
+        .pipe(gulp.dest('build'));
+});
+
+gulp.task('callback', function () {
+    // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
+    return watch('css/**/*.css', function () {
+        gulp.src('css/**/*.css')
+            .pipe(gulp.dest('build'));
+    });
+});
 //gulp-autoprefixer
 var autoprefixer = require('gulp-autoprefixer');
 gulp.task('autoprefixer', function () {
@@ -29,6 +46,17 @@ gulp.task('uglify', function (cb) {
         ],
         cb
     );
+});
+//gulp-cssmin
+var gulp = require('gulp');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+
+gulp.task('default', function () {
+    gulp.src('src/**/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist'));
 });
 //gulp-sass
 var sass = require('gulp-sass');

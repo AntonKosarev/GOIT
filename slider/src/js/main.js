@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.bxslider').bxSlider();
 });
 
+
 $(document).ready(function(){
     function getbg () {
         $('[data-slide-index = 0]').on('click', function () {
@@ -16,7 +17,9 @@ $(document).ready(function(){
             $('body').css('background', '#68a780');
         });
     }
-    getbg();
+    window.onload = function () {
+        getbg();
+    };
     function getmenu () {
         $('#openmenu').on('click', function(e) {
             e.preventDefault();

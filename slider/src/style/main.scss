@@ -2,7 +2,6 @@
 @import "partials/resetstyle";
 @import "partials/fonts.scss";
 @import "partials/font-awesome.scss";
-@import "partials/header.scss";
 
 
 $font-ss: Arial, sans-serif;
@@ -33,6 +32,9 @@ div {
 body {
   background: $bg-color-slide1;
 }
+
+@import "partials/header.scss";
+
 
 .slide {
   //border: 1px solid black;
@@ -240,3 +242,5 @@ body {
   margin-left: 3px;
 }
 
+
+@import "partials/media.scss";

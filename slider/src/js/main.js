@@ -4,9 +4,8 @@ $(document).ready(function(){
     $('.bxslider').bxSlider();
 });
 
-
-$(document).ready(function(){
-    function getbg () {
+$(function(){
+    function getbg() {
         $('[data-slide-index = 0]').on('click', function () {
             $('body').css('background', '#6358c0');
         });
@@ -17,9 +16,8 @@ $(document).ready(function(){
             $('body').css('background', '#68a780');
         });
     }
-    window.onload = function () {
-        getbg();
-    };
+    getbg();
+
     function getmenu () {
         $('#openmenu').on('click', function(e) {
             e.preventDefault();

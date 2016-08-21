@@ -1,18 +1,23 @@
 {
-  "name": "slider",
+  "name": "test_1",
   "version": "1.0.0",
-  "description": "test for company Applikey solutions",
-  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssmin": "^0.1.7",
+    "gulp": "^3.9.5",
+    "gulp-imagemin": "^3.0.3",
+    "imagemin-pngquant": "^5.0.0",
     "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.9"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "gulp-rigger": "^0.5.8"
   },
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "description": ""
 }

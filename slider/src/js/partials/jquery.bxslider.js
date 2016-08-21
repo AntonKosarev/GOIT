@@ -1,13 +1,3 @@
-/**
- * BxSlider v4.1.2 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Copyright 2014, Steven Wanderski - http://stevenwanderski.com - http://bxcreative.com
- * Written while drinking Belgian ales and listening to jazz
- *
- * Released under the MIT license - http://opensource.org/licenses/MIT
- */
-
 ;(function($){
 
 	var plugin = {};
@@ -15,11 +5,11 @@
 	var defaults = {
 
 		// GENERAL
-		mode: 'horizontal',
+		mode: 'fade',
 		slideSelector: '',
 		infiniteLoop: true,
 		hideControlOnEnd: false,
-		speed: 400,
+		speed: 500,
 		easing: null,
 		slideMargin: 0,
 		startSlide: 0,
@@ -27,7 +17,7 @@
 		captions: false,
 		ticker: false,
 		tickerHover: false,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
 		adaptiveHeightSpeed: 500,
 		video: false,
 		useCSS: true,
@@ -52,16 +42,16 @@
 		pagerCustom: null,
 
 		// CONTROLS
-		//controls: true,
-		//nextText: 'Next',
-		//prevText: 'Prev',
-		//nextSelector: null,
-		//prevSelector: null,
-		//autoControls: false,
-		//startText: 'Start',
-		//stopText: 'Stop',
-		//autoControlsCombine: false,
-		//autoControlsSelector: null,
+		controls: false,
+		nextText: 'Next',
+		prevText: 'Prev',
+		nextSelector: null,
+		prevSelector: null,
+		autoControls: false,
+		startText: 'Start',
+		stopText: 'Stop',
+		autoControlsCombine: false,
+		autoControlsSelector: null,
 
 		// AUTO
 		auto: false,

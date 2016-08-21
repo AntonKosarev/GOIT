@@ -68,37 +68,38 @@
 /* PAGER */
 
 .bx-wrapper .bx-pager {
+	width: 10px;
+	position: absolute;
+	left: 95%;
+	top: 410px;
 	text-align: center;
-	font-size: .85em;
-	//font-family: Arial;
-	font-weight: bold;
-	color: #666;
-	padding-top: 20px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-	display: inline-block;
-	*zoom: 1;
-	*display: inline;
+	width: 10px;
+	height: 10px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
-	text-indent: -9999px;
 	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px;
+	width: 8px;
+	height: 8px;
+	margin: 24px 0;
+	background: rgba(255, 255, 255, 0.5);
+	text-indent: -9999px;
 	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 2px solid rgba(255, 255, 255, 0);
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+	border: 2px solid #fff;
+	background: rgba(255, 255, 255, 0);
+	margin: 24px 0;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */

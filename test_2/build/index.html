@@ -6,21 +6,41 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="header">
-        <header class="clearfix">
-            <ul class="social_network">
-                <li><a href="#"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google fa-inverse" aria-hidden="true"></i></a></li>
+    <div class="drop_menu">
+    
+        <div class="drop_menu-close">
+            <a id="closemenu" href="#">&#10006;</a>
+        </div>
+    
+        <div class="drop_menu-list">
+            <ul>
+                <li><a href="#">Item#1</a>
+                </li>
+                <li><a href="#">Item#2</a>
+                    <span class="clearfix">
+                        <i class="fa fa-plus fa-inverse" aria-hidden="true"></i>
+                    </span>
+                </li>
+                <li><a href="#">Item#3</a>
+                </li>
             </ul>
-            <div class="menu">
-                <a href="#"><i class="fa fa-bars fa-inverse" aria-hidden="true"></i></a>
-            </div>
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logotype"></a>
-            </div>
-        </header>
-    </header>
+        </div>
+    
+    
+    </div>
+<header class="header clearfix">
+    <ul class="social_network">
+        <li><a href="#"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google fa-inverse" aria-hidden="true"></i></a></li>
+    </ul>
+    <div class="menu">
+        <a id="openmenu" href="#"><i class="fa fa-bars fa-inverse" aria-hidden="true"></i></a>
+    </div>
+    <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="logotype"></a>
+    </div>
+</header>
 <ul class="bxslider">
     <li id="slide1">
         <div class="slide">
@@ -134,7 +154,10 @@
                     </div>
                     <div class="column">
                         <div class="slide3_video">
-                            <a href="#"><img src="img/photo.png" alt="#"></a>
+                            <img src="img/photo.png" alt="#">
+                            <div class="slide3_video-play">
+                                <a href="#"><img src="img/play.png" alt="play"></a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,4 +17,15 @@ $(document).ready(function(){
         });
     }
     getbg();
+    function getmenu () {
+        $('#openmenu').on('click', function(e) {
+            e.preventDefault();
+            $('.drop_menu').css('display', 'block');
+        });
+        $('#closemenu').on('click', function(e) {
+            e.preventDefault();
+            $('.drop_menu').css('display', 'none');
+        });
+    }
+    getmenu();
 });

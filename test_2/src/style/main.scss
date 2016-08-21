@@ -202,6 +202,18 @@ body {
 
   }
 }
+.slide3_video {
+  position: relative;
+}
+.slide3_video-play {
+  position: absolute;
+  top: 39.4%;
+  left: 44%;
+  padding: 28px;
+  &:hover {
+    cursor: pointer;
+  }
+}
 .mic,
 .paper,
 .globe,
@@ -227,3 +239,4 @@ body {
   background-position-y: -254px;
   margin-left: 3px;
 }
+

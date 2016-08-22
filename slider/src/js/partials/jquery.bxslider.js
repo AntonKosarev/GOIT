@@ -758,6 +758,25 @@
 				if(pagerIndex != slider.active.index) el.goToSlide(pagerIndex);
 				e.preventDefault();
 			}
+			//Моя модификация для изменения фона
+			var $bg = $('body');
+			var color = {
+				bg: 'background',
+				c: ['#6358c0',
+					'#61acec',
+					'#68a780'
+				]
+			};
+			var slide = [
+				$('a.bx-pager-link.active[data-slide-index = 0]').attr('data-slide-index'),
+				$('a.bx-pager-link.active[data-slide-index = 1]').attr('data-slide-index'),
+				$('a.bx-pager-link.active[data-slide-index = 2]').attr('data-slide-index')
+					];
+			for (var i=0;i<slide.length;i++) {
+				if (slide[i]==i) {
+					$bg.css(color.bg, color.c[i]);
+				}
+			}
 		}
 
 		/**

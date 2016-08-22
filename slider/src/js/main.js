@@ -23,16 +23,12 @@ $(function(){
 
     $('#openmenu').on('click', function(e) {
         e.preventDefault();
-        $('.drop_menu').animate({
-            width: '540px'
-        }, 1000);
+        $('.drop_menu').slideToggle();
     });
 
     $('#closemenu').on('click', function(e) {
         e.preventDefault();
-        $('.drop_menu').animate({
-            width: 0
-        }, 1000);
+        $('.drop_menu').slideToggle();
         closeSub($('#drop'));
     });
 

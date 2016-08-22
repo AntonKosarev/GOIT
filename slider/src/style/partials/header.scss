@@ -23,11 +23,11 @@ $font-ST: SolomonThin, Arial, sans-serif;
 
 //drop menu
 .drop_menu {
-  //display: none;
+  display: none;
   position: absolute;
-  top: 0;
   right: 0;
-  width: 0;
+  top: 0;
+  width: 540px;
   height: 100%;
   z-index: 100;
   font-family: $font-ST;

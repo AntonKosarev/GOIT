@@ -23,14 +23,12 @@ $font-ST: SolomonThin, Arial, sans-serif;
 
 //drop menu
 .drop_menu {
-  display: none;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
+  //display: none;
   position: absolute;
-  width: 540px;
-  height: 100%;
+  top: 0;
   right: 0;
+  height: 100%;
+  width: 0;
   z-index: 100;
   font-family: $font-ST;
   font-size: 30px;

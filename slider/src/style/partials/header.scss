@@ -27,8 +27,8 @@ $font-ST: SolomonThin, Arial, sans-serif;
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
   width: 0;
+  height: 100%;
   z-index: 100;
   font-family: $font-ST;
   font-size: 30px;
@@ -39,19 +39,19 @@ $font-ST: SolomonThin, Arial, sans-serif;
 }
 
 .drop_menu-close {
-  text-align: right;
   font-size: 26px;
-  margin: 32px 46px 0 0;
+  margin: 32px 46px 0 470px;
 }
 
 .drop_menu-list {
-  //border: 1px solid white;
   margin: 182px 0 0 0;
   ul {
-    width: 434px;
-    margin: 0 0 0 56px;
-    //border: 1px solid red;
+    width: 75%;
+    margin: 0 auto;
     line-height: 68px;
+  }
+  .submenu {
+    margin: 0;
   }
   li {
     border-bottom: 1px solid #9d9d9d;
@@ -61,16 +61,26 @@ $font-ST: SolomonThin, Arial, sans-serif;
   }
   div {
     float: right;
-    width: 24px;
-    height: 24px;
-    font-size: 16px;
-    border-radius: 12px;
-    background: #61acec;
-    margin: 22px 0 0 0;
-    line-height: 22px;
-    text-align: center;
-    i {
-      vertical-align: middle;
+    width: 6%;
+  }
+  img {
+    width: 100%;
+    max-width: 24px;
+    &:hover {
+      cursor: pointer;
     }
+  }
+}
+.submenu {
+  //display: none;
+  height: 0;
+  font-size: 22px;
+  overflow: hidden;
+  li {
+    border: none;
+    line-height: 40px;
+  }
+  li:last-child {
+    //padding-bottom: 20px;
   }
 }

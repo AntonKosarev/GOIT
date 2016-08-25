@@ -15,10 +15,16 @@ $font-ST: SolomonThin, Arial, sans-serif;
   width: 97px;
   height: 25px;
   margin: 0 auto 0;
+  .mobile {
+    display: none;
+  }
 }
 .menu {
   float: right;
   padding: 18px 2.6% 0 0;
+  #openmenu {
+    color: #fff;
+  }
 }
 
 //drop menu

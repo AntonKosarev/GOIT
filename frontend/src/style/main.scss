@@ -1,0 +1,160 @@
+@import "partials/resetstyle";
+@import "partials/fonts.scss";
+@import "partials/variable_miximas.scss";
+@import "partials/font-awesome.scss";
+@import "partials/jquery.bxslider";
+@import "partials/fonts-settings.scss";
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div {
+  //border: 1px solid red;
+}
+
+body {
+  background: $bg-color-slide1;
+}
+
+@import "partials/header.scss";
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 60%;
+  max-width: 1100px;
+  height: 100%;
+  min-height: 707px;
+  margin: auto;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+  width: 100%;
+  margin: auto;
+}
+
+//slide1
+.slide1 {
+  display: flex;
+  justify-content: space-around;
+  max-width: 990px;
+}
+.slide1-photo {
+  width: 40%;
+  max-width: 389px;
+  a {
+    width: 100%;
+  }
+}
+.slide1-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 49%;
+  max-width: 477px;
+  margin: 0 0 0 7%;
+}
+.slide1-button {
+  .button {
+    width: 255px;
+    background: #61acec;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 62px;
+    margin: 0 0 0 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//slide2
+.slide2 {
+  display: flex;
+  justify-content: space-around;
+  max-width: 970px;
+}
+
+.slide2-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-content: center;
+  text-align: right;
+  width: 24%;
+  max-width: 231px;
+
+}
+.slide2-photo {
+  align-self: center;
+  width: 48%;
+  max-width: 456px;
+  height: 100%;
+  .slide2_img-1 {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+//.slide2-photo_position {
+//  position: relative;
+//  .slide2_img-1 {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 77%;
+//    max-width: 348px;
+//    img {
+//      width: 100%;
+//    }
+//    &:hover {
+//      z-index: 1;
+//    }
+//  }
+//  .slide2_img-2 {
+//    position: absolute;
+//    top: 7%;
+//    left: 21%;
+//    width: 77%;
+//    max-width: 348px;
+//    img {
+//      width: 100%;
+//    }
+//    &:hover {
+//      z-index: 1;
+//    }
+//  }
+//}
+.slide2-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24%;
+  max-width: 231px;
+}
+
+//slide3
+.slide3 {
+  display: flex;
+  align-items: center;
+  max-width: 1096px;
+}
+.slide3-photo {
+  width: 54%;
+  max-width: 593px;
+  img {
+    width: 100%;
+  }
+}
+
+@import "partials/media.scss";

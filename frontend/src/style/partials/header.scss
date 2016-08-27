@@ -11,6 +11,7 @@ $font-ST: SolomonThin, Arial, sans-serif;
     padding: 16px 9px 0 0;
   }
 }
+
 .logo {
   width: 97px;
   height: 25px;
@@ -56,9 +57,6 @@ $font-ST: SolomonThin, Arial, sans-serif;
     margin: 0 auto;
     line-height: 68px;
   }
-  .submenu {
-    margin: 0;
-  }
   li {
     border-bottom: 1px solid #9d9d9d;
   }
@@ -82,11 +80,9 @@ $font-ST: SolomonThin, Arial, sans-serif;
   height: 0;
   font-size: 22px;
   overflow: hidden;
+  margin: 0;
   li {
     border: none;
     line-height: 40px;
-  }
-  li:last-child {
-    //padding-bottom: 20px;
   }
 }

@@ -5,6 +5,7 @@
 	var defaults = {
 
 		// GENERAL
+		//mode: 'vertical',
 		mode: 'fade',
 		slideSelector: '',
 		infiniteLoop: true,

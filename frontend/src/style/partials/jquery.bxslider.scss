@@ -15,7 +15,7 @@
     ===================================*/
 
 .bx-wrapper {
-	position: relative;
+	position: fixed;
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
@@ -69,7 +69,7 @@
 
 .bx-wrapper .bx-pager {
 	width: 10px;
-	position: absolute;
+	position: fixed;
 	left: 95%;
 	top: 40%;
 	text-align: center;

@@ -1,46 +1,56 @@
 //= partials/jquery.bxslider.js
+//= partials/jquery.tab.js
 var k=0;
 $(document).ready(function(){
     $('.bxslider').bxSlider();
 });
 
-$(function(){
+$(document).ready(function(){
+
+    var mod = {
+        submenu: $('.submenu'),
+        subopen: $('#openmenu'),
+        subclose: $('#closemenu'),
+        plus: $('#dropdat'),
+        plusdiv: $('#drop'),
+        plushtml: "<img src='img/plus.png' alt='+'>",
+        minushtml: "<img src='img/minus.png' alt='-'>",
+        dropmenu: $('.drop_menu')
+    };
+
     function openSub(click) {
-        $('.submenu').animate({
+        mod.submenu.animate({
             height: '140px'
-        }, 1000);
+        }, 500);
         $(click).attr("class", "up");
-        click.innerHTML = "<img src='img/minus.png' alt='-'>";
+        click.innerHTML = mod.minushtml;
     }
     function closeSub(click){
-        $('.submenu').animate({
+        mod.submenu.animate({
             height: '0'
-        }, 1000);
+        }, 500);
         $(click).attr("class", "drop");
-        click.innerHTML = "<img src='img/plus.png' alt='+'>"
-        console.log(click.innerHTML);
+        click.innerHTML = mod.plushtml;
     }
 
-    $('#openmenu').on('click', function(e) {
+    mod.subopen.on('tap', function(e) {
         e.preventDefault();
-        //$('.drop_menu').slideToggle();
-        $('.drop_menu').animate({width:'toggle'}, 500)
+        mod.dropmenu.animate({width:'toggle'}, 500);
     });
 
-    $('#closemenu').on('click', function(e) {
+    mod.subclose.on('tap', function(e) {
         e.preventDefault();
-        //$('.drop_menu').slideToggle();
-        $('.drop_menu').animate({width:'toggle'}, 500)
-        closeSub($('#drop'));
+        closeSub(mod.plusdiv);
+        mod.dropmenu.animate({width:'toggle'}, 500);
     });
 
-    $('#drop').on('click', function (e) {
+    mod.plus.on('tap', function (e) {
         e.preventDefault();
-        var $class = $(this).attr("class");
+        var $class = mod.plusdiv.attr("class");
         if ($class == 'drop') {
-            openSub(this);
+            openSub(mod.plusdiv);
         }else if ($class == 'up') {
-            closeSub(this);
+            closeSub(mod.plusdiv);
         }
     });
 });

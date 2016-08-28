@@ -21,6 +21,11 @@ body {
 
 @import "partials/header.scss";
 .slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +34,6 @@ body {
   max-width: 1100px;
   height: 100%;
   min-height: 707px;
-  margin: auto;
 }
 
 .slide1,

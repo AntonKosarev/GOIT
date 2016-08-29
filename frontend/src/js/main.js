@@ -1,56 +1,58 @@
+//= partials/jquery-1.12.4.js
 //= partials/jquery.bxslider.js
 //= partials/jquery.tab.js
-var k=0;
+
 $(document).ready(function(){
     $('.bxslider').bxSlider();
 });
 
 $(document).ready(function(){
 
-    var mod = {
+    var $mod = {
         submenu: $('.submenu'),
         subopen: $('#openmenu'),
         subclose: $('#closemenu'),
-        plus: $('#dropdat'),
         plusdiv: $('#drop'),
-        plushtml: "<img src='img/plus.png' alt='+'>",
-        minushtml: "<img src='img/minus.png' alt='-'>",
-        dropmenu: $('.drop_menu')
+        dropmenu: $('.drop_menu'),
+        plushtml: function() {
+            this.plusdiv.html("<img src='img/plus.png' alt='+'>");
+        },
+        minushtml: function() {
+            this.plusdiv.html("<img src='img/minus.png' alt='-'>");
+        }
     };
 
-    function openSub(click) {
-        mod.submenu.animate({
+    function openSub() {
+        $mod.submenu.animate({
             height: '140px'
-        }, 500);
-        $(click).attr("class", "up");
-        click.innerHTML = mod.minushtml;
+        }, 400);
+        $mod.plusdiv.attr("class", "up");
+        $mod.minushtml();
     }
-    function closeSub(click){
-        mod.submenu.animate({
+
+    function closeSub(){
+        $mod.submenu.animate({
             height: '0'
-        }, 500);
-        $(click).attr("class", "drop");
-        click.innerHTML = mod.plushtml;
+        }, 400);
+        $mod.plusdiv.attr("class", "drop");
+        $mod.plushtml();
     }
 
-    mod.subopen.on('tap', function(e) {
-        e.preventDefault();
-        mod.dropmenu.animate({width:'toggle'}, 500);
+    $mod.subopen.on('tap', function() {
+        $mod.dropmenu.animate({width:'toggle'}, 400);
     });
 
-    mod.subclose.on('tap', function(e) {
-        e.preventDefault();
-        closeSub(mod.plusdiv);
-        mod.dropmenu.animate({width:'toggle'}, 500);
+    $mod.subclose.on('tap', function() {
+        closeSub();
+        $mod.dropmenu.animate({width:'toggle'}, 400);
     });
 
-    mod.plus.on('tap', function (e) {
-        e.preventDefault();
-        var $class = mod.plusdiv.attr("class");
-        if ($class == 'drop') {
-            openSub(mod.plusdiv);
-        }else if ($class == 'up') {
-            closeSub(mod.plusdiv);
+    $mod.plusdiv.on('tap', function () {
+        var klass = this.getAttribute('class');
+        if (klass == 'drop') {
+            openSub();
+        }else if (klass == 'up') {
+            closeSub();
         }
     });
 });

@@ -38,7 +38,7 @@
 		pager: true,
 		pagerType: 'full',
 		pagerShortSeparator: ' / ',
-		pagerSelector: null,
+		pagerSelector: 'div.pager',
 		buildPager: null,
 		pagerCustom: null,
 

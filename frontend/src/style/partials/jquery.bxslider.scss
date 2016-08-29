@@ -15,7 +15,7 @@
     ===================================*/
 
 .bx-wrapper {
-	position: fixed;
+	//position: fixed;
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
@@ -67,22 +67,23 @@
 
 /* PAGER */
 
-.bx-wrapper .bx-pager {
+.pager .bx-pager {
 	width: 10px;
-	position: fixed;
+	position: absolute;
 	left: 95%;
-	top: 40%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
-.bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.pager .bx-pager .bx-pager-item,
+.pager .bx-controls-auto .bx-controls-auto-item {
 	width: 10px;
 	height: 10px;
 	margin: 24px 0;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
+.pager .bx-pager.bx-default-pager a {
 	display: block;
 	width: 8px;
 	height: 8px;
@@ -95,8 +96,8 @@
 	border: 2px solid rgba(255, 255, 255, 0);
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active {
+.pager .bx-pager.bx-default-pager a:hover,
+.pager .bx-pager.bx-default-pager a.active {
 	border: 2px solid #fff;
 	background: rgba(255, 255, 255, 0);
 	//margin: 24px 0;

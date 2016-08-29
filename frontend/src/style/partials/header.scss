@@ -57,6 +57,9 @@ $font-ST: SolomonThin, Arial, sans-serif;
     margin: 0 auto;
     line-height: 68px;
   }
+  .submenu {
+    margin-left: 0;
+  }
   li {
     border-bottom: 1px solid #9d9d9d;
   }
@@ -76,11 +79,9 @@ $font-ST: SolomonThin, Arial, sans-serif;
   }
 }
 .submenu {
-  //display: none;
   height: 0;
   font-size: 22px;
   overflow: hidden;
-  margin: 0;
   li {
     border: none;
     line-height: 40px;

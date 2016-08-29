@@ -13,30 +13,4 @@ $bg-color-slide1: #6358c0;
 $bg-color-slide2: #61acec;
 $bg-color-slide3: #68a780;
 
-//Sprites
-.mic,
-.paper,
-.globe,
-.img {
-  width: 66px;
-  height: 66px;
-  background: url("../img/sprites_slide2.png") no-repeat;
-}
-.mic {
-  float: right;
-  background-position-y: 0;
-}
-.paper {
-  float: right;
-  background-position-y: -86px;
-  margin-top: 62px;
-}
-.globe {
-  float: left;
-  background-position-y: -170px;
-}
-.img {
-  float: left;
-  background-position-y: -254px;
-  margin: 62px 0 0 3px;
-}
+

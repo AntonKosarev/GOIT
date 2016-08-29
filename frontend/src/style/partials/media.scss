@@ -1,6 +1,6 @@
 /* Desktops and laptops ----------- */
 @media only screen
-and (max-width: 480px) {
+and (max-width: 760px) {
  .header {
     position: absolute;
     top: 0;
@@ -74,6 +74,7 @@ and (max-width: 480px) {
   .slide2 {
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
   }
   .slide2-left,
   .slide2-right {

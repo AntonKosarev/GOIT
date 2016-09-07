@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="template.css" type="text/css" media="screen">
+        <!-- MOBILE head inclusions part - externally insert script importing here  -->
+        <!--///mobile_inclusions_head///-->
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/TweenMax.min.js" ></script>
+        <script type="text/javascript" src="js/plugins/TextPlugin.min.js" ></script>
+        <script type="text/javascript" src="js/AppExtension.js" ></script>
+
+        <script type="text/javascript" >
+        // 0 value - so the JS can take all available canvas size
+        // !IMPORTANT! keep the formatting below intact!
+        app_width = window.innerWidth;
+        app_height = window.innerHeight;
+
+        var pause_url = "ireload_button.png";
+        var closing_logo_url = "treever_bug_words_name.png";
+    	var photo_back_url = "Austin_Halloween_in_the_streets.jpg";
+
+    	//----------------------------------------------------
+    	var photo_0_url = "theme_2/hw1.jpg";
+    	var photo_1_url = "theme_2/hw2.jpg";
+    	var photo_2_url = "theme_2/hw3.jpg";
+    	var photo_3_url = "theme_2/hw4.jpg";
+    	
+    	var sound_0_url = "Highway To Hell.mp3";
+    	var quote_0_text = "You only live once, but if you do it right, once is enough.";
+    	var quote_0_author = "- Mae West"; 
+    	
+        // MOBILE body inclusions part - externally insert script importing here
+        ///mobile_inclusions_body_01///
+          
+        window.onload = function() {
+            
+            var audio = document.getElementById('audio');
+            var source = document.getElementById('sound_0_id');
+            source.src = sound_0_url;
+            
+            audio.load(); //call this to just preload the audio without playing
+            // audio.play(); //call this to play the song right away
+        }
+
+        </script>
+    </head>
+    <body>
+
+        <!-- template's image items -->
+        <div id="backgroundDiv"><img id="background" src="Austin_Halloween_in_the_streets.jpg"></div>
+        <div id="photo_1Div"><img id="photo_1" src="theme_2/hw1.jpg"></div>
+        <div id="photo_2Div"><img id="photo_2" src="theme_2/hw2.jpg"></div>
+        <div id="photo_3Div"><img id="photo_3" src="theme_2/hw3.jpg"></div>
+        <div id="photo_4Div"><img id="photo_4" src="theme_2/hw4.jpg"></div>
+      
+
+        <div id="quote_screen"></div>
+        <div id="quote">
+            <span id="quote_text"></span><br /><span id="quote_author"></span>
+        </div>
+
+        <!-- end template's image items -->
+
+        <div id="touch_screen">
+            <img id="play_button" src="just_leaves_play.png">
+        </div>
+        <script type="text/javascript">
+            // init all listenners
+            initListenners();
+
+            // REFERENCES
+            // references for the animation engine
+            // GSAP Docs - http://greensock.com/docs/#/HTML5/GSAP/
+            // GSAP Timeline - http://greensock.com/docs/#/HTML5/GSAP/TimelineMax/
+
+            //moove model
+            var fotoTo = {
+                f1: [
+                    {left: "100%", right: "50%", top: "0%", bottom: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "0%", right: "80%", bottom: "60%", top: "0%", scale: "0.4", alpha: "1", rotation: 360}
+                ],
+                f2: [
+                    {left: "100%", right: "50%", top: "100%", bottom: "0%", scale: "0.8", alpha: "1"},
+                    {left: "50%", right: "0%", bottom: "0%", top: "50%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "0%", right: "80%", bottom: "0%", top: "50%", scale: "0.4", alpha: "1", rotation: 360}
+                ],
+                f3: [
+                    {left: "0%", right: "100%", top: "100%", bottom: "0%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "0%", top: "50%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "80%", right: "0%", bottom: "0%", top: "50%", scale: "0.4", alpha: "1", rotation: 360}
+                ],
+                f4: [
+                    {left: "80%", right: "100%", top: "0%", bottom: "100%", scale: "0.8", alpha: "1"},
+                    {left: "55.5%", right: "50%", top: "0%", bottom: "60%", scale: "0.4", alpha: "1", rotation: 360}
+                ]
+            };
+
+
+            // create timeline scene
+            timeline // IMPORTANT! TimelineMax object is created externally. Use timeline variable as default timeline variable
+            
+            .call (extension_onStartAnimation)  // extension call extension_onStartAnimation when before treeve animation is started.
+                                                // Please refer .call() method of Timeline object.
+            
+            .to("#background", 30, {right:"0%", ease:Power0.easeNone}, 0)
+            
+            .call(extension_onEndAnimation) // extension call extension_onEndAnimation when ALL treeve animation is finished. 
+                                            // Please refer .call() method of Timeline object.
+                                            // Reposition this call as you wish - just to be called in the end
+
+
+            .add("photo_1", 0) // keyframe label "photo_1"
+            .from("#photo_1", 5, {alpha:"0", scale:"0.2"}, "photo_1")
+            .to("#photo_1", 1, fotoTo.f1[0], "photo_1+=6")
+            .to("#photo_1", 1, fotoTo.f1[1], "photo_1+=7.5")
+            .to("#photo_1", 1, fotoTo.f1[2], "photo_1+=10")
+
+
+            .add("photo_2", 6) // keyframe label "photo_2"
+            .from("#photo_2", 5, {alpha:"0", scale:"0.2"}, "photo_2")
+            .to("#photo_2", 1, fotoTo.f2[0], "photo_2+=6")
+            .to("#photo_2", 1, fotoTo.f2[1], "photo_2+=7.5")
+            .to("#photo_2", 1, fotoTo.f2[2], "photo_2+=10")
+
+            .add("photo_3", 12) // keyframe label "photo_3"
+            .from("#photo_3", 3, {alpha:"0", scale:"0.2"}, "photo_3")
+            .to("#photo_3", 1, fotoTo.f3[0], "photo_3+=4")
+            .to("#photo_3", 1, fotoTo.f3[1], "photo_3+=5.5")
+            .to("#photo_3", 1, fotoTo.f3[2], "photo_3+=8")
+
+
+            .add("photo_4", 16) // keyframe label "photo_4"
+            .from("#photo_4", 3, {alpha:"0", scale:"0.2"}, "photo_4")
+            .to("#photo_4", 1, fotoTo.f4[0], "photo_4+=4")
+            .to("#photo_4", 1, fotoTo.f4[1], "photo_4+=6")
+
+            .add("quote", 26) // keyframe label "quote"
+            .from("#quote_screen", 2, {alpha:"0", scale:"2"}, "quote")
+            .to("#quote_text", 1, {text:quote_0_text}, "quote+=1")
+            .to("#quote_author", 1, {text:quote_0_author}, "quote+=2");
+
+
+
+                
+        </script>
+
+        <audio id="audio">
+          <source id="sound_0_id" type="audio/mp3" src="Highway To Hell.mp3">
+            Your device does not support HTML5 audio.
+        </audio>
+    </body>
+</html>

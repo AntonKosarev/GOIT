@@ -24,10 +24,14 @@
     	var photo_1_url = "theme_2/hw2.jpg";
     	var photo_2_url = "theme_2/hw3.jpg";
     	var photo_3_url = "theme_2/hw4.jpg";
-    	
+    	var photo_4_url = "theme_2/hw5.jpg";
+    	var photo_5_url = "theme_2/hw6.jpg";
+    	var photo_6_url = "theme_2/hw7.jpg";
+    	var photo_7_url = "theme_2/hw8.jpg";
+
     	var sound_0_url = "Highway To Hell.mp3";
-    	var quote_0_text = "You only live once, but if you do it right, once is enough.";
-    	var quote_0_author = "- Mae West"; 
+    	var quote_0_text = "Last night you were unhinged. You were like some desperate howling demon.</br>You frightened me. Do it again.";
+    	var quote_0_author = "- The Addam's Family";
     	
         // MOBILE body inclusions part - externally insert script importing here
         ///mobile_inclusions_body_01///
@@ -52,7 +56,11 @@
         <div id="photo_2Div"><img id="photo_2" src="theme_2/hw2.jpg"></div>
         <div id="photo_3Div"><img id="photo_3" src="theme_2/hw3.jpg"></div>
         <div id="photo_4Div"><img id="photo_4" src="theme_2/hw4.jpg"></div>
-      
+        <div id="photo_5Div"><img id="photo_5" src="theme_2/hw5.jpg"></div>
+        <div id="photo_6Div"><img id="photo_6" src="theme_2/hw6.jpg"></div>
+        <div id="photo_7Div"><img id="photo_7" src="theme_2/hw7.jpg"></div>
+        <div id="photo_8Div"><img id="photo_8" src="theme_2/hw8.jpg"></div>
+
 
         <div id="quote_screen"></div>
         <div id="quote">
@@ -76,73 +84,125 @@
             //moove model
             var fotoTo = {
                 f1: [
-                    {left: "100%", right: "50%", top: "0%", bottom: "100%", scale: "0.8", alpha: "1"},
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
                     {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
-                    {left: "0%", right: "80%", bottom: "60%", top: "0%", scale: "0.4", alpha: "1", rotation: 360}
+                    {left: "0%", right: "100%", bottom: "60%", top: "0%", scale: "0.4", alpha: "0.8", rotation: 360}
                 ],
                 f2: [
-                    {left: "100%", right: "50%", top: "100%", bottom: "0%", scale: "0.8", alpha: "1"},
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
                     {left: "50%", right: "0%", bottom: "0%", top: "50%", scale: "0.6", alpha: "1", rotation: -180},
-                    {left: "0%", right: "80%", bottom: "0%", top: "50%", scale: "0.4", alpha: "1", rotation: 360}
+                    {left: "0%", right: "20%", bottom: "60%", top: "0%", scale: "0.4", alpha: "0.8", rotation: 360}
                 ],
                 f3: [
-                    {left: "0%", right: "100%", top: "100%", bottom: "0%", scale: "0.8", alpha: "1"},
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
                     {left: "0%", right: "50%", bottom: "0%", top: "50%", scale: "0.6", alpha: "1", rotation: -180},
-                    {left: "80%", right: "0%", bottom: "0%", top: "50%", scale: "0.4", alpha: "1", rotation: 360}
+                    {left: "20%", right: "0%", bottom: "60%", top: "0%", scale: "0.4", alpha: "0.8", rotation: 360}
                 ],
                 f4: [
-                    {left: "80%", right: "100%", top: "0%", bottom: "100%", scale: "0.8", alpha: "1"},
-                    {left: "55.5%", right: "50%", top: "0%", bottom: "60%", scale: "0.4", alpha: "1", rotation: 360}
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "60%", right: "0%", bottom: "60%", top: "0%", scale: "0.4", alpha: "0.8", rotation: 360}
+                ],
+                f5: [
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "0%", right: "100%", bottom: "0%", top: "40%", scale: "0.4", alpha: "0.8", rotation: 360}
+                ],
+                f6: [
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "0%", right: "20%", bottom: "0%", top: "40%", scale: "0.4", alpha: "0.8", rotation: 360}
+                ],
+                f7: [
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "20%", right: "0%", bottom: "0%", top: "40%", scale: "0.4", alpha: "0.8", rotation: 360}
+                ],
+                f8: [
+                    {left: "100%", right: "50%", bottom: "0%", top: "100%", scale: "0.8", alpha: "1"},
+                    {left: "0%", right: "50%", bottom: "80%", top: "0%", scale: "0.6", alpha: "1", rotation: -180},
+                    {left: "60%", right: "0%", bottom: "0%", top: "40%", scale: "0.4", alpha: "0.8", rotation: 360}
                 ]
             };
 
+            var paceFrom = 2,
+                paceTo = 4;
 
             // create timeline scene
             timeline // IMPORTANT! TimelineMax object is created externally. Use timeline variable as default timeline variable
-            
+
             .call (extension_onStartAnimation)  // extension call extension_onStartAnimation when before treeve animation is started.
                                                 // Please refer .call() method of Timeline object.
-            
+
             .to("#background", 30, {right:"0%", ease:Power0.easeNone}, 0)
-            
-            .call(extension_onEndAnimation) // extension call extension_onEndAnimation when ALL treeve animation is finished. 
+
+            .call(extension_onEndAnimation) // extension call extension_onEndAnimation when ALL treeve animation is finished.
                                             // Please refer .call() method of Timeline object.
                                             // Reposition this call as you wish - just to be called in the end
 
 
             .add("photo_1", 0) // keyframe label "photo_1"
-            .from("#photo_1", 5, {alpha:"0", scale:"0.2"}, "photo_1")
-            .to("#photo_1", 1, fotoTo.f1[0], "photo_1+=6")
-            .to("#photo_1", 1, fotoTo.f1[1], "photo_1+=7.5")
-            .to("#photo_1", 1, fotoTo.f1[2], "photo_1+=10")
+            .from("#photo_1", paceFrom, {alpha:"0", scale:"0.2"}, "photo_1")
+            .to("#photo_1", paceTo, fotoTo.f1[0], "photo_1+=1")
+            .to("#photo_1", paceTo, fotoTo.f1[1], "photo_1+=2")
+            .to("#photo_1", paceTo, fotoTo.f1[2], "photo_1+=3")
+                .to("#photo_1", paceTo, {scale:"0.2", alpha:"0"}, "photo_1+=31")
 
 
-            .add("photo_2", 6) // keyframe label "photo_2"
-            .from("#photo_2", 5, {alpha:"0", scale:"0.2"}, "photo_2")
-            .to("#photo_2", 1, fotoTo.f2[0], "photo_2+=6")
-            .to("#photo_2", 1, fotoTo.f2[1], "photo_2+=7.5")
-            .to("#photo_2", 1, fotoTo.f2[2], "photo_2+=10")
+            .add("photo_2", 3) // keyframe label "photo_2"
+            .from("#photo_2", paceFrom, {alpha:"0", scale:"0.2"}, "photo_2")
+            .to("#photo_2", paceTo, fotoTo.f2[0], "photo_2+=1")
+            .to("#photo_2", paceTo, fotoTo.f2[1], "photo_2+=2")
+            .to("#photo_2", paceTo, fotoTo.f2[2], "photo_2+=3")
+                .to("#photo_2", paceTo, {scale:"0.2", alpha:"0"}, "photo_2+=28")
 
-            .add("photo_3", 12) // keyframe label "photo_3"
-            .from("#photo_3", 3, {alpha:"0", scale:"0.2"}, "photo_3")
-            .to("#photo_3", 1, fotoTo.f3[0], "photo_3+=4")
-            .to("#photo_3", 1, fotoTo.f3[1], "photo_3+=5.5")
-            .to("#photo_3", 1, fotoTo.f3[2], "photo_3+=8")
+            .add("photo_3", 6) // keyframe label "photo_3"
+            .from("#photo_3", paceFrom, {alpha:"0", scale:"0.2"}, "photo_3")
+            .to("#photo_3", paceTo, fotoTo.f3[0], "photo_3+=1")
+            .to("#photo_3", paceTo, fotoTo.f3[1], "photo_3+=2")
+            .to("#photo_3", paceTo, fotoTo.f3[2], "photo_3+=3")
+                    .to("#photo_3", paceTo, {scale:"0.2", alpha:"0"}, "photo_3+=25")
 
+            .add("photo_4", 9) // keyframe label "photo_4"
+            .from("#photo_4", paceFrom, {alpha:"0", scale:"0.2"}, "photo_4")
+            .to("#photo_4", paceTo, fotoTo.f4[0], "photo_4+=1")
+            .to("#photo_4", paceTo, fotoTo.f4[1], "photo_4+=2")
+            .to("#photo_4", paceTo, fotoTo.f4[2], "photo_4+=3")
+                    .to("#photo_4", paceTo, {scale:"0.2", alpha:"0"}, "photo_4+=22")
 
-            .add("photo_4", 16) // keyframe label "photo_4"
-            .from("#photo_4", 3, {alpha:"0", scale:"0.2"}, "photo_4")
-            .to("#photo_4", 1, fotoTo.f4[0], "photo_4+=4")
-            .to("#photo_4", 1, fotoTo.f4[1], "photo_4+=6")
+            .add("photo_5", 12) // keyframe label "photo_5"
+            .from("#photo_5", paceFrom, {alpha:"0", scale:"0.2"}, "photo_5")
+            .to("#photo_5", paceTo, fotoTo.f5[0], "photo_5+=1")
+            .to("#photo_5", paceTo, fotoTo.f5[1], "photo_5+=2")
+            .to("#photo_5", paceTo, fotoTo.f5[2], "photo_5+=3")
+                    .to("#photo_5", paceTo, {scale:"0.2", alpha:"0"}, "photo_5+=19")
 
-            .add("quote", 26) // keyframe label "quote"
+            .add("photo_6", 15) // keyframe label "photo_6"
+            .from("#photo_6", paceFrom, {alpha:"0", scale:"0.2"}, "photo_6")
+            .to("#photo_6", paceTo, fotoTo.f6[0], "photo_6+=1")
+            .to("#photo_6", paceTo, fotoTo.f6[1], "photo_6+=2")
+            .to("#photo_6", paceTo, fotoTo.f6[2], "photo_6+=3")
+                    .to("#photo_6", paceTo, {scale:"0.2", alpha:"0"}, "photo_6+=16")
+
+            .add("photo_7", 18) // keyframe label "photo_7"
+            .from("#photo_7", paceFrom, {alpha:"0", scale:"0.2"}, "photo_7")
+            .to("#photo_7", paceTo, fotoTo.f7[0], "photo_7+=1")
+            .to("#photo_7", paceTo, fotoTo.f7[1], "photo_7+=2")
+            .to("#photo_7", paceTo, fotoTo.f7[2], "photo_7+=3")
+                    .to("#photo_7", paceTo, {scale:"0.2", alpha:"0"}, "photo_7+=13")
+
+            .add("photo_8", 21) // keyframe label "photo_8"
+            .from("#photo_8", paceFrom, {alpha:"0", scale:"0.2"}, "photo_8")
+            .to("#photo_8", paceTo, fotoTo.f8[0], "photo_8+=1")
+            .to("#photo_8", paceTo, fotoTo.f8[1], "photo_8+=2")
+            .to("#photo_8", paceTo, fotoTo.f8[2], "photo_8+=3")
+                    .to("#photo_8", paceTo, {scale:"0.2", alpha:"0"}, "photo_8+=10")
+
+            .add("quote", 30) // keyframe label "quote"
             .from("#quote_screen", 2, {alpha:"0", scale:"2"}, "quote")
             .to("#quote_text", 1, {text:quote_0_text}, "quote+=1")
-            .to("#quote_author", 1, {text:quote_0_author}, "quote+=2");
+            .to("#quote_author", 1, {text:quote_0_author}, "quote+=2")
 
-
-
-                
         </script>
 
         <audio id="audio">

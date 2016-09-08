@@ -4,9 +4,25 @@ var isPlaying = true;
 
 
 function initListenners () {
+            //var gallerey = [
+            //    $("#photo_1"),
+            //    $("#photo_2"),
+            //    $("#photo_3"),
+            //    $("#photo_4"),
+            //    $("#photo_5"),
+            //    $("#photo_6"),
+            //    $("#photo_7"),
+            //    $("#photo_8")
+            //];
+
     console.log ("init listenners...");
     $("#touch_screen").click(function() {
         if (timeline.progress() == 1) {
+
+            //for (var i=0;i<gallerey.length;i++) {
+            //    gallerey[i].attr('style', 'opacity: 0;');
+            //}
+            //timeline.reverse();
             timeline.restart();
 
             isPlaying = true;

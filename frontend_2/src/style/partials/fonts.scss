@@ -1,0 +1,21 @@
+/*
+1. шрифт в формате eot для работы в IE 6/7/8
+2. шрифт в формате woff для работы в IE9+, FF3.6+, Chrome 5+
+3. шрифт в формате ttf
+4. шрифт в формате svg для работы в iOS младше 4.2
+5. css файл с кроссбраузерной записью @font-face
+6. демо страница с примером подключения шрифта и инструкцией
+*/
+@font-face {
+  font-family: CoreSansNRW0145RegularIt;
+  src: url('../fonts/CoreSansNRW0145RegularIt.eot');
+  src: url('../fonts/CoreSansNRW0145RegularIt.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CoreSansNRW0145RegularIt.woff') format('woff'),
+  url('../fonts/CoreSansNRW0145RegularIt.ttf') format('truetype'),
+  url('../fonts/CoreSansNRW0145RegularIt.otf') format('opentype'),
+  url('../fonts/CoreSansNRW0145RegularIt.svg') format('svg');
+}
+@font-face {
+  font-family: CoreSansNR45Regular;
+  src: url('../fonts/CoreSansNR45Regular.woff') format('woff');
+}

@@ -1,0 +1,297 @@
+@charset "UTF-8";
+@font-face {
+  font-family: MyriadPro-regular;
+  src: url("fonts/MyriadPro/MyriadPro-regular.eot");
+  /* IE9*/
+  src: url("fonts/MyriadPro/MyriadPro-regular.woff") format("woff"), url("fonts/MyriadPro/MyriadPro-regular.ttf") format("truetype"), url("fonts/MyriadPro/MyriadPro-regular.svg#MyriadPro-Cond") format("svg");
+  /* iOS 4.1- */ }
+
+@font-face {
+  font-family: "Zurich BT";
+  src: url("fonts/Zurich BT/Zurich BT.eot");
+  /* IE9*/
+  src: url("fonts/Zurich BT/Zurich BT.woff") format("woff"), url("fonts/Zurich BT/Zurich BT.ttf") format("truetype"), url("fonts/Zurich BT/Zurich BT.svg#Zurich BT") format("svg");
+  /* iOS 4.1- */ }
+
+@font-face {
+  font-family: KlavikaMedium-Plain;
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.eot");
+  /* IE9*/
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.woff") format("woff"), url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.ttf") format("truetype"), url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.svg#Zurich BT") format("svg");
+  /* iOS 4.1- */ }
+
+/*#005c13 0px -2px 0px;*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  background: #ece6d6;
+  min-height: 100%;
+  font-family: Arial, san-serif; }
+
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto 100px; }
+
+/* Стили для шапки */
+.header-logo {
+  float: left; }
+
+.header-right {
+  float: right;
+  text-align: right; }
+  .header-right p {
+    color: #373737;
+    font-family: MyriadPro-regular, Arial, san-serif; }
+
+.header-right__nav {
+  color: #209a28;
+  font-family: "Zurich BT", Arial, san-serif; }
+  .header-right__nav li {
+    display: inline-block; }
+
+.header-nav {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url(pie/PIE.htc);
+  background: #65c13e;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#65c13e), to(#0f941a));
+  background: -webkit-linear-gradient(#65c13e, #0f941a);
+  background: -moz-linear-gradient(#65c13e, #0f941a);
+  background: -ms-linear-gradient(#65c13e, #0f941a);
+  background: -o-linear-gradient(#65c13e, #0f941a);
+  background: linear-gradient(#65c13e, #0f941a);
+  behavior: url(pie/PIE.htc);
+  color: #fff;
+  font-family: "Zurich BT", Arial, san-serif;
+  text-align: center; }
+  .header-nav li {
+    display: inline-block; }
+
+/* end Стили для шапки */
+.content-wrapper {
+  background: #f4f2ec; }
+
+.main-content {
+  padding: 50px 0;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  font-family: "Zurich BT", Arial, san-serif; }
+
+.bttxt h1 {
+  text-transform: capitalize; }
+
+/* Стили для banners -------------------------------------------------------------*/
+.main-content__banner {
+  position: relative; }
+
+.banner-pager {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  width: 250px;
+  height: 266px;
+  background: rgba(37, 29, 20, 0.9);
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  behavior: url(pie/PIE.htc);
+  z-index: 100; }
+  .banner-pager h1 {
+    color: #209a28;
+    font-family: "Zurich BT", Arial, san-serif; }
+    .banner-pager h1 span {
+      color: #fff; }
+  .banner-pager p {
+    color: #fff;
+    font-family: Arial, san-serif; }
+    .banner-pager p span {
+      color: #209a28; }
+
+/* end Стили для banners ---------------------------------------*/
+/* Стили для формы справа --------------------------------------*/
+aside {
+  padding: 50px 0;
+  width: 251px;
+  float: right;
+  color: #3f3b30; }
+  aside h1 {
+    font-family: MyriadPro-regular, Arial, san-serif; }
+  aside input {
+    font-family: KlavikaMedium-Plain, Arial, san-serif;
+    text-transform: uppercase; }
+
+/* end Стили для формы справа ----------------------------------*/
+/* Стили для табов ---------------------------------------------*/
+.tabs {
+  position: relative; }
+
+.tabs {
+  /* миксины неиспользовал для закругления части углов*/ }
+  .tabs label {
+    color: #444137;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #cfcdc5;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#f4f3f1));
+    background: -webkit-linear-gradient(#fff, #f4f3f1);
+    background: -moz-linear-gradient(#fff, #f4f3f1);
+    background: -ms-linear-gradient(#fff, #f4f3f1);
+    background: -o-linear-gradient(#fff, #f4f3f1);
+    background: linear-gradient(#fff, #f4f3f1);
+    behavior: url(pie/PIE.htc);
+    /* миксины неиспользовал для поддержки ИЕ9+*/
+    -webkit-box-shadow: inset 0 -2px 0 0 white;
+    -moz-box-shadow: inset -2px 0 0 white;
+    box-shadow: inset 0 -2px 0 0 white;
+    behavior: url(pie/PIE.htc); }
+  .tabs #tab_l1 {
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    behavior: url(pie/PIE.htc); }
+  .tabs #tab_l3 {
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    behavior: url(pie/PIE.htc); }
+
+/* Стрелочки на CSS -----------------------------------------------------*/
+.arrow-right,
+.arrow-bottom {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  z-index: 10; }
+
+.arrow-right {
+  top: 18px;
+  border-left-color: #0f941a;
+  border-right: 0; }
+
+.arrow-bottom {
+  top: 42px;
+  border-top-color: #0f941a;
+  border-bottom: 0;
+  display: none; }
+
+#arrow-right__1 {
+  left: 5%; }
+
+#arrow-right__2 {
+  left: 35%; }
+
+#arrow-right__3 {
+  left: 65%; }
+
+#arrow-bottom__1 {
+  left: 14%; }
+
+#arrow-bottom__2 {
+  left: 44%; }
+
+#arrow-bottom__3 {
+  left: 74%; }
+
+.tabs input {
+  position: absolute;
+  left: -9999px; }
+
+#tab_1:checked ~ #arrow-right__1,
+#tab_2:checked ~ #arrow-right__2,
+#tab_3:checked ~ #arrow-right__3 {
+  display: none; }
+
+#tab_1:checked ~ #arrow-bottom__1,
+#tab_2:checked ~ #arrow-bottom__2,
+#tab_3:checked ~ #arrow-bottom__3 {
+  display: block; }
+
+/* end Стрелочки на CSS ---------------------------------------------------*/
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3 {
+  color: #fff;
+  background: #65c13e;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#65c13e), to(#0f941a));
+  background: -webkit-linear-gradient(#65c13e, #0f941a);
+  background: -moz-linear-gradient(#65c13e, #0f941a);
+  background: -ms-linear-gradient(#65c13e, #0f941a);
+  background: -o-linear-gradient(#65c13e, #0f941a);
+  background: linear-gradient(#65c13e, #0f941a);
+  behavior: url(pie/PIE.htc);
+  border: 1px solid #0c932f;
+  box-shadow: none;
+  z-index: 3; }
+
+.tabs_cont {
+  width: 100%;
+  color: #3a3731;
+  position: relative;
+  z-index: 2; }
+  .tabs_cont article {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top; }
+
+.tabs_cont > div {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  opacity: 0;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out; }
+
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3 {
+  position: static;
+  left: 0;
+  opacity: 1; }
+
+/* end Стили для табов -----------------------------------------------------------*/
+/*Стили для нижнего блока----------------------------------------------------------*/
+.fbar {
+  background: #f4f2ec;
+  text-align: center; }
+
+.fbar-head {
+  border-bottom: 3px solid #635543;
+  background: #878176; }
+
+.fbar-left,
+.fbar-center,
+.fbar-right {
+  width: 30%;
+  display: inline-block; }
+
+.fbar-center li {
+  display: inline-block; }
+
+/*end Стили для нижнего блока------------------------------------------------------*/
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px 0;
+  text-align: center; }

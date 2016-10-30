@@ -52,13 +52,18 @@ header {
   float: right;
   text-align: right; }
   .header-right p {
-    color: #373737;
+    text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75);
+    color: #585755;
+    font-size: 12px;
+    font-weight: 400;
     font-family: MyriadPro-regular, Arial, san-serif; }
   .header-right span {
     font-family: MyriadPro-regular, Arial, san-serif;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    color: #373737;
+    font-weight: 400; }
 
 .header-right__nav {
   color: #209a28;
@@ -100,7 +105,7 @@ header {
     display: inline-block;
     padding: 12px 5px; }
   .header-nav a:hover {
-    color: black; }
+    color: #dbdbdb; }
 
 /* end Стили для шапки */
 .home {
@@ -124,16 +129,16 @@ header {
   border-radius: 5px;
   behavior: url(pie/PIE.htc); }
 
-.bttxt {
+.btxt {
   position: relative;
   margin: -32px 0 0 0; }
-  .bttxt h1 {
+  .btxt h1 {
     color: #444137;
     font-family: "Zurich BT", Arial, san-serif;
     font-size: 23px;
     font-weight: 400;
     text-transform: uppercase; }
-  .bttxt p {
+  .btxt p {
     margin: 11px 0 23px 0;
     width: 416px;
     height: 33px;
@@ -143,11 +148,11 @@ header {
     color: #595447;
     font-weight: 400;
     word-spacing: -1px; }
-  .bttxt a {
+  .btxt a {
     color: #28b028;
     font-weight: 700;
     text-decoration: underline; }
-  .bttxt img {
+  .btxt img {
     position: absolute;
     right: 62px;
     bottom: -38px;
@@ -213,48 +218,32 @@ header {
       font-family: Arial, sans-serif;
       font-size: 12px;
       font-weight: 400;
-      margin: 7px 0 15px 0; }
+      margin: 7px 0 11px 0; }
     .right-form .holidaysearch select {
+      margin: 0 0 14px 0;
       position: relative;
       display: block;
-      width: 199px;
-      height: 25px;
-      border: 1px solid #cfcdc5;
-      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de;
-      background: white;
-      background: -webkit-gradient(linear, 0 0, 0 bottom, from(white), to(#f4f3f1));
-      background: -webkit-linear-gradient(white, #f4f3f1);
-      background: -moz-linear-gradient(white, #f4f3f1);
-      background: -ms-linear-gradient(white, #f4f3f1);
-      background: -o-linear-gradient(white, #f4f3f1);
-      background: linear-gradient(white, #f4f3f1);
-      behavior: url(pie/PIE.htc);
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      behavior: url(pie/PIE.htc);
-      margin-bottom: 18px;
-      text-indent: 5px; }
-      .right-form .holidaysearch select:after {
-        /* добавляю свою стрелочку для выпадающего списка label*/
-        content: url("../img/select.png");
-        position: absolute;
-        right: 0;
-        top: 1px;
-        pointer-events: none;
-        /* опускает картинку на заднийплан */ }
+      width: 225px;
+      height: 30px;
+      border: none;
+      background: url("../img/selectbg.png") no-repeat;
+      padding: 0 0 0 5px; }
     .right-form .holidaysearch .label {
       width: 100%; }
     .right-form .holidaysearch .par_search {
       /* блок с label+select */
+      width: 206px;
+      /* расстояние между label и select*/
+      height: 44px;
+      overflow: hidden;
       position: relative;
       /* для правильного отображения селектора .parametr_serch label:after */ }
     .right-form .holidaysearch .par_search .label:after {
       /* добавляю свою стрелочку для выпадающего списка label*/
       content: url("../img/select.jpg");
       position: absolute;
-      right: 19px;
-      top: 3px;
+      right: 7px;
+      top: 6px;
       pointer-events: none;
       /* опускает картинку на заднийплан */
       border-radius: 1px;
@@ -318,7 +307,6 @@ header {
     .right-form .quicksearch [type='submit'] {
       width: 66px;
       height: 25px;
-      background-color: #43ac2d;
       background: url("../img/bgsubmit.jpg") repeat-x;
       border: 1px solid #0c932f;
       -webkit-border-radius: 5px;
@@ -404,7 +392,6 @@ header {
       /* Style for "Shape 1 co" */
       width: 66px;
       height: 25px;
-      background-color: #43ac2d;
       background: url("../img/bgsubmit.jpg") repeat-x;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -418,6 +405,8 @@ header {
       font-size: 14px;
       text-transform: uppercase;
       margin: 0 0 0 8px; }
+      .right-form .newslettersignup [type="submit"]:hover {
+        cursor: pointer; }
 
 .right-form__news {
   margin: 19px 0 0 0; }
@@ -498,7 +487,7 @@ header {
   border-right: 0; }
 
 .arrow-bottom {
-  top: 40px;
+  top: 38px;
   border-top-color: #0f941a;
   border-bottom: 0;
   display: none; }
@@ -662,6 +651,8 @@ header {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px; }
+    .fbar-center li:hover {
+      color: #4a4942; }
 
 .fbar-right {
   width: 200px;

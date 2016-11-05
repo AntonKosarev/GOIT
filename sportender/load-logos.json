@@ -1,0 +1,22 @@
+{
+    "status": "success",
+    "success": true,
+    "message": "Logos loaded!",
+    "data": [
+        {
+            "img": "assets/img_1.jpg",
+            "price": 225,
+            "title": "First Image"
+        },
+        {
+            "img": "assets/img_2.jpg",
+            "price": 19,
+            "title": "Second Image"
+        },
+        {
+            "img": "assets/img_3.jpg",
+            "price": 10025,
+            "title": "Next image"
+        }
+    ]
+}

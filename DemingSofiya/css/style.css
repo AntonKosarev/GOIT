@@ -1,0 +1,689 @@
+@charset "UTF-8";
+@font-face {
+  font-family: MyriadPro-regular;
+  src: url("fonts/MyriadPro/MyriadPro-regular.eot");
+  /* IE9*/
+  src: url("fonts/MyriadPro/MyriadPro-regular.woff") format("woff"), url("fonts/MyriadPro/MyriadPro-regular.ttf") format("truetype"), url("fonts/MyriadPro/MyriadPro-regular.svg#MyriadPro-Cond") format("svg");
+  /* iOS 4.1- */ }
+
+@font-face {
+  font-family: "Zurich BT";
+  src: url("fonts/Zurich BT/Zurich BT.eot");
+  /* IE9*/
+  src: url("fonts/Zurich BT/Zurich BT.woff") format("woff"), url("fonts/Zurich BT/Zurich BT.ttf") format("truetype"), url("fonts/Zurich BT/Zurich BT.svg#Zurich BT") format("svg");
+  /* iOS 4.1- */ }
+
+@font-face {
+  font-family: KlavikaMedium-Plain;
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.eot");
+  /* IE9*/
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.woff") format("woff"), url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.ttf") format("truetype"), url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.svg#Zurich BT") format("svg");
+  /* iOS 4.1- */ }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background: #ece6d6 url("../img/bg.jpg") no-repeat top center; }
+
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto 100px; }
+
+/*------------------------- Стили для шапки --------------------*/
+header {
+  padding: 14px 0 0 0; }
+
+.header-logo {
+  float: left;
+  margin: 6px 0 0 26px; }
+
+.header-right {
+  float: right;
+  text-align: right; }
+  .header-right p {
+    font-family: MyriadPro-regular, Arial, san-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75);
+    color: #585755; }
+  .header-right span {
+    font-family: MyriadPro-regular, Arial, san-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #373737; }
+
+.header-right__nav {
+  margin: 15px 0 0 0;
+  font-family: MyriadPro-regular, Arial, san-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #209a28; }
+  .header-right__nav li {
+    display: inline-block;
+    margin: 0 0 0 8px; }
+  .header-right__nav li:hover {
+    margin: 0 0 0 7px;
+    font-weight: 900; }
+
+.header-nav {
+  margin: 20px 0 0 0;
+  padding: 2px 0 0 0;
+  font-family: "Zurich BT", Arial, san-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(pie/PIE.htc);
+  box-shadow: inset 2px 2.2px 0 #81de41;
+  border: 1px solid #0c932f;
+  color: white;
+  background: url("../img/navbg.jpg") repeat-x; }
+  .header-nav li {
+    display: inline-block;
+    margin: 0 17px 0 21px; }
+  .header-nav a {
+    display: inline-block;
+    padding: 12px 5px; }
+  .header-nav a:hover {
+    color: #dbdbdb; }
+
+/*------------- end Стили для шапки --------------------*/
+/* ---------------Стили для формы справа ---------------*/
+.right-form {
+  float: right;
+  width: 215px;
+  padding: 20px 10px 0 25px;
+  color: #3f3b30; }
+  .right-form .holidaysearch {
+    /*своистрелочки дляселектов*/
+    /*end свои стрелочки дляселектов*/ }
+    .right-form .holidaysearch h1 {
+      font-family: MyriadPro-regular, Arial, san-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30; }
+    .right-form .holidaysearch h2 {
+      margin: 7px 0 11px 0;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3f3b30; }
+    .right-form .holidaysearch select {
+      position: relative;
+      display: block;
+      width: 225px;
+      height: 30px;
+      line-height: 30px;
+      /*Хак для safari*/
+      margin: 0 0 14px 0;
+      padding: 0 0 0 5px;
+      border: none;
+      background: url("../img/selectbg.png") no-repeat; }
+    .right-form .holidaysearch .label {
+      width: 100%; }
+    .right-form .holidaysearch .par_search {
+      /* блок с label+select */
+      position: relative;
+      /* для правильного отображения селектора .parametr_serch label:after */
+      width: 206px;
+      /* расстояние между label и select*/
+      height: 44px;
+      overflow: hidden; }
+    .right-form .holidaysearch .par_search .label:after {
+      /* добавляю свою стрелочку для выпадающего списка label*/
+      content: url("../img/select.jpg");
+      position: absolute;
+      right: 7px;
+      top: 6px;
+      z-index: 200;
+      border-radius: 1px;
+      pointer-events: none;
+      /* опускает картинку на заднийплан */ }
+    .right-form .holidaysearch [type='submit'] {
+      width: 202px;
+      height: 42px;
+      border: none;
+      font-family: KlavikaMedium-Plain, Arial, san-serif;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-indent: -39px;
+      color: white;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/searchhollidays.png") no-repeat; }
+      .right-form .holidaysearch [type='submit']:hover {
+        cursor: pointer; }
+    .right-form .holidaysearch .holidaysearch__submit {
+      position: relative;
+      margin: -3px 0 19px 0; }
+      .right-form .holidaysearch .holidaysearch__submit img {
+        position: absolute;
+        top: 13px;
+        left: 157px; }
+  .right-form .quicksearch {
+    margin: 0 0 24px 0; }
+    .right-form .quicksearch h1 {
+      font-family: MyriadPro-regular, Arial, san-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30; }
+    .right-form .quicksearch h2 {
+      margin: 7px 0 13px 0;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3f3b30; }
+    .right-form .quicksearch [type='search'] {
+      width: 118px;
+      height: 25px;
+      border: 1px solid #cfcdc5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+      background-color: white;
+      background: white;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(white), to(#f4f3f1));
+      background: -webkit-linear-gradient(white, #f4f3f1);
+      background: -moz-linear-gradient(white, #f4f3f1);
+      background: -ms-linear-gradient(white, #f4f3f1);
+      background: -o-linear-gradient(white, #f4f3f1);
+      background: linear-gradient(white, #f4f3f1);
+      behavior: url(pie/PIE.htc);
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de; }
+    .right-form .quicksearch [type='submit'] {
+      width: 66px;
+      height: 25px;
+      margin: 0 0 0 8px;
+      font-family: KlavikaMedium-Plain, Arial, san-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      border: 1px solid #0c932f;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc);
+      color: white;
+      box-shadow: inset 2px 2.2px 0 #81de41, 0 0 0 3px #d8d5cc;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/bgsubmit.jpg") repeat-x; }
+      .right-form .quicksearch [type='submit']:hover {
+        cursor: pointer; }
+  .right-form .line {
+    width: 250px;
+    height: 1px;
+    margin: 0 0 0 -25px;
+    box-shadow: 0.5px 0.9px 0 white;
+    background-color: #e1dbce; }
+  .right-form .newslettersignup {
+    margin: 22px 0 24px 0; }
+    .right-form .newslettersignup h1 {
+      font-family: MyriadPro-regular, Arial, san-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30; }
+    .right-form .newslettersignup h2 {
+      margin: 3px 0 15px 0;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #3f3b30; }
+    .right-form .newslettersignup [type="email"] {
+      width: 198px;
+      height: 22px;
+      margin: 0 0 13px 0;
+      border: 1px solid #cfcdc5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+      background: white;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(white), to(#f4f3f1));
+      background: -webkit-linear-gradient(white, #f4f3f1);
+      background: -moz-linear-gradient(white, #f4f3f1);
+      background: -ms-linear-gradient(white, #f4f3f1);
+      background: -o-linear-gradient(white, #f4f3f1);
+      background: linear-gradient(white, #f4f3f1);
+      behavior: url(pie/PIE.htc);
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de; }
+    .right-form .newslettersignup .input-name {
+      width: 118px;
+      height: 22px;
+      border: 1px solid #cfcdc5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de;
+      background: white;
+      background: -webkit-gradient(linear, 0 0, 0 bottom, from(white), to(#f4f3f1));
+      background: -webkit-linear-gradient(white, #f4f3f1);
+      background: -moz-linear-gradient(white, #f4f3f1);
+      background: -ms-linear-gradient(white, #f4f3f1);
+      background: -o-linear-gradient(white, #f4f3f1);
+      background: linear-gradient(white, #f4f3f1);
+      behavior: url(pie/PIE.htc); }
+    .right-form .newslettersignup [type="submit"] {
+      width: 66px;
+      height: 25px;
+      margin: 0 0 0 8px;
+      font-family: KlavikaMedium-Plain, Arial, san-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 1px solid #0c932f;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      behavior: url(pie/PIE.htc);
+      color: white;
+      box-shadow: inset 2px 2.2px 0 #81de41, 0 0 0 3px #d8d5cc;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/bgsubmit.jpg") repeat-x; }
+      .right-form .newslettersignup [type="submit"]:hover {
+        cursor: pointer; }
+
+.right-form__news {
+  margin: 19px 0 0 0; }
+  .right-form__news h1 {
+    font-family: MyriadPro-regular, Arial, san-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3f3b30; }
+  .right-form__news article {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3f3b30; }
+    .right-form__news article h2 {
+      margin: 7px 0 0 0;
+      font-weight: 700; }
+    .right-form__news article p {
+      margin: 0 0 18px 0;
+      font-weight: 400; }
+
+/* end Стили для формы справа ----------------------------------*/
+/* ---------------Стили для banners ----------------------*/
+.home {
+  margin: 13px 0 0 23px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #14961c; }
+
+.content-wrapper {
+  margin: 10px 0 0 2px;
+  background: #f4f2ec; }
+
+.main-content {
+  height: 100%;
+  padding: 18px 0 31px 17px;
+  overflow: hidden;
+  font-family: "Zurich BT", Arial, san-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(pie/PIE.htc);
+  background: #fff; }
+
+.btxt {
+  position: relative;
+  margin: -32px 0 0 0; }
+  .btxt h1 {
+    font-family: "Zurich BT", Arial, san-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #444137; }
+  .btxt p {
+    width: 416px;
+    height: 33px;
+    margin: 11px 0 23px 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    word-spacing: -1px;
+    font-weight: 400;
+    color: #595447; }
+  .btxt a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #28b028; }
+  .btxt img {
+    position: absolute;
+    right: 62px;
+    bottom: -38px;
+    z-index: 200; }
+
+.main-content__banner {
+  position: relative; }
+
+.banner-pager {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 202px;
+  height: 255px;
+  z-index: 100;
+  padding: 10px 15px 0 18px;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  behavior: url(pie/PIE.htc);
+  background: rgba(37, 29, 20, 0.9); }
+  .banner-pager h1 {
+    font-size: 28px;
+    font-family: "Zurich BT", Arial, san-serif;
+    line-height: 32px;
+    color: #28b028; }
+    .banner-pager h1 span {
+      font-size: 18px;
+      color: #fff; }
+  .banner-pager p {
+    margin: 12px 0 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    word-spacing: -1px;
+    color: #fff; }
+    .banner-pager p span {
+      color: #28b028; }
+  .banner-pager .banner-pager__View {
+    margin: 0 0 22px 0; }
+
+/* ----------------------------end Стили для banners ----------------*/
+/* Стили для табов ---------------------------------------------*/
+.tabs {
+  position: relative; }
+
+.tabs {
+  /* миксины неиспользовал для закругления части углов*/ }
+  .tabs label {
+    display: block;
+    position: relative;
+    float: left;
+    width: 32.4%;
+    height: 36px;
+    border: 1px solid #cfcdc5;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #444137;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#f4f3f1));
+    background: -webkit-linear-gradient(#fff, #f4f3f1);
+    background: -moz-linear-gradient(#fff, #f4f3f1);
+    background: -ms-linear-gradient(#fff, #f4f3f1);
+    background: -o-linear-gradient(#fff, #f4f3f1);
+    background: linear-gradient(#fff, #f4f3f1);
+    behavior: url(pie/PIE.htc);
+    /* миксины неиспользовал для поддержки ИЕ9+*/
+    -webkit-box-shadow: inset 0 -2px 0 0 white;
+    -moz-box-shadow: inset -2px 0 0 white;
+    box-shadow: inset 0 -2px 0 0 white;
+    behavior: url(pie/PIE.htc); }
+  .tabs #tab_l1 {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    behavior: url(pie/PIE.htc); }
+  .tabs #tab_l3 {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    behavior: url(pie/PIE.htc); }
+
+/* Стрелочки на CSS -----------------------------------------------------*/
+.arrow-right,
+.arrow-bottom {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 10;
+  border: 4px solid transparent; }
+
+.arrow-right {
+  top: 18px;
+  border-left-color: #0f941a;
+  border-right: 0; }
+
+.arrow-bottom {
+  display: none;
+  top: 38px;
+  border-top-color: #0f941a;
+  border-bottom: 0; }
+
+#arrow-right__1 {
+  left: 6.5%; }
+
+#arrow-right__2 {
+  left: 41%; }
+
+#arrow-right__3 {
+  left: 73%; }
+
+#arrow-bottom__1 {
+  left: 14%; }
+
+#arrow-bottom__2 {
+  left: 44%; }
+
+#arrow-bottom__3 {
+  left: 74%; }
+
+.tabs input {
+  position: absolute;
+  left: -9999px; }
+
+#tab_1:checked ~ #arrow-right__1,
+#tab_2:checked ~ #arrow-right__2,
+#tab_3:checked ~ #arrow-right__3 {
+  display: none; }
+
+#tab_1:checked ~ #arrow-bottom__1,
+#tab_2:checked ~ #arrow-bottom__2,
+#tab_3:checked ~ #arrow-bottom__3 {
+  display: block; }
+
+/* end Стрелочки на CSS ---------------------------------------------------*/
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3 {
+  z-index: 3;
+  border: 1px solid #0c932f;
+  font-family: "Zurich BT", Arial, san-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+  background: url("../img/tabbg.jpg") repeat-x;
+  box-shadow: none; }
+
+.tabs_cont {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  font-size: 14px;
+  color: #3a3731; }
+  .tabs_cont article {
+    display: inline-block;
+    width: 30%;
+    margin: 23px 2.7% -2px 0.2%;
+    vertical-align: top; }
+  .tabs_cont h1 {
+    margin: 8px 0 6px 0; }
+  .tabs_cont p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; }
+
+.tabs_cont > div {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  opacity: 0;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out; }
+
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3 {
+  position: static;
+  left: 0;
+  opacity: 1; }
+
+/* end Стили для табов -----------------------------------------------------------*/
+/*Стили для нижнего блока----------------------------------------------------------*/
+.fbar {
+  margin: 20px 0 0 0;
+  padding: 0 0 19px 0;
+  text-align: center;
+  background: #f4f2ec; }
+
+.fbar-head {
+  margin: 0 0 21px 0;
+  padding: 13px 0 10px 0;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 18px;
+  border-bottom: 2px solid #635543;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  behavior: url(pie/PIE.htc);
+  color: white;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.75);
+  background: url("../img/fbarbg.jpg") repeat-x; }
+
+.vertical-line {
+  float: left;
+  width: 1px;
+  height: 118px;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75);
+  background-color: #cfcdc5; }
+
+.fbar-left,
+.fbar-center,
+.fbar-right {
+  display: inline-block;
+  width: 30%; }
+  .fbar-left h1,
+  .fbar-center h1,
+  .fbar-right h1 {
+    font-family: KlavikaMedium-Plain, Arial, san-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #64522a; }
+
+.fbar-left {
+  float: left;
+  width: 200px;
+  margin: 0 19px 0 29px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 11px;
+  text-align: left;
+  color: #757268; }
+  .fbar-left h1 img {
+    margin: 0 0 0 5px;
+    vertical-align: middle; }
+  .fbar-left p {
+    margin: 4px 0 12px 0;
+    word-spacing: 4px; }
+  .fbar-left a {
+    display: block;
+    margin: 0 0 0 -7px; }
+
+.fbar-center {
+  width: 490px;
+  text-align: left; }
+  .fbar-center ul {
+    float: left;
+    width: 130px;
+    margin: 6px 24px 0 0; }
+  .fbar-center ul:nth-child(2) {
+    margin-right: 39px; }
+  .fbar-center li {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #757268; }
+    .fbar-center li:hover {
+      color: #4a4942; }
+
+.fbar-right {
+  float: right;
+  width: 200px;
+  text-align: left; }
+  .fbar-right h1 {
+    margin: 0 0 6px 0; }
+  .fbar-right p {
+    margin: 1px 0 1px 3px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #757268; }
+    .fbar-right p span {
+      font-weight: 700; }
+
+/*------------------------end Стили для нижнего блока----------------*/
+/*---------Футер------------------*/
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 49px 0;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center; }
+  footer h1 {
+    font-weight: 700;
+    color: #3a3731; }
+  footer p {
+    font-weight: 400;
+    color: #716c61; }

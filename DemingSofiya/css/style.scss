@@ -1,0 +1,769 @@
+@font-face {font-family: MyriadPro-regular;
+  src: url("fonts/MyriadPro/MyriadPro-regular.eot"); /* IE9*/
+  src: url("fonts/MyriadPro/MyriadPro-regular.woff") format("woff"), /* chrome、firefox */
+       url("fonts/MyriadPro/MyriadPro-regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+       url("fonts/MyriadPro/MyriadPro-regular.svg#MyriadPro-Cond") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "Zurich BT";
+  src: url("fonts/Zurich BT/Zurich BT.eot"); /* IE9*/
+  src: url("fonts/Zurich BT/Zurich BT.woff") format("woff"), /* chrome、firefox */
+       url("fonts/Zurich BT/Zurich BT.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+       url("fonts/Zurich BT/Zurich BT.svg#Zurich BT") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: KlavikaMedium-Plain;
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.eot"); /* IE9*/
+  src: url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.woff") format("woff"), /* chrome、firefox */
+  url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/KlavikaMedium-Plain/KlavikaMedium-Plain.svg#Zurich BT") format("svg"); /* iOS 4.1- */
+}
+
+$MyriadPro-regular: MyriadPro-regular, Arial, san-serif;
+$ZurichBT: "Zurich BT", Arial, san-serif;
+$KlavikaMediumPlain: KlavikaMedium-Plain, Arial, san-serif;
+$Arial: Arial, sans-serif;
+
+$bgcolor: #ece6d6;
+
+@mixin border-radius($rad) {
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  border-radius: $rad;
+  behavior: url(pie/PIE.htc);
+}
+@mixin bg-gradient($colorBottom, $colorTop) {
+  background: $colorTop;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from($colorTop), to($colorBottom));
+  background: -webkit-linear-gradient($colorTop, $colorBottom);
+  background: -moz-linear-gradient($colorTop, $colorBottom);
+  background: -ms-linear-gradient($colorTop, $colorBottom);
+  background: -o-linear-gradient($colorTop, $colorBottom);
+  background: linear-gradient($colorTop, $colorBottom);
+  behavior: url(pie/PIE.htc);
+}
+@mixin shadow($color, $x, $y, $blur) {
+  -webkit-box-shadow: $color $x $y $blur;
+  -moz-box-shadow: $color $x $y $blur;
+  box-shadow: $color $x $y $blur;
+  behavior: url(pie/PIE.htc);
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background: $bgcolor url("../img/bg.jpg") no-repeat top center;
+}
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto 100px;
+}
+
+/*------------------------- Стили для шапки --------------------*/
+header {
+  padding: 14px 0 0 0;
+}
+.header-logo {
+  float: left;
+  margin: 6px 0 0 26px;
+}
+.header-right {
+  float: right;
+  text-align: right;
+  p {
+    font-family: $MyriadPro-regular;
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75);
+    color: #585755;
+  }
+  span {
+    font-family: $MyriadPro-regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #373737;
+  }
+}
+.header-right__nav {
+  li {
+    display: inline-block;
+    margin: 0 0 0 8px;
+  }
+  margin: 15px 0 0 0;
+  font-family: $MyriadPro-regular;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #209a28;
+  li:hover {
+    margin: 0 0 0 7px;
+    font-weight: 900;
+  }
+}
+.header-nav {
+  margin: 20px 0 0 0;
+  padding: 2px 0 0 0;
+
+  font-family: $ZurichBT;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+
+  @include border-radius(5px);
+  box-shadow: inset 2px 2.2px 0 #81de41;
+  border: 1px solid #0c932f;
+
+  color: white;
+  background: url("../img/navbg.jpg") repeat-x;
+  li {
+    display: inline-block;
+    margin: 0 17px 0 21px;
+  }
+  a {
+    display: inline-block;
+    padding: 12px 5px;
+  }
+  a:hover {
+    color: #dbdbdb;
+  }
+}
+/*------------- end Стили для шапки --------------------*/
+
+/* ---------------Стили для формы справа ---------------*/
+.right-form {
+  float: right;
+  width: 215px;
+  padding: 20px 10px 0 25px;
+  color: #3f3b30;
+  .holidaysearch {
+    h1 {
+      font-family: $MyriadPro-regular;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30;
+    }
+    h2 {
+      margin: 7px 0 11px 0;
+      font-family: $Arial;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3f3b30;
+    }
+    select {
+      position: relative;
+      display: block;
+      width: 225px;
+      height: 30px;
+      line-height: 30px; /*Хак для safari*/
+      margin: 0 0 14px 0;
+      padding: 0 0 0 5px;
+      border: none;
+      background: url("../img/selectbg.png") no-repeat;
+    }
+
+    /*своистрелочки дляселектов*/
+    .label {
+      width: 100%;
+    }
+    .par_search { /* блок с label+select */
+      position: relative; /* для правильного отображения селектора .parametr_serch label:after */
+      width: 206px; /* расстояние между label и select*/
+      height: 44px;
+      overflow: hidden;
+    }
+    .par_search .label:after { /* добавляю свою стрелочку для выпадающего списка label*/
+      content: url("../img/select.jpg");
+      position: absolute;
+      right: 7px;
+      top: 6px;
+      z-index: 200;
+      border-radius: 1px;
+      pointer-events: none; /* опускает картинку на заднийплан */
+    }
+    /*end свои стрелочки дляселектов*/
+
+    [type='submit'] {
+      width: 202px;
+      height: 42px;
+      border: none;
+      font-family: $KlavikaMediumPlain;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-indent: -39px;
+      color: white;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/searchhollidays.png") no-repeat;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .holidaysearch__submit {
+      position: relative;
+      margin: -3px 0 19px 0;
+      img {
+        position: absolute;
+        top: 13px;
+        left: 157px;
+      }
+    }
+  }
+  .quicksearch {
+    margin: 0 0 24px 0;
+    h1 {
+      font-family: $MyriadPro-regular;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30;
+    }
+    h2 {
+      margin: 7px 0 13px 0;
+      font-family: $Arial;
+      font-size: 12px;
+      font-weight: 400;
+      color: #3f3b30;
+    }
+    [type='search'] {
+      width: 118px;
+      height: 25px;
+
+      border: 1px solid #cfcdc5;
+      @include border-radius(5px);
+
+      font-family: $Arial;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+
+      background-color: white;
+      @include bg-gradient(#f4f3f1, white);
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de;
+    }
+    [type='submit'] {
+      width: 66px;
+      height: 25px;
+
+      margin: 0 0 0 8px;
+
+      font-family: $KlavikaMediumPlain;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+
+      border: 1px solid #0c932f;
+      @include border-radius(5px);
+
+      color: white;
+      box-shadow: inset 2px 2.2px 0 #81de41, 0 0 0 3px #d8d5cc;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/bgsubmit.jpg") repeat-x;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .line {
+    width: 250px;
+    height: 1px;
+    margin: 0 0 0 -25px;
+    box-shadow: 0.5px 0.9px 0 white;
+    background-color: #e1dbce;
+  }
+  .newslettersignup {
+    margin: 22px 0 24px 0;
+    h1 {
+      font-family: $MyriadPro-regular;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #3f3b30;
+    }
+    h2 {
+      margin: 3px 0 15px 0;
+
+      font-family: $Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+
+      color: #3f3b30;
+    }
+    [type="email"] {
+      width: 198px;
+      height: 22px;
+
+      margin: 0 0 13px 0;
+
+      border: 1px solid #cfcdc5;
+      @include border-radius(5px);
+
+      font-family: $Arial;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+
+      @include bg-gradient(#f4f3f1, white);
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de;
+    }
+    .input-name {
+      width: 118px;
+      height: 22px;
+
+      border: 1px solid #cfcdc5;
+      @include border-radius(5px);
+
+      font-family: $Arial;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      text-indent: 7px;
+
+      box-shadow: inset 0 -2px 0 white, 0 0 0 3px #e8e5de;
+      @include bg-gradient(#f4f3f1, white);
+    }
+    [type="submit"] {
+      width: 66px;
+      height: 25px;
+
+      margin: 0 0 0 8px;
+
+      font-family: $KlavikaMediumPlain;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      border: 1px solid #0c932f;
+      @include border-radius(5px);
+
+      color: white;
+      box-shadow: inset 2px 2.2px 0 #81de41, 0 0 0 3px #d8d5cc;
+      text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+      background: url("../img/bgsubmit.jpg") repeat-x;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.right-form__news {
+  margin: 19px 0 0 0;
+  h1 {
+    font-family: $MyriadPro-regular;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3f3b30;
+  }
+  article {
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3f3b30;
+    h2 {
+      margin: 7px 0 0 0;
+      font-weight: 700;
+    }
+    p {
+      margin: 0 0 18px 0;
+      font-weight: 400;
+    }
+  }
+}
+/* end Стили для формы справа ----------------------------------*/
+
+/* ---------------Стили для banners ----------------------*/
+.home {
+  margin: 13px 0 0 23px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #14961c;
+}
+.content-wrapper {
+  margin: 10px 0 0 2px;
+  background: #f4f2ec;
+}
+.main-content {
+  height: 100%;
+  padding: 18px 0 31px 17px;
+  overflow: hidden;
+  font-family: $ZurichBT;
+  @include border-radius(5px);
+  background: #fff;
+}
+.btxt {
+  position: relative;
+  margin: -32px 0 0 0;
+  h1 {
+    font-family: $ZurichBT;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #444137;
+  }
+  p {
+    width: 416px;
+    height: 33px;
+    margin: 11px 0 23px 0;
+
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 20px;
+    word-spacing: -1px;
+    font-weight: 400;
+    color: #595447;
+  }
+  a {
+     font-weight: 700;
+     text-decoration: underline;
+     color: #28b028;
+   }
+  img {
+    position: absolute;
+    right: 62px;
+    bottom: -38px;
+    z-index: 200;
+  }
+}
+.main-content__banner {
+  position: relative;
+}
+.banner-pager {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 202px;
+  height: 255px;
+  z-index: 100;
+
+  padding: 10px 15px 0 18px;
+
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  behavior: url(pie/PIE.htc);
+  background: rgba(37,29,20, 0.9);
+  h1 {
+    font-size: 28px;
+    font-family: $ZurichBT;
+    line-height: 32px;
+    color: #28b028;
+    span {
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  p {
+    margin: 12px 0 0 0;
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 18px;
+    word-spacing: -1px;
+    color: #fff;
+    span {
+      color: #28b028;
+    }
+  }
+  .banner-pager__View {
+    margin: 0 0 22px 0;
+  }
+}
+/* ----------------------------end Стили для banners ----------------*/
+
+
+/* Стили для табов ---------------------------------------------*/
+.tabs {
+  position: relative;
+}
+.tabs  {
+  label {
+    display: block;
+    position: relative;
+    float: left;
+    width: 32.4%;
+    height: 36px;
+
+    border: 1px solid #cfcdc5;
+
+    line-height: 38px;
+    text-align: center;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    color: #444137;
+    @include bg-gradient(#f4f3f1, #fff);
+    /* миксины неиспользовал для поддержки ИЕ9+*/
+    -webkit-box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset  -2px 0 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 1);
+    behavior: url(pie/PIE.htc);
+  }
+  /* миксины неиспользовал для закругления части углов*/
+  #tab_l1 {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    behavior: url(pie/PIE.htc);
+  }
+  #tab_l3 {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    behavior: url(pie/PIE.htc);
+  }
+}
+
+/* Стрелочки на CSS -----------------------------------------------------*/
+.arrow-right,
+.arrow-bottom {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 10;
+  border: 4px solid transparent;
+}
+.arrow-right {
+  top: 18px;
+  border-left-color: #0f941a;
+  border-right: 0;
+}
+.arrow-bottom {
+  display: none;
+  top: 38px;
+  border-top-color: #0f941a;
+  border-bottom: 0;
+}
+#arrow-right__1  {left: 6.5%;}
+#arrow-right__2  {left: 41%;}
+#arrow-right__3  {left: 73%;}
+#arrow-bottom__1 {left: 14%;}
+#arrow-bottom__2 {left: 44%;}
+#arrow-bottom__3 {left: 74%;}
+.tabs input {
+  position: absolute;
+  left: -9999px;
+}
+#tab_1:checked ~ #arrow-right__1,
+#tab_2:checked ~ #arrow-right__2,
+#tab_3:checked ~ #arrow-right__3 {
+  display: none;
+}
+#tab_1:checked ~ #arrow-bottom__1,
+#tab_2:checked ~ #arrow-bottom__2,
+#tab_3:checked ~ #arrow-bottom__3 {
+  display: block;
+}
+/* end Стрелочки на CSS ---------------------------------------------------*/
+
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3 {
+  z-index: 3;
+
+  border: 1px solid #0c932f;
+
+  font-family: $ZurichBT;
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #fff;
+  text-shadow: 0 -2px 0 rgba(0, 92, 19, 0.63);
+  background: url("../img/tabbg.jpg") repeat-x;
+  box-shadow: none;
+}
+.tabs_cont {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  font-size: 14px;
+  color: #3a3731;
+  article {
+    display: inline-block;
+    width: 30%;
+    margin: 23px 2.7% -2px 0.2%;
+    vertical-align: top;
+  }
+  h1 {
+    margin: 8px 0 6px 0;
+  }
+  p {
+    font-family: $Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+.tabs_cont > div {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+
+  opacity: 0;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3 {
+  position: static;
+  left: 0;
+  opacity: 1;
+}
+/* end Стили для табов -----------------------------------------------------------*/
+
+/*Стили для нижнего блока----------------------------------------------------------*/
+.fbar {
+  margin: 20px 0 0 0;
+  padding: 0 0 19px 0;
+  text-align: center;
+  background: #f4f2ec;
+}
+.fbar-head {
+  margin: 0 0 21px 0;
+  padding: 13px 0 10px 0;
+
+  font-family: $Arial;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 18px;
+
+  border-bottom: 2px solid #635543;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  behavior: url(pie/PIE.htc);
+
+  color: white;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.75);
+  background: url("../img/fbarbg.jpg") repeat-x;
+}
+.vertical-line {
+  float: left;
+  width: 1px;
+  height: 118px;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.75);
+  background-color: #cfcdc5;
+}
+.fbar-left,
+.fbar-center,
+.fbar-right {
+  display: inline-block;
+  width: 30%;
+  h1 {
+    font-family: $KlavikaMediumPlain;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #64522a;
+  }
+}
+.fbar-left {
+  float: left;
+  width: 200px;
+
+  margin: 0 19px 0 29px;
+
+  font-family: $Arial;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 11px;
+  text-align: left;
+
+  color: #757268;
+  h1 {
+    img {
+      margin: 0 0 0 5px;
+      vertical-align: middle;
+    }
+  }
+  p {
+    margin: 4px 0 12px 0;
+    word-spacing: 4px;
+  }
+  a {
+    display: block;
+    margin: 0 0 0 -7px;
+  }
+}
+.fbar-center {
+  width: 490px;
+  text-align: left;
+  ul {
+    float: left;
+    width: 130px;
+    margin: 6px 24px 0 0;
+  }
+  ul:nth-child(2) {
+    margin-right: 39px;
+  }
+  li {
+    font-family: $Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #757268;
+    &:hover {
+      color: #4a4942;
+    }
+  }
+}
+.fbar-right {
+  float: right;
+  width: 200px;
+  text-align: left;
+  h1 {
+    margin: 0 0 6px 0;
+  }
+  p {
+    margin: 1px 0 1px 3px;
+    font-family: $Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #757268;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+/*------------------------end Стили для нижнего блока----------------*/
+
+/*---------Футер------------------*/
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 49px 0;
+
+  font-family: $Arial;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+
+  h1 {
+  font-weight: 700;
+  color: #3a3731;
+  }
+  p {
+  font-weight: 400;
+  color: #716c61;
+  }
+}

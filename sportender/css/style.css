@@ -1,0 +1,389 @@
+@import url("https://db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana");
+@import url("https://db.onlinewebfonts.com/c/a78cfad3beb089a6ce86d4e280fa270b?family=Calibri");
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+body {
+    background: #041119;
+}
+.sportender {
+    background: url("../img/bg-wrapper.png") right center no-repeat #041119;
+    width: 939px;
+    margin: 0 auto;
+    padding: 55px 0 47px 0;
+
+}
+.sportender-logo {
+    margin: 0 0 21px 100px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #5cb8e6;
+}
+/* Галерея */
+.gallery {
+    float: left;
+    width: 338px;
+    margin: 0 0 0 99px;
+}
+.jssort01 .p {
+    position: absolute;
+    width: 79px;
+    height: 87px;
+}
+.jssort01 .t {}
+.jssort01 .w { /*контейнер со слайдом*/
+    text-align: center;
+    margin: 11px 0 0 1px;
+    padding: 8px 0 0 0;
+    width: 74px;
+    height: 64px;
+    background-color: #65808d;
+    border: 1px solid #c2c2c2;
+}
+.jssort01 .c {/*невыделенный слайд*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79px;
+    height: 87px;
+}
+.jssort01 .c:hover {
+    cursor: pointer;
+}
+.jssort01 .pav .c {/*выделенный слайд*/
+    width: 79px;
+    height: 87px;
+    background: url("../img/t01.png");
+}
+/* Модальное окно */
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 648px;
+    position: relative;
+    margin: 94px auto;
+    border: 1px solid white;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.close:hover { cursor: pointer; }
+/* end Модальное окно */
+/* end Галерея */
+
+/* Цена, кнопки, описание, другие работы автора */
+.rightpart {
+    float: right;
+    width: 387px;
+    margin: 0 95px 0 0;
+}
+.prise {
+    margin: 6px 0 26px -1px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #fefefe;
+}
+.prise span {
+    width: 36px;
+    height: 13px;
+    margin: 0 0 0 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #c5c4c4;
+}
+.buttons {
+    padding: 0 0 14px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.buttons button {
+    border-radius: 15px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.buttons button:hover {
+    cursor: pointer;
+}
+.button-change {
+    padding: 3px 16px;
+    background-image: linear-gradient(to top, #4781ca 0%, #5cb8e6 100%);
+    border: 1px solid #aab7b8;
+}
+.button-buy {
+    padding: 3px 28px;
+    margin: 0 12px 0 0;
+    background-image: linear-gradient(to top, #959595 0%, #c2c2c2 100%);
+    border: 1px solid #aab7b8;
+}
+.description {
+    border-bottom: 1px solid #e1e1e1;
+}
+.description h1 {
+    margin: 9px 0 11px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fffefe;
+}
+.description p {
+    padding: 0 0 9px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: white;
+}
+.format {
+    border-bottom: 1px solid #e1e1e1;
+}
+.format h1 {
+    margin: 8px 0 6px 0;
+    color: #fefefe;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.format p {
+    padding: 0 0 9px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+.category h1 {
+    margin: 7px 0 3px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fffefe;
+}
+.category li {
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #99c7ff;
+}
+.over {
+    width: 358px;/*удалить*/
+    margin: 25px 0 0 0;
+    padding: 11px 14px;
+    border: 1px solid #acacac;
+    background-color: #022539;
+}
+.over h1 {
+    margin: 0 0 6px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.over-article {
+    margin: 0 0 15px 0;
+}
+.over-article img {
+    margin: 3px 10px 2px 0;
+    float: left;
+    vertical-align: middle;
+}
+.over-article h2 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+.over-article p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #b7b7b7;
+}
+.over-article__p {
+    margin: 7px 0 6px 0;
+}
+.over-article span {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Карусель Автор*/
+.carousel {
+    position: relative;
+}
+.carousel h1 {
+    margin: 0 0 10px 1px;
+    letter-spacing: 0.4px;
+}
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 45px;
+    padding: 5px;
+    background: none;
+}
+.carousel .prev:hover,
+.carousel .next:hover {
+    cursor: pointer;
+}
+.carousel .prev {
+    left: -4px;
+}
+.carousel .next {
+    right: -4px;
+}
+.carousel-list {
+    top: 2px;
+    margin: auto;
+}
+.carousel ul li img {
+    margin: 0 4px;
+}
+/* end Карусель Автор */
+
+/* Похожие логотипы */
+.sportender-similar {
+    margin: 18px 94px 0 100px;
+    padding: 10px 0 15px 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    border-top: 1px solid #e1e1e1;;
+    border-bottom: 1px solid #e1e1e1;;
+    color: #99c7ff;
+}
+.sportender-similar h1 {
+    margin: 0 0 11px 0;
+}
+
+/* Карусель Похожие логотипы */
+.carousel__similar {
+    position: relative;
+}
+.carousel__similar .prev,
+.carousel__similar .next {
+    position: absolute;
+    top: 60px;
+    padding: 5px;
+    background: none;
+}
+.carousel__similar .prev:hover,
+.carousel__similar .next:hover {
+    cursor: pointer;
+}
+.carousel__similar .prev {
+    left: -4px;
+}
+.carousel__similar .next {
+    right: -4px;
+}
+.carousel__similar-list {
+    top: 2px;
+    margin: auto;
+}
+.carousel__similar ul li {
+    position: relative;
+    border-radius: 7px;
+}
+.carousel__similar ul li a:hover {
+    cursor: default;
+}
+.carousel__similar ul li img {
+    margin: 0 5px;
+    border-radius: 7px;
+}
+.carousel__similar ul li:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.carousel__similar ul li p {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    width: 155px;
+    height: 21px;
+    padding: 0 0 0 13px;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #82bbe8;
+    background: #03263a;
+}
+.carousel__similar ul li p button {
+    float: right;
+    margin: 2px 11px 0 0;
+
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+
+    border: 1px solid #aab7b8;
+    border-radius: 10px;
+
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, #4781ca 0%, #82bbe8 100%);
+}
+
+.carousel__similar ul li p button:hover {
+    cursor: pointer;
+}
+.carousel__similar ul li p button:active {
+    border: none;
+}
+.carousel__similar ul li h1 {
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+    width: 168px;
+    text-align: center;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #555;
+}
+/* end Карусель Похожие логотипы */
+
+/* end Похожие логотипы */
+
+/* end Цена, кнопки, описание, другие работы автора */

@@ -1,0 +1,610 @@
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width: 760px) {
+ .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 40px 30px;
+    z-index: 100;
+  }
+  .menu {
+    #openmenu {
+      color: #000;
+      font-size: xx-large;
+    }
+  }
+  .drop_menu {
+    width: 100%;
+    //top: 130px;
+    bottom: 0;
+    z-index: 50;
+    .submenu {
+      height: 140px;
+      margin-left: 0;
+    }
+    .drop {
+      //display: none;
+    }
+    .drop_menu-close {
+      display: none;
+    }
+  }
+  .logo {
+    margin: 0;
+    .screen {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      float: left;
+    }
+  }
+  .social_network {
+    display: none;
+  }
+
+  .slide {
+    margin-top: 250px;
+  }
+
+  //slide1
+  .slide1-article {
+    margin: auto;
+    width: 100%;
+    max-width: 781px;
+    text-align: center;
+    h1 {
+      margin: auto;
+    }
+    p {
+      margin: 110px auto 103px;
+    }
+  }
+  .slide1-photo {
+    display: none;
+  }
+  //slide2
+  .slide2-photo {
+    display: none;
+  }
+  .slide2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .slide2-left,
+  .slide2-right {
+    text-align: center;
+    width: 43%;
+    max-width: 458px;
+  }
+  .mic,
+  .paper,
+  .globe,
+  .img {
+    float: none;
+    margin: 78px auto 0;
+  }
+  //slide3
+  .slide3 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide3-photo {
+    width: 93%;
+    max-width: 994px;
+  }
+
+  .slide3-article {
+    width: 65%;
+    max-width: 792px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Nexus7 (landscape) ----------- */
+@media only screen
+and (min-device-width: 600px)
+and (max-device-width: 960px)
+and (orientation: landscape) {
+  .slide {
+    min-height: 430px;
+  }
+  .slide2-article {
+    p {
+      max-height: 20px;
+    }
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 40px 30px;
+    z-index: 100;
+  }
+  .menu {
+    #openmenu {
+      color: #000;
+      font-size: xx-large;
+    }
+  }
+  .drop_menu {
+    width: 100%;
+    //top: 130px;
+    bottom: 0;
+    z-index: 50;
+    .submenu {
+      height: 140px;
+      margin-left: 0;
+    }
+    .drop {
+      //display: none;
+    }
+    .drop_menu-close {
+      display: none;
+    }
+  }
+  .logo {
+    margin: 0;
+    .screen {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      float: left;
+    }
+  }
+  .social_network {
+    display: none;
+  }
+
+  .slide {
+    //margin-top: 150px;
+  }
+
+  //slide1
+  .slide1-article {
+    margin: auto;
+    width: 100%;
+    max-width: 781px;
+    text-align: center;
+    h1 {
+      margin: auto;
+    }
+    p {
+      margin: 110px auto 103px;
+    }
+  }
+  .slide1-photo {
+    display: none;
+  }
+  //slide2
+  .slide2-photo {
+    display: none;
+  }
+  .slide2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide2-left,
+  .slide2-right {
+    text-align: center;
+    width: 43%;
+    max-width: 458px;
+  }
+  .mic,
+  .paper,
+  .globe,
+  .img {
+    float: none;
+    margin: 78px auto 0;
+  }
+  //slide3
+  .slide3 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide3-photo {
+    width: 93%;
+    max-width: 994px;
+  }
+
+  .slide3-article {
+    width: 65%;
+    max-width: 792px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+/*Nexus6 (альбомный режим)----------- */
+@media only screen
+and (min-device-width : 412px)
+and (max-device-width : 732px)
+and (orientation : landscape) {
+  .slide {
+    min-height: 430px;
+  }
+  .slide2-article {
+    p {
+      max-height: 20px;
+    }
+  }
+}
+
+/*Nexus6 (портретный режим)----------- */
+@media only screen
+and (min-device-width : 412px)
+and (max-device-width : 732px)
+and (orientation : portrait) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 40px 30px;
+    z-index: 100;
+  }
+  .menu {
+    #openmenu {
+      color: #000;
+      font-size: xx-large;
+    }
+  }
+  .drop_menu {
+    width: 100%;
+    //top: 130px;
+    bottom: 0;
+    z-index: 50;
+    .submenu {
+      height: 140px;
+      margin-left: 0;
+    }
+    .drop {
+      //display: none;
+    }
+    .drop_menu-close {
+      display: none;
+    }
+  }
+  .logo {
+    margin: 0;
+    .screen {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      float: left;
+    }
+  }
+  .social_network {
+    display: none;
+  }
+
+  .slide {
+    //margin-top: 250px;
+  }
+
+  //slide1
+  .slide1-article {
+    margin: auto;
+    width: 100%;
+    max-width: 781px;
+    text-align: center;
+    h1 {
+      margin: auto;
+    }
+    p {
+      margin: 110px auto 103px;
+    }
+  }
+  .slide1-photo {
+    display: none;
+  }
+  //slide2
+  .slide2-photo {
+    display: none;
+  }
+  .slide2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide2-left,
+  .slide2-right {
+    text-align: center;
+    width: 43%;
+    max-width: 458px;
+  }
+  .mic,
+  .paper,
+  .globe,
+  .img {
+    float: none;
+    margin: 78px auto 0;
+  }
+  //slide3
+  .slide3 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide3-photo {
+    width: 93%;
+    max-width: 994px;
+  }
+
+  .slide3-article {
+    width: 65%;
+    max-width: 792px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+/*iPhone 5 (альбомный режим)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .slide {
+    min-height: 430px;
+  }
+  .slide2-article {
+    p {
+      max-height: 20px;
+    }
+  }
+}
+
+/*iPhone 5 (портретный режим)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 40px 30px;
+    z-index: 100;
+  }
+  .menu {
+    #openmenu {
+      color: #000;
+      font-size: xx-large;
+    }
+  }
+  .drop_menu {
+    width: 100%;
+    //top: 130px;
+    bottom: 0;
+    z-index: 50;
+    .submenu {
+      height: 140px;
+      margin-left: 0;
+    }
+    .drop {
+      //display: none;
+    }
+    .drop_menu-close {
+      display: none;
+    }
+  }
+  .logo {
+    margin: 0;
+    .screen {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      float: left;
+    }
+  }
+  .social_network {
+    display: none;
+  }
+
+  .slide {
+    //margin-top: 250px;
+  }
+
+  //slide1
+  .slide1-article {
+    margin: auto;
+    width: 100%;
+    max-width: 781px;
+    text-align: center;
+    h1 {
+      margin: auto;
+    }
+    p {
+      margin: 110px auto 103px;
+    }
+  }
+  .slide1-photo {
+    display: none;
+  }
+  //slide2
+  .slide2-photo {
+    display: none;
+  }
+  .slide2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide2-left,
+  .slide2-right {
+    text-align: center;
+    width: 43%;
+    max-width: 458px;
+  }
+  .mic,
+  .paper,
+  .globe,
+  .img {
+    float: none;
+    margin: 78px auto 0;
+  }
+  //slide3
+  .slide3 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide3-photo {
+    width: 93%;
+    max-width: 994px;
+  }
+
+  .slide3-article {
+    width: 65%;
+    max-width: 792px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+/*iPhone 6 (альбомный режим)----------- */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .slide {
+    min-height: 430px;
+  }
+  .slide2-article {
+    p {
+      max-height: 20px;
+    }
+  }
+}
+
+/*iPhone 6 (портретный режим)----------- */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 0;
+    padding: 40px 30px;
+    z-index: 100;
+  }
+  .menu {
+    #openmenu {
+      color: #000;
+      font-size: xx-large;
+    }
+  }
+  .drop_menu {
+    width: 100%;
+    //top: 130px;
+    bottom: 0;
+    z-index: 50;
+    .submenu {
+      height: 140px;
+      margin-left: 0;
+    }
+    .drop {
+      //display: none;
+    }
+    .drop_menu-close {
+      display: none;
+    }
+  }
+  .logo {
+    margin: 0;
+    .screen {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      float: left;
+    }
+  }
+  .social_network {
+    display: none;
+  }
+  .slide {
+    //margin-top: 250px;
+  }
+  //slide1
+  .slide1-article {
+    margin: auto;
+    width: 100%;
+    max-width: 781px;
+    text-align: center;
+    h1 {
+      margin: auto;
+    }
+    p {
+      margin: 110px auto 103px;
+    }
+  }
+  .slide1-photo {
+    display: none;
+  }
+  //slide2
+  .slide2-photo {
+    display: none;
+  }
+  .slide2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide2-left,
+  .slide2-right {
+    text-align: center;
+    width: 43%;
+    max-width: 458px;
+  }
+  .mic,
+  .paper,
+  .globe,
+  .img {
+    float: none;
+    margin: 78px auto 0;
+  }
+  //slide3
+  .slide3 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide3-photo {
+    width: 93%;
+    max-width: 994px;
+  }
+  .slide3-article {
+    width: 65%;
+    max-width: 792px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}

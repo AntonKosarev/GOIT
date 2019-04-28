@@ -1,0 +1,82 @@
+
+
+.drop__menu{
+    /*padding: 10px 20px 10px 30px;*/
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    /*color: white;*/
+    /*background: #f47920;*/
+}
+.drop__menu .nav__menu {
+    transition: all 0.9s ease 0.2s;
+}
+.drop__menu #menu__icon {
+    display: none;
+}
+.drop__menu .nav__menu li {
+    letter-spacing: 1px;
+}
+.drop__menu .nav__menu li:hover {
+    color: #231f20;
+}
+.drop__menu .nav__menu a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+}
+.drop__menu .nav__menu li:last-child a {
+    border-bottom: 2px solid white;
+}
+.drop__menu .nav__phone {
+    /*margin: -4px 0 0 23px;*/
+}
+
+/*выпадающее меню*/
+.drop__menu .nav__menu-drop {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.drop__menu .nav__menu-drop span {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: white;
+}
+.drop__menu .nav__menu-drop .line__1 {
+    top: 18px;
+    left: 15px;
+}
+.drop__menu .nav__menu-drop .line__2 {
+    bottom: 18px;
+    left: 15px;
+}
+.drop__menu .nav__menu-drop:hover {
+    cursor: pointer;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+
+    /*transform: rotate(135deg);*/
+}
+.drop__menu .nav__menu-drop:hover .line__1 {
+    transition: all 0.5s ease 0.4s;
+    /*top: 23px;*/
+}
+.drop__menu .nav__menu-drop:hover .line__2 {
+    transition: all 0.5s ease 0.4s;
+    /*bottom: 24px;*/
+    /*transform: rotate(-90deg);*/
+}
+@media all and (max-width: 720px) {
+    .drop__menu #menu__icon {
+        display: block;
+    }
+}

@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.eot");
+    src: url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.svg#Open Sans") format("svg");
+}
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+div,
+nav,
+ul,
+header,
+section,
+article,
+footer {
+    /*min-height: 20px;*/
+    /*margin: 20px;*/
+    /*border: 3px solid black;*/
+}
+
+.nav {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
+
+    padding: 27px 30px 28px 119px;
+
+    background: #f47920;
+}
+    .nav__logo {}
+    .nav__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        width: 482px;
+
+        margin: 23px 0 0 0;
+
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        /* Text style for "Home" */
+        color: white;
+        /* Text style for "Products" */
+    }
+    .nav__menu li {
+        letter-spacing: 1px;
+    }
+    .nav__menu li:hover {
+        color: #231f20;
+    }
+    .nav__phone {
+        margin: -4px 0 0 23px;
+    }
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    background: #2d2829;
+}
+    .search__usage {}
+    .search__colour {}
+    .search__size {}
+    .search__search {}
+    .select {
+        position: relative;
+        width: 199px;
+        margin: 15px 6px 10px 6px;
+        padding: 4px 0 6px 7px;
+        border: none;
+        line-height: 28px;
+        background-color: #231f20;
+    }
+    .select label:after {
+        content: url(../img/select-arrow.png);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+    .buttonsearch {
+        width: 199px;
+        margin: 15px 13px 10px;
+        padding: 4px 0 6px 0;
+        border: none;
+        background-color: #f47920;
+    }
+    .select:hover,
+    .buttonsearch:hover {
+        cursor: pointer;
+    }
+
+.main {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    background: #fff;
+}
+    .main__discountcoupon {
+        float: left;
+        max-width: 377px;
+        margin: 0 0 0 0;
+        padding: 88px 0 102px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        background: url("../img/main__discount-bg.jpg");
+    }
+    .main__discountcoupon h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+        line-height: 44px;
+    }
+    .main__discountcoupon .line {
+        width: 34px;
+        height: 4px;
+        margin: 14px auto 17px;
+        background-color: #f47920;
+    }
+    .main__discountcoupon p {
+        margin: 0 63px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+    .main__discountcoupon p:last-child {
+        margin: 38px 0 0 0;
+    }
+
+    .main__portlandgrey {
+        padding: 74px 102px 0 452px;
+    }
+        .main__portlandgrey-h1 {
+            border-bottom: 3px solid #f47920;
+        }
+        .main__portlandgrey-h1 h1 {
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: 29px;
+            font-weight: 900;
+            color: #5d5d5d;
+            letter-spacing: 4px;
+        }
+        .main__portlandgrey-h1 p {
+            margin: 10px 0 8px 2px;
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #f47920;
+        }
+        .main__portlandgrey-content {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+            .main__portlandgrey-img1 {
+                width: 201px;
+                height: 201px;
+                padding: 16px 27px 0 0;
+            }
+            .main__portlandgrey-img2 {
+                width: 201px;
+                height: 201px;
+                padding: 16px 27px 0 0;
+            }
+            .main__portlandgrey-prise {
+                margin: 16px 0 0 20px;
+                line-height: 19px;
+                font-family: "Open Sans", Arial, sans-serif;
+                font-size: 13px;
+                font-weight: 600;
+                color: #5d5d5d;
+            }
+            .main__portlandgrey-prise li span{
+                color: #f47920;
+                font-weight: 700;
+            }
+            .main__portlandgrey-prise p {
+                margin: 10px 0 0 -2px;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 50px;
+                letter-spacing: 1px;
+                color: #f47920;
+            }
+            .main__portlandgrey-prise p span{
+                color: #5d5d5d;
+            }
+
+.featuredpoducts {
+    background: url("../img/featuredpoducts-bg.jpg");
+}
+    .featuredpoducts__h1 {
+        padding: 72px 0 49px 0;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .featuredpoducts__examples {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .featuredpoducts__examples div {
+        margin: 0 35px -3px;
+    }
+        .featuredpoducts__examples h1 {
+            margin-top: 20px;
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+        }
+        .featuredpoducts__examples p {
+            margin: 3px 0 20px 0;
+            color: #2d2829;
+            font-size: 17px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .featuredpoducts__examples img {}
+        .featuredpoducts__bamboo {}
+        .featuredpoducts__barossa {}
+        .featuredpoducts__negro {}
+        .featuredpoducts__como {}
+        .featuredpoducts__tosca {}
+
+.footer {
+    background: #2d2829;
+}
+    .footer__menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        padding: 71px 0 0 0;;
+
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+
+        color: #696365;
+        opacity: 0.9;
+    }
+    .footer__menu h1 {
+        margin: 0 0 28px 0;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+        opacity: 0.9;
+    }
+
+        .footer__menu-comevisitus {
+            width: 206px;
+        }
+        .footer__menu-comevisitus {
+            margin: 0 0 0 12px;
+        }
+        .footer__menu-comevisitus .icon {
+            margin: 5px 16px 6px 0;
+        }
+        .icon {
+            display: inline-block;
+            float: left;
+            background: url("../img/footer-sprites.png") no-repeat;
+        }
+            .footer__menu-comevisitus li:nth-child(1) .icon {
+                width: 18px;
+                height: 15px;
+                background-position: -70px 0;
+            }
+            .footer__menu-comevisitus li:nth-child(2) .icon {
+                width: 10px;
+                height: 15px;
+                background-position: -90px 0;
+            }
+            .footer__menu-comevisitus li:nth-child(3) .icon {
+                width: 15px;
+                height: 15px;
+                background-position: -102px 0;
+            }
+            .footer__menu-comevisitus li:nth-child(4) .icon {
+                width: 16px;
+                height: 10px;
+                background-position: -120px 0;
+            }
+            .footer__menu-comevisitus li:nth-child(5) .icon {
+                width: 15px;
+                height: 15px;
+                margin-bottom: 35px;
+                background-position: -138px 0;
+            }
+            .footer__menu-comevisitus li:last-child {
+                margin: 26px 0 0 0;
+            }
+
+        .footer__menu-contactus {
+            width: 286px;
+        }
+            .footer__menu-contactus .icon:nth-child(1) {
+                width: 21px;
+                height: 22px;
+                background-position: 0 0;
+            }
+            .footer__menu-contactus .icon:nth-child(2) {
+                width: 22px;
+                height: 22px;
+                background-position: -22px 0;
+            }
+            .footer__menu-contactus .icon:nth-child(3) {
+                width: 22px;
+                height: 22px;
+                background-position: -45px 0;
+            }
+            .footer__menu-social {
+                display: flex;
+                justify-content: center;
+                margin: 85px 0 20px 0;
+            }
+            .footer__menu-social a {
+                margin: 0 20px 0 0;
+            }
+
+
+.footer__menu-sitemap {
+            width: 126px;
+        }
+        .footer__menu-sitemap h1,
+        .footer__menu-sitemap ul {
+            margin-left: -120px;
+        }
+        .footer__menu-sitemap ul li ul {
+            margin: 0 0 0 20px;
+        }
+.coptyright {
+    padding: 87px 0 55px 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+@media all and (max-width: 480px) {
+
+    .nav {
+        padding: 20px;
+    }
+
+    .nav__menu {
+        width: 100%;
+    }
+
+    #nav__menu-big {
+        display: none;
+    }
+
+    .nav__phone {
+        margin: 0 0 0 0;
+    }
+
+
+    .search {
+
+    }
+        .search__usage {}
+        .search__colour {}
+        .search__size {}
+        .search__search {}
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+        .main__discountcoupon {
+            float: none;
+        }
+        .main__portlandgrey {
+            padding: 0 0 0 0;
+        }
+            .main__portlandgrey-h1 {}
+
+    .main__portlandgrey-content {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+                .main__portlandgrey-img1 {}
+                .main__portlandgrey-img2 {
+                    display: none;
+                }
+                .main__portlandgrey-prise {}
+    .footer {
+    }
+        .footer__menu {
+        }
+            .footer__menu-comevisitus {}
+            .footer__menu-comevisitus {}
+            .footer__menu-sitemap {}
+.coptyright {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: #454142;
+}
+    .footer__menu-sitemap h1,
+    .footer__menu-sitemap ul {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 481px) and (max-width: 720px) {
+    .nav {
+        padding-left: 70px;
+    }
+    .nav__phone {
+        margin: 0 0 0 0;
+    }
+    #nav__menu-big {
+        display: none;
+    }
+    .nav__menu {
+        width: 100%;
+    }
+    .main {
+             display: flex;
+             /*flex-wrap: wrap;*/
+        text-align: center;
+    }
+    .main__portlandgrey-content {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .main__portlandgrey-img2 {
+        display: none;
+    }
+    .main__discountcoupon {
+        float: none;
+    }
+    .main__portlandgrey {
+        padding: 0 0 0 0;
+    }
+    .footer__menu-sitemap h1,
+    .footer__menu-sitemap ul {
+        margin-left: 0;
+    }
+}
+@media all and (min-width: 721px)  and (max-width: 1280px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #nav__menu {
+        display: none;
+    }
+}
+@media all and (min-width: 1281px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #nav__menu {
+        display: none;
+    }
+}
+
+

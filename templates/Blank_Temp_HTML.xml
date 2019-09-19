@@ -1,7 +1,0 @@
-<templateSet group="Blank_Temp_HTML">
-  <template name="index.html" value="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#10;    &lt;title&gt;Пустой&lt;/title&gt;&#10;    &lt;link href='css/resetstyle.css' rel='stylesheet'&gt;&#10;    &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot;&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-</templateSet>
